@@ -1,0 +1,140 @@
+import { LucideIcon } from "lucide-react";
+
+// ================= HERO SECTION TYPES =================
+export interface HeroSlide {
+    image: string;
+    badge: string;
+    titleLine1: string;
+    titleLine2: string;
+    highlight: string;
+    description: string;
+    buttonText: string;
+    buttonLink: string;
+}
+
+// ================= FEATURE CARDS TYPES =================
+export interface FeatureCard {
+    id: number;
+    title: string;
+    description: string;
+    icon: LucideIcon;
+    bgImage: string;
+    variant: "dark" | "gold";
+}
+
+// ================= ABOUT SECTION TYPES =================
+export interface AboutFeature {
+    id: number;
+    title: string;
+    description: string;
+    icon: LucideIcon;
+}
+
+// ================= SERVICES SECTION TYPES =================
+export interface Service {
+    id: number;
+    title: string;
+    description: string;
+    icon: LucideIcon;
+    image: string;
+}
+
+// ================= PROCESS SECTION TYPES =================
+export interface ProcessStep {
+    step: string;
+    title: string;
+    description: string;
+    icon: LucideIcon;
+    image: string;
+}
+
+// ================= TEAM SECTION TYPES =================
+export interface TeamSocial {
+    label: string;
+    href: string;
+}
+
+export interface TeamMember {
+    id: number;
+    name: string;
+    role: string;
+    icon: string;
+    image: string;
+}
+
+export interface TeamSectionData {
+    tagline: string;
+    title: string;
+    highlight: string;
+    bgImage: string;
+    socials: TeamSocial[];
+    members: TeamMember[];
+}
+
+// ================= RESULTS SECTION TYPES =================
+export interface StatItem {
+    id?: number;
+    value: string;
+    suffix: string;
+    label: string;
+    icon: string;
+}
+
+export interface ResultsSectionData {
+    titleLine1: string;
+    titleLine2: string;
+    highlight: string;
+    description: string;
+    leftColumnImage?: string;
+    rightBgImage?: string;
+    stats: StatItem[];
+}
+
+// ================= TESTIMONIALS SECTION TYPES =================
+export interface TestimonialItem {
+    id?: number;
+    text: string;
+    name: string;
+    role: string;
+}
+
+export interface TestimonialsSectionData {
+    title: string;
+    description: string;
+    bgImage: string;
+    items: TestimonialItem[];
+}
+
+// ================= BLOG SECTION TYPES =================
+export interface BlogPost {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    date: {
+        day: string;
+        month: string;
+    };
+    author: string;
+    commentsCount: string;
+    slug: string;
+}
+
+export interface BlogSectionData {
+    tagline: string;
+    title: string;
+    posts: BlogPost[];
+}
+
+// ================= PAGE TOP BANNER TYPES =================
+export interface BreadcrumbItem {
+    label: string;
+    href?: string;
+}
+
+export interface PageTopProps {
+    title: string;
+    subtitle?: string;
+    breadcrumbs?: BreadcrumbItem[];
+    bgImage?: string;
+}

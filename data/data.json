@@ -1,0 +1,547 @@
+{
+  "topNavbar": {
+    "phone": "548978478",
+    "email": "demo@example.com",
+    "address": "45 Dreem street Austria",
+    "socials": [
+      {
+        "label": "Facebook",
+        "href": "#"
+      },
+      {
+        "label": "Twitter",
+        "href": "#"
+      },
+      {
+        "label": "Instagram",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      }
+    ]
+  },
+  "navbar": {
+    "logo": "/images/law-logo.png",
+    "phone": "1200 300 9000",
+    "phoneLabel": "Need Help?",
+    "navItems": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Practice Areas",
+        "href": "/practice",
+        "dropdown": [
+          {
+            "name": "Criminal Law",
+            "href": "/practice/criminal-law"
+          },
+          {
+            "name": "Family Law",
+            "href": "/practice/family-law"
+          },
+          {
+            "name": "Corporate Law",
+            "href": "/practice/corporate-law"
+          },
+          {
+            "name": "Property Law",
+            "href": "/practice/property-law"
+          }
+        ]
+      },
+      {
+        "name": "Pages",
+        "href": "/pages",
+        "dropdown": [
+          {
+            "name": "Attorneys",
+            "href": "/pages/attorneys"
+          },
+          {
+            "name": "Attorneys Details",
+            "href": "/pages/attorneys-details"
+          },
+          {
+            "name": "Case Law",
+            "href": "/pages/case-law"
+          },
+          {
+            "name": "Case Law Details",
+            "href": "/pages/case-law-details"
+          },
+          {
+            "name": "FAQ",
+            "href": "/pages/faq"
+          },
+          {
+            "name": "FAQ Details",
+            "href": "/pages/faq-details"
+          },
+          {
+            "name": "Testimonials",
+            "href": "/pages/testimonials"
+          },
+          {
+            "name": "Testimonials Details",
+            "href": "/pages/testimonials-details"
+          }
+        ]
+      },
+      {
+        "name": "About",
+        "href": "/about"
+      },
+      {
+        "name": "Blog",
+        "href": "/blog"
+      },
+      {
+        "name": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "hero": {
+    "image": "https://img.magnific.com/free-photo/gavel-scales-justice-law-books_23-2151998158.jpg?semt=ais_hybrid&w=740&q=80",
+    "badge": "Welcome to Lawustice",
+    "titleLine1": "Transforming Equity",
+    "titleLine2": "With Precision And",
+    "highlight": "Gentle Advocacy",
+    "description": "We provide trusted legal representation with a strategic approach, delivering clear guidance, strong advocacy, and reliable solutions for individuals and businesses seeking justice, protection, and long-term legal confidence.",
+    "buttonText": "Book Appointment",
+    "buttonLink": "#appointment"
+  },
+  "featureCards": [
+    {
+      "id": 1,
+      "title": "Strategic Legal\nExcellence",
+      "description": "We deliver strategic legal solutions with precision and insight, protecting your rights and achieving the best possible outcomes.",
+      "icon": "Scale",
+      "bgImage": "https://media.istockphoto.com/id/2202761531/photo/justice-statue-gavel-with-law-justice-lawyers-having-team-meeting-at-law-firm-background.jpg?s=612x612&w=0&k=20&c=wpcgr8UuSl9pzg664rpk8dUH-aLC1XQp_v6FEW4YRCM=",
+      "variant": "dark"
+    },
+    {
+      "id": 2,
+      "title": "Trusted Guidance,\nPersonalized Solutions",
+      "description": "We take the time to understand your unique needs and provide tailored legal strategies with clear communication and dedicated support.",
+      "icon": "Handshake",
+      "bgImage": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3fGVufDB8fDB8fHww",
+      "variant": "dark"
+    },
+    {
+      "id": 3,
+      "title": "Proven Results,\nLasting Impact",
+      "description": "Our track record of success reflects our commitment to excellence, integrity, and achieving results that truly make a difference.",
+      "icon": "ShieldCheck",
+      "bgImage": "https://media.istockphoto.com/id/2202761531/photo/justice-statue-gavel-with-law-justice-lawyers-having-team-meeting-at-law-firm-background.jpg?s=612x612&w=0&k=20&c=wpcgr8UuSl9pzg664rpk8dUH-aLC1XQp_v6FEW4YRCM=",
+      "variant": "gold"
+    }
+  ],
+  "about": {
+    "image": "https://law.mpg.de/wp-content/uploads/National-Security-Law-Authoritarian-Legacy-and-Constitutional-Courts.jpg",
+    "tagline": "About Us",
+    "title": "We Are Here To Fight Against",
+    "highlight": "Any Violence",
+    "description": "Our attorneys are the cornerstone of our commitment to providing exceptional legal services. Each member of our team brings a wealth of experience, specialized knowledge, and a deep dedication to achieving the best outcomes for our clients. We pride ourselves on our collaborative approach, transparent communication, and unwavering focus on delivering measurable results. Whether you are an individual facing a complex legal challenge or a business seeking.",
+    "buttonText": "More About Us",
+    "buttonLink": "#about",
+    "features": [
+      {
+        "id": 1,
+        "title": "Professional Liability",
+        "description": "Our experienced attorneys provide reliable representation to protect your rights and minimize legal risks.",
+        "icon": "Scale"
+      },
+      {
+        "id": 2,
+        "title": "Legal Protection",
+        "description": "We are dedicated to defending your interests and ensuring you receive the justice you deserve.",
+        "icon": "Gavel"
+      }
+    ]
+  },
+  "services": {
+    "tagline": "Our Services",
+    "title": "Comprehensive Legal Soluction ",
+    "highlight": " Your Needs",
+    "description": "We offer a comprehensive range of legal services designed to protect your rights and interests across all areas of law.",
+    "bgImage": "https://png.pngtree.com/thumb_back/fh260/background/20250414/pngtree-an-image-of-a-gavel-and-scales-representing-justice-in-the-image_17194681.jpg",
+    "items": [
+      {
+        "id": 1,
+        "title": "Civil Litigation",
+        "description": "Effective legal representation in civil disputes to protect your rights and secure favorable outcomes.",
+        "icon": "Scale",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20250423/pngtree-elegant-legal-imagery-featuring-scales-and-gavel-image_17205097.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Contract Drafting",
+        "description": "Clear, precise, and legally sound contracts tailored to your business and personal needs.",
+        "icon": "FileText",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20250423/pngtree-elegant-legal-imagery-featuring-scales-and-gavel-image_17205097.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Criminal Defense",
+        "description": "Strategic defense and aggressive representation to protect your rights and your future.",
+        "icon": "Gavel",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20250423/pngtree-elegant-legal-imagery-featuring-scales-and-gavel-image_17205097.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Family Law",
+        "description": "Compassionate legal support for family matters, including divorce, custody, and more.",
+        "icon": "Users",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20250423/pngtree-elegant-legal-imagery-featuring-scales-and-gavel-image_17205097.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Corporate Law",
+        "description": "Expert counsel on corporate governance, business contracts, compliance, and mergers.",
+        "icon": "Building2",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20250423/pngtree-elegant-legal-imagery-featuring-scales-and-gavel-image_17205097.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Property Law",
+        "description": "Trusted representation for real estate transactions, property disputes, and land zoning.",
+        "icon": "Landmark",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20250423/pngtree-elegant-legal-imagery-featuring-scales-and-gavel-image_17205097.jpg"
+      }
+    ]
+  },
+  "process": {
+    "title": "A Clear Process",
+    "highlight": "Your Success.",
+    "description": "We follow a proven approach to deliver effective legal solutions that protect your rights and achieve the best possible outcomes.",
+    "steps": [
+      {
+        "step": "STEP 01",
+        "title": "Consultation",
+        "description": "We listen to your concerns, understand your situation, and evaluate your case to provide clear guidance.",
+        "icon": "MessageSquare",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-stack-of-law-books-with-courtroom-scales-image_3721829.jpg"
+      },
+      {
+        "step": "STEP 02",
+        "title": "Strategy & Plan",
+        "description": "Our team develops a customized legal strategy tailored to your goals and the specifics of your case.",
+        "icon": "FileSearch",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20221216/pngtree-bronze-statue-of-justice-holding-up-scales-judge-law-enforcement-symbol-photo-image_28740294.jpg"
+      },
+      {
+        "step": "STEP 03",
+        "title": "Action & Representation",
+        "description": "We take decisive action and advocate for your rights with dedication, skill, and attention to detail.",
+        "icon": "Scale",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs30H_njPA5SEehDMMHfsBE9XaC8fOcAUE17WbVtWbm3aG-MfH4PiT020f&s=10"
+      },
+      {
+        "step": "STEP 04",
+        "title": "Resolution & Results",
+        "description": "We work tirelessly to achieve the best possible outcome and provide support every step of the way.",
+        "icon": "ShieldCheck",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs30H_njPA5SEehDMMHfsBE9XaC8fOcAUE17WbVtWbm3aG-MfH4PiT020f&s=10"
+      }
+    ]
+  },
+  "team": {
+    "tagline": "Our Attorneys",
+    "title": "Exceptional Legal Lawyers,",
+    "highlight": "Proven Results",
+    "bgImage": "https://img.magnific.com/premium-photo/dark-studio-scales-justice-balance-law-legal-concept_204719-165359.jpg?semt=ais_hybrid&w=740&q=80",
+    "socials": [
+      {
+        "label": "Facebook",
+        "href": "#"
+      },
+      {
+        "label": "Twitter",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "label": "Instagram",
+        "href": "#"
+      }
+    ],
+    "members": [
+      {
+        "id": 1,
+        "name": "John Anderson",
+        "role": "Senior Attorney",
+        "icon": "Scale",
+        "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 2,
+        "name": "Sarah Williams",
+        "role": "Corporate Lawyer",
+        "icon": "BriefcaseBusiness",
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 3,
+        "name": "Michael Brown",
+        "role": "Criminal Defense Attorney",
+        "icon": "Gavel",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 4,
+        "name": "Emily Davis",
+        "role": "Family Law Attorney",
+        "icon": "UserRound",
+        "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 5,
+        "name": "David Martinez",
+        "role": "Litigation Partner",
+        "icon": "Scale",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 6,
+        "name": "Jessica Taylor",
+        "role": "Property Law Specialist",
+        "icon": "BriefcaseBusiness",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 7,
+        "name": "Robert Wilson",
+        "role": "Managing Associate",
+        "icon": "Gavel",
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "results": {
+    "titleLine1": "Built On Experience.",
+    "titleLine2": "Driven By",
+    "highlight": "Results.",
+    "description": "Our commitment to excellence has earned the trust of clients and delivered successful outcomes across a wide range of cases.",
+    "leftColumnImage": "https://img.magnific.com/premium-photo/white-marble-corinthian-pillar-architecture-ancient-column_53876-648485.jpg?semt=ais_hybrid&w=740&q=80",
+    "rightBgImage": "https://images.unsplash.com/photo-1714192266857-585ffaac4adc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
+    "stats": [
+      {
+        "id": 1,
+        "value": "110",
+        "suffix": "+",
+        "label": "AWARD WINNING",
+        "icon": "Trophy"
+      },
+      {
+        "id": 2,
+        "value": "900",
+        "suffix": "+",
+        "label": "SUCCESSFUL CASES",
+        "icon": "FileCheck2"
+      },
+      {
+        "id": 3,
+        "value": "850",
+        "suffix": "+",
+        "label": "SATISFIED CLIENTS",
+        "icon": "UsersRound"
+      },
+      {
+        "id": 4,
+        "value": "965",
+        "suffix": "+",
+        "label": "EXPERT ATTORNEYS",
+        "icon": "UserRound"
+      },
+      {
+        "id": 5,
+        "value": "25",
+        "suffix": "+",
+        "label": "YEARS EXPERIENCE",
+        "icon": "Scale"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "description": "What our clients say about their experience working with us.",
+    "bgImage": "https://sblawassociates.co.in/wp-content/uploads/2024/05/1.jpg",
+    "items": [
+      {
+        "id": 1,
+        "text": "From the initial consultation to the final resolution, their professionalism and dedication were evident. They kept me informed every step of the way and fought tirelessly to protect my rights.",
+        "name": "John D.",
+        "role": "Family Law Client"
+      },
+      {
+        "id": 2,
+        "text": "Their attention to detail and strategic approach were instrumental in achieving a favorable outcome. I am forever grateful for their hard work and commitment.",
+        "name": "Maria S.",
+        "role": "Criminal Defense Client"
+      },
+      {
+        "id": 3,
+        "text": "They fought for my right to fair compensation and kept me informed throughout the process. Their expertise in personal injury law made a significant difference in my recovery.",
+        "name": "Alex R.",
+        "role": "Personal Injury Client"
+      },
+      {
+        "id": 4,
+        "text": "The entire legal team was professional, responsive, and genuinely committed to helping me. I always felt that my case was in capable hands.",
+        "name": "David K.",
+        "role": "Corporate Law Client"
+      },
+      {
+        "id": 5,
+        "text": "They explained every step clearly and worked tirelessly to get the best possible result. I would highly recommend their legal services.",
+        "name": "Sarah M.",
+        "role": "Civil Litigation Client"
+      },
+      {
+        "id": 6,
+        "text": "Excellent legal guidance from start to finish. Their experience and dedication gave me complete confidence throughout my case.",
+        "name": "Robert T.",
+        "role": "Property Law Client"
+      }
+    ]
+  },
+  "blog": {
+    "tagline": "OUR BLOG",
+    "title": "Latest News & Articles",
+    "posts": [
+      {
+        "id": 1,
+        "title": "How Select Appropriate Attorney for Your Case?",
+        "description": "Lawyer texting is a way for lawyers to communicate with clients using text messages.",
+        "image": "https://img.magnific.com/free-photo/gavel-scales-justice-law-books_23-2151998158.jpg?semt=ais_hybrid&w=740&q=80",
+        "date": {
+          "day": "20",
+          "month": "Jun"
+        },
+        "author": "Admin",
+        "commentsCount": "02 Comments",
+        "slug": "how-select-appropriate-attorney-for-your-case"
+      },
+      {
+        "id": 2,
+        "title": "A case study where you successfully negotiated",
+        "description": "Lawyer texting is a way for lawyers to communicate with clients using text messages.",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3fGVufDB8fDB8fHww",
+        "date": {
+          "day": "25",
+          "month": "Feb"
+        },
+        "author": "Admin",
+        "commentsCount": "02 Comments",
+        "slug": "case-study-where-you-successfully-negotiated"
+      },
+      {
+        "id": 3,
+        "title": "One of the most effective lawyer blog topic",
+        "description": "Lawyer texting is a way for lawyers to communicate with clients using text messages.",
+        "image": "https://media.istockphoto.com/id/2202761531/photo/justice-statue-gavel-with-law-justice-lawyers-having-team-meeting-at-law-firm-background.jpg?s=612x612&w=0&k=20&c=wpcgr8UuSl9pzg664rpk8dUH-aLC1XQp_v6FEW4YRCM=",
+        "date": {
+          "day": "27",
+          "month": "Nov"
+        },
+        "author": "Admin",
+        "commentsCount": "02 Comments",
+        "slug": "one-of-the-most-effective-lawyer-blog-topic"
+      }
+    ]
+  },
+  "footer": {
+    "logo": "/images/law-logo.png",
+    "tagline": "Providing trusted legal representation with strategic approach and dedicated support for individuals and businesses.",
+    "practiceAreas": [
+      "Business Law",
+      "Family Law",
+      "Healthcare Law",
+      "Criminal Law",
+      "Real Estate Law",
+      "Education Law",
+      "Employment Law",
+      "Civil Litigation"
+    ],
+    "usefulLinks": [
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Attorneys",
+        "href": "/attorneys"
+      },
+      {
+        "label": "Case Results",
+        "href": "/case-results"
+      },
+      {
+        "label": "Testimonials",
+        "href": "/testimonials"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "FAQs",
+        "href": "/faq"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ],
+    "contacts": [
+      {
+        "icon": "MapPin",
+        "value": [
+          "3060 Commercial Road",
+          "Fratton, Australia"
+        ]
+      },
+      {
+        "icon": "Phone",
+        "value": [
+          "+817 895 74555",
+          "+817 895 74555"
+        ]
+      },
+      {
+        "icon": "Mail",
+        "value": [
+          "help24/7@verdicta.com",
+          "help24/7@verdicta.com"
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "label": "Facebook",
+        "href": "#"
+      },
+      {
+        "label": "Twitter",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "label": "Instagram",
+        "href": "#"
+      }
+    ],
+    "copyright": "2025 Lawustice. All Rights Reserved."
+  }
+}
