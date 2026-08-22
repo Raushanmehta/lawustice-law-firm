@@ -220,8 +220,8 @@ export default function Footer() {
                     <Image
                         src="https://png.pngtree.com/png-vector/20250223/ourmid/pngtree-scales-of-justice-png-image_15568686.png"
                         alt="Justice Scale"
-                        width={400}
-                        height={400}
+                        width={300}
+                        height={300}
                         className="h-auto w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96"
                     />
                 </div>

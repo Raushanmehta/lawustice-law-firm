@@ -58,36 +58,41 @@
         "href": "/pages",
         "dropdown": [
           {
-            "name": "Attorneys",
-            "href": "/pages/attorneys"
+            "name": "Why Choose us",
+            "href": "/why-choose-us"
           },
           {
-            "name": "Attorneys Details",
-            "href": "/pages/attorneys-details"
+            "name": "Our Approach",
+            "href": "/our-approach"
           },
           {
-            "name": "Case Law",
-            "href": "/pages/case-law"
+            "name": "Our Team",
+            "href": "/team"
+          },
+          
+          {
+            "name": "Industries",
+            "href": "/industries"
           },
           {
-            "name": "Case Law Details",
-            "href": "/pages/case-law-details"
+            "name": "Events",
+            "href": "/events"
           },
           {
-            "name": "FAQ",
-            "href": "/pages/faq"
+            "name": "Publications",
+            "href": "/publications"
           },
           {
-            "name": "FAQ Details",
-            "href": "/pages/faq-details"
+            "name": "FAQs",
+            "href": "/faqs"
           },
           {
-            "name": "Testimonials",
-            "href": "/pages/testimonials"
+            "name": "Careers",
+            "href": "/careers"
           },
           {
-            "name": "Testimonials Details",
-            "href": "/pages/testimonials-details"
+            "name": "Legal Updates",
+            "href": "/legal-updates"
           }
         ]
       },
@@ -162,6 +167,52 @@
         "description": "We are dedicated to defending your interests and ensuring you receive the justice you deserve.",
         "icon": "Gavel"
       }
+    ]
+  },
+  "whyChooseUs": {
+    "tagline": "Why Choose Us",
+    "title": "Why Choose Us?",
+    "description": "At Law Justice, we combine legal excellence with a client-first approach. Our commitment to integrity, transparency, and results sets us apart.",
+    "rightImage": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      { "title": "Experienced Attorneys", "description": "Our team of skilled lawyers brings years of experience and in-depth knowledge to every case.", "icon": "user" },
+      { "title": "Client-Focused Approach", "description": "We prioritize your needs and work closely with you to achieve the best possible outcome.", "icon": "shield" },
+      { "title": "Proven Track Record", "description": "We have a strong history of success in delivering favorable results for our clients.", "icon": "balance" },
+      { "title": "Transparent & Honest", "description": "We believe in clear communication and honest advice at every stage of your case.", "icon": "handshake" },
+      { "title": "Timely & Efficient", "description": "We value your time and ensure prompt, efficient, and effective legal solutions.", "icon": "clock" },
+      { "title": "Confidential & Secure", "description": "Your privacy is our priority. We handle every case with the utmost confidentiality.", "icon": "lock" }
+    ]
+  },
+  "statsSection": {
+    "stats": [
+      { "icon": "Users", "value": "20+", "title": "Years of Experience" },
+      { "icon": "Scale", "value": "4356+", "title": "Satisfied Clients" },
+      { "icon": "Trophy", "value": "98%", "title": "Success Rate" },
+      { "icon": "Handshake", "value": "50+", "title": "Practice Areas" }
+    ]
+  },
+  "ourApproach": {
+    "titlePart1": "Our",
+    "titlePart2": "Approach",
+    "subtitle": "We follow a client-focused approach that ensures clarity, strategy, and the best possible outcomes.",
+    "steps": [
+      { "number": "01", "title": "Understand", "description": "We listen carefully to understand your unique situation and goals.", "icon": "comments" },
+      { "number": "02", "title": "Analyze", "description": "We examine the facts, evaluate options, and identify the best strategy.", "icon": "search" },
+      { "number": "03", "title": "Strategize", "description": "We develop a clear, tailored legal strategy designed for results.", "icon": "file" },
+      { "number": "04", "title": "Advocate", "description": "We represent you with skill, dedication, and unwavering commitment.", "icon": "user" },
+      { "number": "05", "title": "Deliver Results", "description": "We focus on achieving the best possible outcome for you.", "icon": "shield" }
+    ]
+  },
+  "ourValues": {
+    "smallHeading": "OUR VALUES",
+    "titlePart1": "The Principles That",
+    "titlePart2": "Guide Us",
+    "subtitle": "These principles are at the heart of everything we do. They drive our decisions, shape our actions, and define the way we serve our clients.",
+    "values": [
+      { "title": "Integrity", "description": "We uphold the highest standards of honesty and ethics in all that we do.", "icon": "shield" },
+      { "title": "Dedication", "description": "We are committed to fighting for our clients like family, with unwavering dedication.", "icon": "clipboard" },
+      { "title": "Excellence", "description": "We pursue excellence in everything we do to deliver the best possible results.", "icon": "trophy" },
+      { "title": "Compassion", "description": "We treat every client with respect, empathy, and understanding.", "icon": "handshake" }
     ]
   },
   "services": {
@@ -276,52 +327,185 @@
     "members": [
       {
         "id": 1,
+        "slug": "john-anderson",
         "name": "John Anderson",
+        "firstName": "John",
+        "lastName": "Anderson",
         "role": "Senior Attorney",
+        "specialty": "CIVIL LITIGATION ATTORNEY",
         "icon": "Scale",
-        "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80",
+        "bio": "John Anderson is a strategic civil litigation attorney who helps clients resolve clarity and confidence.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5001",
+        "email": "john@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:john@lawjustice.com" },
+        "aboutParagraphs": ["John Anderson provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "Strong advocacy starts with listening carefully and preparing deliberately.",
+        "practiceAreas": [
+          { "title": "Civil Litigation", "description": "Strategic representation for complex disputes and commercial claims.", "icon": "balance" },
+          { "title": "Negotiation", "description": "Focused negotiation designed to protect your interests and control risk.", "icon": "contract" },
+          { "title": "Dispute Resolution", "description": "Practical solutions for resolving disputes efficiently and effectively.", "icon": "home" },
+          { "title": "Legal Consultation", "description": "Personalized consultations that clarify your options and next steps.", "icon": "heart" },
+          { "title": "Risk Management", "description": "Proactive legal planning to reduce risks and support confident decisions.", "icon": "money" },
+          { "title": "Client Representation", "description": "Dedicated representation focused on protecting your rights and interests.", "icon": "child" }
+        ]
       },
       {
         "id": 2,
+        "slug": "sarah-williams",
         "name": "Sarah Williams",
+        "firstName": "Sarah",
+        "lastName": "Williams",
         "role": "Corporate Lawyer",
+        "specialty": "CORPORATE LAW ATTORNEY",
         "icon": "BriefcaseBusiness",
-        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
+        "bio": "Sarah Williams advises growing companies on contracts, governance, and thoughtful business decisions.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5002",
+        "email": "sarah@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:sarah@lawjustice.com" },
+        "aboutParagraphs": ["Sarah Williams provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "The best legal advice makes the next business decision clearer.",
+        "practiceAreas": [
+          { "title": "Commercial Contracts", "description": "Clear agreements that support confident business relationships.", "icon": "contract" },
+          { "title": "Business Governance", "description": "Reliable counsel for governance, compliance, and growth decisions.", "icon": "balance" },
+          { "title": "Mergers and Acquisitions", "description": "Strategic legal support for business growth and corporate transactions.", "icon": "money" },
+          { "title": "Legal Advisory", "description": "Clear legal guidance for important business decisions.", "icon": "home" },
+          { "title": "Risk Management", "description": "Proactive planning to identify and reduce legal and commercial risks.", "icon": "child" },
+          { "title": "Regulatory Compliance", "description": "Practical advice to help businesses meet their legal obligations.", "icon": "balance" }
+        ]
       },
       {
         "id": 3,
+        "slug": "michael-brown",
         "name": "Michael Brown",
-        "role": "Criminal Defense Attorney",
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "role": "Criminal Attorney",
+        "specialty": "CRIMINAL DEFENSE ATTORNEY",
         "icon": "Gavel",
-        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        "bio": "Michael Brown provides focused criminal defense counsel and a steady presence when the stakes are highest.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5003",
+        "email": "michael@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:michael@lawjustice.com" },
+        "aboutParagraphs": ["Michael Brown provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "Every person deserves a defense built on preparation, respect, and resolve.",
+        "practiceAreas": [
+          { "title": "Criminal Defense", "description": "Thorough defense representation from investigation through trial.", "icon": "balance" },
+          { "title": "Trial Advocacy", "description": "Prepared courtroom advocacy focused on protecting your rights.", "icon": "contract" },
+          { "title": "Case Investigation", "description": "Detailed investigation and preparation to build a strong defense.", "icon": "home" },
+          { "title": "Legal Consultation", "description": "Clear advice to help you understand your rights and legal options.", "icon": "heart" },
+          { "title": "Negotiation", "description": "Focused negotiation aimed at achieving the best possible outcome.", "icon": "money" },
+          { "title": "Appeals", "description": "Careful review and representation for post-trial legal matters.", "icon": "child" }
+        ]
       },
       {
         "id": 4,
+        "slug": "emily-davis",
         "name": "Emily Davis",
+        "firstName": "Emily",
+        "lastName": "Davis",
         "role": "Family Law Attorney",
+        "specialty": "FAMILY LAW ATTORNEY",
         "icon": "UserRound",
-        "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+        "bio": "Emily Davis guides families through difficult transitions with compassion, preparation, and practical advice.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5004",
+        "email": "emily@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:emily@lawjustice.com" },
+        "aboutParagraphs": ["Emily Davis provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "Good family-law counsel protects both your rights and your sense of direction.",
+        "practiceAreas": [
+          { "title": "Family Law", "description": "Personalized guidance through divorce, custody, and family matters.", "icon": "child" },
+          { "title": "Support Agreements", "description": "Thoughtful advice for fair and sustainable support arrangements.", "icon": "heart" },
+          { "title": "Divorce and Separation", "description": "Compassionate legal support through divorce and separation matters.", "icon": "balance" },
+          { "title": "Child Custody", "description": "Advocacy focused on protecting children's best interests.", "icon": "home" },
+          { "title": "Property Division", "description": "Strategic guidance for the fair division of marital assets and debts.", "icon": "contract" },
+          { "title": "Prenuptial Agreements", "description": "Thoughtful agreements that protect assets and provide peace of mind.", "icon": "money" }
+        ]
       },
       {
         "id": 5,
+        "slug": "david-martinez",
         "name": "David Martinez",
+        "firstName": "David",
+        "lastName": "Martinez",
         "role": "Litigation Partner",
+        "specialty": "LITIGATION PARTNER",
         "icon": "Scale",
-        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
+        "bio": "David Martinez is a seasoned litigation partner known for measured strategy  courtroom advocacy.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5005",
+        "email": "david@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:david@lawjustice.com" },
+        "aboutParagraphs": ["David Martinez provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "A strong case is built from the facts outward.",
+        "practiceAreas": [
+          { "title": "Commercial Litigation", "description": "Focused representation for business and contract disputes.", "icon": "balance" },
+          { "title": "Dispute Resolution", "description": "Practical paths to resolve conflict while protecting your position.", "icon": "contract" },
+          { "title": "Contract Disputes", "description": "Strategic counsel for disagreements involving commercial contracts.", "icon": "home" },
+          { "title": "Class Actions", "description": "Experienced representation for claims involving shared legal concerns.", "icon": "child" },
+          { "title": "Legal Consultation", "description": "Clear advice that helps clients make informed litigation decisions.", "icon": "heart" },
+          { "title": "Settlement Negotiation", "description": "Focused negotiation to pursue efficient and favorable resolutions.", "icon": "money" }
+        ]
       },
       {
         "id": 6,
+        "slug": "jessica-taylor",
         "name": "Jessica Taylor",
+        "firstName": "Jessica",
+        "lastName": "Taylor",
         "role": "Property Law Specialist",
+        "specialty": "PROPERTY LAW SPECIALIST",
         "icon": "BriefcaseBusiness",
-        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+        "bio": "Jessica Taylor helps property owners and businesses protect their interests through every stage of a transaction.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5006",
+        "email": "jessica@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:jessica@lawjustice.com" },
+        "aboutParagraphs": ["Jessica Taylor provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "Careful property advice creates confidence long after the closing table.",
+        "practiceAreas": [
+          { "title": "Property Transactions", "description": "Careful legal guidance for acquisitions, sales, and development.", "icon": "home" },
+          { "title": "Lease Agreements", "description": "Practical review and drafting for commercial and residential leases.", "icon": "contract" },
+          { "title": "Property Disputes", "description": "Trusted representation for ownership and real estate disputes.", "icon": "balance" },
+          { "title": "Land Development", "description": "Legal support for planning, development, and zoning matters.", "icon": "balance" },
+          { "title": "Title Review", "description": "Detailed title review to identify and resolve potential issues.", "icon": "child" },
+          { "title": "Real Estate Advice", "description": "Practical advice for confident property decisions and transactions.", "icon": "money" }
+        ]
       },
       {
         "id": 7,
+        "slug": "robert-wilson",
         "name": "Robert Wilson",
+        "firstName": "Robert",
+        "lastName": "Wilson",
         "role": "Managing Associate",
+        "specialty": "MANAGING ASSOCIATE",
         "icon": "Gavel",
-        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+        "bio": "Robert Wilson combines broad legal experience with attentive client service across  practice areas.",
+        "address": "2600 Commercial Road,\nFrisco, Texas 75034",
+        "phone": "000 300 5007",
+        "email": "robert@lawjustice.com",
+        "socials": { "facebook": "#", "twitter": "#", "linkedin": "#", "emailUrl": "mailto:robert@lawjustice.com" },
+        "aboutParagraphs": ["Robert Wilson provides thoughtful legal analysis, careful preparation, and dependable communication throughout the legal process.", "Clear explanations help clients understand their options, manage uncertainty, and make informed decisions with confidence while focused advocacy keeps each matter moving toward a practical and lasting resolution that reflects their goals and values fully."],
+        "quote": "Good representation is measured by the trust built along the way.",
+        "practiceAreas": [
+          { "title": "Legal Advisory", "description": "Clear legal guidance for important personal and business decisions.", "icon": "balance" },
+          { "title": "Case Strategy", "description": "Organized preparation and practical strategy for complex matters.", "icon": "contract" },
+          { "title": "Client Representation", "description": "Dedicated representation focused on protecting your rights and interests.", "icon": "child" },
+          { "title": "Dispute Resolution", "description": "Practical solutions for resolving disputes efficiently and effectively.", "icon": "home" },
+          { "title": "Legal Consultation", "description": "Personalized consultations that clarify your options and next steps.", "icon": "heart" },
+          { "title": "Risk Management", "description": "Proactive legal planning to reduce risks and support confident decisions.", "icon": "money" }
+        ]
       }
     ]
   },

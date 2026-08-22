@@ -34,7 +34,7 @@ export default function FeatureCards() {
                                 ease: "easeOut",
                             }}
                             whileHover={{ y: -6 }}
-                            className={`relative flex min-h-[300px] sm:min-h-[320px] flex-col justify-between overflow-hidden rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl transition-shadow duration-300 hover:shadow-2xl ${isGold
+                            className={`relative flex min-h-[280px] sm:min-h-[280px] flex-col justify-between overflow-hidden rounded-2xl p-4 sm:p-4 lg:p-6 shadow-xl transition-shadow duration-300 hover:shadow-2xl ${isGold
                                 ? "bg-[#e2a038] text-[#1c1c1c]"
                                 : "bg-[#122033] text-white"
                                 }`}
@@ -51,7 +51,7 @@ export default function FeatureCards() {
                             </div>
 
                             {/* Main Content */}
-                            <div className="relative z-10 space-y-6">
+                            <div className="relative z-10 space-y-2">
                                 {/* Icon Wrapper */}
                                 <motion.div
                                     whileHover={{ rotate: 5, scale: 1.05 }}

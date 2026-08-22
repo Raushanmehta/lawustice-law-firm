@@ -1,15 +1,28 @@
 "use client";
 
 import AboutSection from "@/components/_section/AboutSection";
+import NeedLegalSection from "@/components/_section/NeedLegalSection";
+import OurApproachSection from "@/components/_section/OurApproachSection";
+import OurValuesSection from "@/components/_section/OurValuesSection";
 import StatsSection from "@/components/_section/StatsSection";
+import WhyChooseUsSection from "@/components/_section/WhyChooseUsSection";
 import PageTopSection from "@/components/PageTopSection";
+import siteData from "@/data/data.json";
 
 export default function AboutPage() {
     return (
         <main>
             <PageTopSection title="About Us" />
             <AboutSection />
-            <StatsSection />
+            <StatsSection data={siteData.statsSection} />
+            <WhyChooseUsSection data={siteData.whyChooseUs} />
+            <OurValuesSection data={siteData.ourValues}/>
+            <OurApproachSection data={siteData.ourApproach}/>
+            <NeedLegalSection
+                leftColumnImage={siteData.results.leftColumnImage}
+                rightBgImage={siteData.results.rightBgImage}
+                phone={siteData.navbar.phone}
+            />
         </main>
     );
 }

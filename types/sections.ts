@@ -30,6 +30,62 @@ export interface AboutFeature {
     icon: LucideIcon;
 }
 
+// ================= WHY CHOOSE US SECTION TYPES =================
+export interface WhyChooseUsFeature {
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export interface WhyChooseUsData {
+    tagline: string;
+    title: string;
+    description: string;
+    rightImage: string;
+    features: WhyChooseUsFeature[];
+}
+
+// ================= STATS SECTION TYPES =================
+export interface StatsItem {
+    icon: string;
+    value: string;
+    title: string;
+}
+
+export interface StatsSectionData {
+    stats: StatsItem[];
+}
+
+// ================= OUR APPROACH SECTION TYPES =================
+export interface OurApproachStep {
+    number: string;
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export interface OurApproachData {
+    titlePart1: string;
+    titlePart2: string;
+    subtitle: string;
+    steps: OurApproachStep[];
+}
+
+// ================= OUR VALUES SECTION TYPES =================
+export interface OurValue {
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export interface OurValuesData {
+    smallHeading: string;
+    titlePart1: string;
+    titlePart2: string;
+    subtitle: string;
+    values: OurValue[];
+}
+
 // ================= SERVICES SECTION TYPES =================
 export interface Service {
     id: number;
@@ -56,10 +112,31 @@ export interface TeamSocial {
 
 export interface TeamMember {
     id: number;
+    slug: string;
     name: string;
+    firstName: string;
+    lastName: string;
     role: string;
+    specialty: string;
     icon: string;
     image: string;
+    bio: string;
+    address: string;
+    phone: string;
+    email: string;
+    socials: {
+        facebook: string;
+        twitter: string;
+        linkedin: string;
+        emailUrl: string;
+    };
+    aboutParagraphs: string[];
+    quote: string;
+    practiceAreas: {
+        title: string;
+        description: string;
+        icon: string;
+    }[];
 }
 
 export interface TeamSectionData {

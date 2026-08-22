@@ -30,11 +30,11 @@ export default function PageTopSection({
                     fill
                     priority
                     sizes="100vw"
-                    className="object-cover object-center opacity-30"
+                    className="object-cover object-center opacity-60"
                 />
                 {/* Dark Gradient Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#031224]/80 via-[#031224]/90 to-[#031224]" />
-                <div className="absolute inset-0 bg-radial-gradient from-transparent via-[#031224]/60 to-[#031224]" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#031224]/20 to-[#031224]" />
+                <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-[#031224]/50" />
             </div>
 
             {/* ================= CONTENT CONTAINER ================= */}

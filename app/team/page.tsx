@@ -4,13 +4,15 @@ import { motion } from "framer-motion";
 import { GoLaw } from "react-icons/go";
 import PageTopSection from "@/components/PageTopSection";
 import TeamPageCard from "@/components/TeamPageCard";
+import NeedLegalSection from "@/components/_section/NeedLegalSection";
+import { teamData } from "@/data/teamData";
+import siteData from "@/data/data.json";
 
 export default function TeamPage() {
     return (
-        <div>
+        <div className="w-full">
             <PageTopSection title="Our Team" />
-
-            <div className="relative z-10 w-full px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24">
+            <div className="relative z-10 w-full px-5 py-12 sm:px-10 sm:py-16 md:px-16 lg:px-20 lg:py-20 xl:px-24">
 
                 {/* ================= SECTION HEADER ================= */}
                 <motion.div
@@ -46,22 +48,24 @@ export default function TeamPage() {
                         </span>
                     </h2>
 
-
-                    <p className="mx-auto max-w-xl text-lg font-base leading-relaxed text-gray-600 sm:text-ms">
-                        Our Team of skilled attornerys is committed to providing exceptional legal representation across
-                        a wide range of pratices area.
+                    <p className="mx-auto max-w-xl text-base leading-relaxed text-gray-600 sm:text-lg">
+                        Our team of skilled attorneys is committed to providing exceptional legal representation across
+                        a wide range of practice areas.
                     </p>
                 </motion.div>
 
                 {/* ================= TEAM CARDS ================= */}
                 <div className="grid grid-cols-1 gap-6 pb-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {[1, 2, 3, 4].map((index) => (
-                        <TeamPageCard key={index} />
+                    {teamData.map((member) => (
+                        <TeamPageCard key={member.slug} member={member} />
                     ))}
                 </div>
             </div>
-
-
+            <NeedLegalSection
+                leftColumnImage={siteData.results.leftColumnImage}
+                rightBgImage={siteData.results.rightBgImage}
+                phone={siteData.navbar.phone}
+            />
         </div>
     );
 }

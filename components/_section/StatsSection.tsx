@@ -1,50 +1,44 @@
 "use client";
 
-import { Handshake, Scale, Trophy, Users } from "lucide-react";
+import { Handshake, Scale, Trophy, Users, type LucideIcon } from "lucide-react";
+import { motion } from "framer-motion";
+import type { StatsSectionData } from "@/types";
 
-const stats = [
-    {
-        icon: Users,
-        value: "20+",
-        title: "Years of Experience",
-    },
-    {
-        icon: Scale,
-        value: "4356+",
-        title: "Satisfied Clients",
-    },
-    {
-        icon: Trophy,
-        value: "98%",
-        title: "Success Rate",
-    },
-    {
-        icon: Handshake,
-        value: "50+",
-        title: "Practice Areas",
-    },
-];
+interface StatsSectionProps {
+    data: StatsSectionData;
+}
 
-export default function StatsSection() {
+const iconMap: Record<string, LucideIcon> = {
+    Handshake,
+    Scale,
+    Trophy,
+    Users,
+};
+
+export default function StatsSection({ data }: StatsSectionProps) {
     return (
         <section className="bg-white py-14 lg:py-20">
-            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-                <div className="overflow-hidden rounded-xl border border-[#273340] bg-[#08131d] shadow-2xl py-4">
+            <div className="mx-auto max-w-[1260px] px-4 sm:px-6 lg:px-8">
+                <div className="overflow-hidden rounded-xl border border-[#273340] bg-[#08131d] shadow-2xl py-2">
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
-                        {stats.map((item, index) => {
-                            const Icon = item.icon;
+                        {data.stats.map((item, index) => {
+                            const Icon = iconMap[item.icon] ?? Scale;
 
                             return (
-                                <div
-                                    key={index}
+                                <motion.div
+                                                    key={item.title}
+                                    initial={{ opacity: 0, y: 28 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, amount: 0.2 }}
+                                    transition={{ duration: 0.55, delay: index * 0.1, ease: "easeOut" }}
                                     className={`relative flex items-center gap-4 px-6 py-8 lg:px-8 xl:px-10
-                    ${index !== stats.length - 1
+                    ${index !== data.stats.length - 1
                                             ? "border-b sm:border-b xl:border-b-0 xl:border-r border-[#2c3947]"
                                             : ""
                                         }`}
                                 >
                                     {/* Diamond Divider */}
-                                    {index !== stats.length - 1 && (
+                                    {index !== data.stats.length - 1 && (
                                         <span className="absolute right-0 top-1/2 hidden h-3 w-3 translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#d8aa52] xl:block" />
                                     )}
 
@@ -78,7 +72,7 @@ export default function StatsSection() {
                                             {item.title}
                                         </p>
                                     </div>
-                                </div>
+                                </motion.div>
                             );
                         })}
                     </div>
