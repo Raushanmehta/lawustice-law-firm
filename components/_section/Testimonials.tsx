@@ -26,7 +26,6 @@ export default function Testimonials() {
 
     React.useEffect(() => {
         if (!api) return;
-        setCurrent(api.selectedScrollSnap());
 
         api.on("select", () => {
             setCurrent(api.selectedScrollSnap());
@@ -51,11 +50,11 @@ export default function Testimonials() {
                 <div className="mx-auto mb-16 max-w-4xl space-y-4 text-center">
                     {/* Small Heading */}
                     <div className="flex items-center justify-center gap-2">
-                        <span className="h-px w-8 bg-[#d99a32]" />
-                        <span className="text-sm font-semibold uppercase tracking-widest text-[#d99a32]">
-                            Testimonials
+                        <span className="h-px w-8 bg-[#d9983b]" />
+                        <span className="text-sm font-semibold uppercase tracking-widest text-White">
+                            Testominial
                         </span>
-                        <span className="h-px w-8 bg-[#d99a32]" />
+                        <span className="h-px w-8 bg-[#d9983b]" />
                     </div>
 
                     {/* Scale Icon */}
@@ -67,7 +66,7 @@ export default function Testimonials() {
                     </div>
 
                     {/* Main Heading */}
-                    <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-6xl text-white">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl">
                         {testimonials.title}
                     </h2>
 
@@ -94,16 +93,16 @@ export default function Testimonials() {
                             {testimonials.items.map((testimonial: TestimonialItem, index: number) => (
                                 <CarouselItem
                                     key={index}
-                                    className="pl-4 sm:pl-6 basis-full md:basis-1/2 lg:basis-1/3"
+                                    className="flex h-auto basis-full pl-4 sm:pl-6 md:basis-1/2 lg:basis-1/4"
                                 >
-                                    <div className="h-full rounded-2xl border border-[#c88728] bg-[#07121d]/95 p-6 shadow-[0_10px_40px_rgba(0,0,0,0.35)] sm:p-7 lg:p-8">
+                                    <div className="flex h-full w-full flex-col rounded-2xl border border-[#c88728] bg-[#07121d]/95 p-5 shadow-[0_10px_40px_rgba(0,0,0,0.35)] sm:p-6 lg:p-7">
                                         {/* Quote */}
                                         <div className="text-center">
-                                            <div className="mb-3 text-[80px] sm:text-[100px] font-serif leading-none text-[#e7a43b]">
+                                            <div className="mb-2 text-[64px] font-serif leading-none text-[#e7a43b] sm:text-[80px]">
                                                 “
                                             </div>
 
-                                            <div className="mb-6 flex items-center justify-center gap-3">
+                                            <div className="mb-4 flex items-center justify-center gap-3">
                                                 <span className="h-px w-12 sm:w-16 bg-gradient-to-r from-transparent via-[#d99a32] to-[#d99a32]" />
 
                                                 <span className="h-2 w-2 rotate-45 bg-[#e4a33b]" />
@@ -112,15 +111,15 @@ export default function Testimonials() {
                                             </div>
 
                                             {/* Text */}
-                                            <p className="min-h-[140px] sm:min-h-[170px] text-sm leading-7 sm:leading-8 text-gray-200 sm:text-[15px]">
+                                            <p className="min-h-[110px] text-sm leading-6 text-gray-200 sm:min-h-[135px] sm:leading-7 sm:text-[15px]">
                                                 {testimonial.text}
                                             </p>
 
                                             {/* Divider */}
-                                            <div className="my-5 h-px w-full bg-gradient-to-r from-transparent via-[#8d6327] to-transparent" />
+                                            <div className="my-4 h-px w-full bg-gradient-to-r from-transparent via-[#8d6327] to-transparent" />
 
                                             {/* Stars */}
-                                            <div className="mb-5 flex justify-center gap-1">
+                                            <div className="mb-4 flex justify-center gap-1">
                                                 {[1, 2, 3, 4, 5].map((star) => (
                                                     <span
                                                         key={star}
@@ -158,12 +157,12 @@ export default function Testimonials() {
 
                         {/* Left Arrow */}
                         <CarouselPrevious
-                            className="-left-2 sm:-left-5 lg:-left-12 h-10 w-10 sm:h-12 sm:w-12 border border-[#d99a32] bg-[#08121c]/95 text-[#d99a32] hover:bg-[#d99a32] hover:text-white transition-all shadow-xl z-30 flex items-center justify-center [&_svg]:size-5 sm:[&_svg]:size-6"
+                            className="-left-2 z-30 flex h-10 w-10 items-center justify-center border border-[#d99a32] bg-[#08121c]/95 text-[#d99a32] shadow-xl transition-all hover:bg-[#d99a32] hover:text-white sm:-left-1 sm:h-12 sm:w-12 [&_svg]:size-5 sm:[&_svg]:size-6"
                         />
 
                         {/* Right Arrow */}
                         <CarouselNext
-                            className="-right-2 sm:-right-5 lg:-right-12 h-10 w-10 sm:h-12 sm:w-12 border border-[#d99a32] bg-[#08121c]/95 text-[#d99a32] hover:bg-[#d99a32] hover:text-white transition-all shadow-xl z-30 flex items-center justify-center [&_svg]:size-5 sm:[&_svg]:size-6"
+                            className="-right-2 z-30 flex h-10 w-10 items-center justify-center border border-[#d99a32] bg-[#08121c]/95 text-[#d99a32] shadow-xl transition-all hover:bg-[#d99a32] hover:text-white sm:-right-1 sm:h-12 sm:w-12 [&_svg]:size-5 sm:[&_svg]:size-6"
                         />
                     </Carousel>
                 </div>

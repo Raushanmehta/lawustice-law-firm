@@ -44,7 +44,7 @@ export default function Navbar() {
         <header
             className={`fixed z-40 w-full font-roboto transition-all duration-300 ${scrolled
                 ? "top-0 border-b border-white/10 bg-[#051A2F] shadow-lg shadow-black/20"
-                : "top-11 border-b border-white/10 bg-transparent"
+                : "top-0 border-b border-white/10 bg-transparent"
                 }`}
         >
             <div className="mx-auto flex h-20 sm:h-24 w-full items-center justify-between px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24">

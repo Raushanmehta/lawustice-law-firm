@@ -103,7 +103,7 @@ export default function TeamSection(): React.JSX.Element {
                     </div>
 
                     {/* Main Heading */}
-                    <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-6xl">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl">
                         {team.title}
                         <br />
                         <span className="font-serif text-[#d9983b]">
@@ -135,14 +135,7 @@ export default function TeamSection(): React.JSX.Element {
                                         className="pl-4 sm:pl-6 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                                     >
                                         <motion.div
-                                            initial={{ opacity: 0, y: 40 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true, amount: 0.15 }}
-                                            transition={{
-                                                duration: 0.6,
-                                                delay: index * 0.1,
-                                                ease: "easeOut",
-                                            }}
+                    
                                             whileHover={{ y: -8 }}
                                             className="group relative flex flex-col overflow-hidden rounded-2xl bg-transparent transition-all duration-300"
                                         >
@@ -203,10 +196,7 @@ export default function TeamSection(): React.JSX.Element {
 
                     {/* ================= AUTO-PLAY INDICATORS ================= */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
+                       
                         className="mt-10 flex items-center justify-center gap-2"
                     >
                         {team.members.map((_, i) => (

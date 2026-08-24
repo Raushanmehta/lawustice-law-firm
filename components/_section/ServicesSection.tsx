@@ -86,7 +86,7 @@ export default function ServicesSection() {
                     </div>
 
                     {/* Main Heading */}
-                    <h2 className="font-serif text-3xl font-base sm:text-4xl lg:text-6xl text-black">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
                         {services.title}
                         <br />
                         Tailored To{" "}
@@ -121,14 +121,7 @@ export default function ServicesSection() {
                                         className="pl-4 sm:pl-6 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                                     >
                                         <motion.div
-                                            initial={{ opacity: 0, y: 40 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true, amount: 0.15 }}
-                                            transition={{
-                                                duration: 0.6,
-                                                delay: index * 0.1,
-                                                ease: "easeOut",
-                                            }}
+                                            
                                             whileHover={{ y: -8 }}
                                             className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-[#111822]/95 shadow-xl backdrop-blur-sm transition-all duration-300 hover:border-[#d9983b]/40 hover:shadow-2xl hover:shadow-[#d9983b]/10"
                                         >

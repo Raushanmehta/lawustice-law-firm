@@ -25,15 +25,15 @@ export default function BlogSection(): React.JSX.Element {
                     >
                         {/* Tagline */}
                         <div className="flex items-center justify-center gap-2">
-                            <span className="h-px w-8 bg-[#d9983b]" />
-                            <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
-                                {blog.tagline}
-                            </span>
-                            <span className="h-px w-8 bg-[#d9983b]" />
-                        </div>
+                        <span className="h-px w-8 bg-[#d9983b]" />
+                        <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
+                            {blog.tagline}
+                        </span>
+                        <span className="h-px w-8 bg-[#d9983b]" />
+                    </div>
 
                         {/* Title */}
-                        <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-6xl text-[#102033]">
+                        <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight sm:text-5xl md:text-5xl lg:text-6xl">
                             {blog.title}
                         </h2>
 

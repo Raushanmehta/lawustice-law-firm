@@ -53,7 +53,7 @@ export default function AboutSection() {
                     </div>
 
                     {/* Main Title */}
-                    <h2 className="font-serif text-3xl leading-tight text-[#0d131a] sm:text-4xl lg:text-6xl">
+                    <h2 className="font-serif  text-3xl font-normal leading-[1.15] tracking-tight sm:text-5xl md:text-5xl lg:text-6xl">
                         {about.title}{" "}
                         <span className="font-serif text-[#d9983b]">
                             {about.highlight}

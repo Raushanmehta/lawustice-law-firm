@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import siteData from "@/data/data.json";
 import type { StatItem } from "@/types";
+import Image from "next/image";
 
 const iconMap: Record<string, LucideIcon> = {
     Trophy,
@@ -27,9 +28,11 @@ export default function ResultsSection() {
         <section className="relative overflow-hidden bg-[#fdfbf7] px-5 py-14 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
             {/* Left Corinthian Column */}
             <div className="pointer-events-none absolute left-0 top-0 hidden h-full w-[30%] overflow-hidden lg:block">
-                <img
+                <Image
                     src={results.leftColumnImage}
                     alt=""
+                    width={520}
+                    height={700}
                     className="
       absolute
       left-[-100px]
@@ -47,9 +50,11 @@ export default function ResultsSection() {
 
             {/* Right soft shadow / plant background */}
             <div className="pointer-events-none absolute right-0 top-0 hidden h-full w-[30%] overflow-hidden lg:block">
-                <img
+                <Image
                     src={results.rightBgImage}
                     alt=""
+                    width={700}
+                    height={700}
                     className="
       absolute
       right-[-180px]
@@ -72,7 +77,7 @@ export default function ResultsSection() {
             <div className="relative z-10 w-full max-w-7xl mx-auto">
                 {/* Heading */}
                 <div className="mx-auto max-w-[700px] text-center">
-                    <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-6xl">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight  sm:text-5xl md:text-5xl lg:text-6xl">
                         {results.titleLine1}
                         <br />
                         {results.titleLine2}{" "}

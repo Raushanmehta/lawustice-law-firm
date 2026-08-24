@@ -27,7 +27,7 @@ export default function ProcessSection(): React.JSX.Element {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     className="mx-auto mb-8 max-w-3xl space-y-4 text-center sm:mb-10"
                 >
-                    <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-6xl">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight  sm:text-5xl md:text-5xl lg:text-6xl">
                         {process.title} <br /> Focused On{" "}
                         <span className="font-serif text-[#d9983b]">
                             {process.highlight}

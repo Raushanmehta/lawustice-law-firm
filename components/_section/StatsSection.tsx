@@ -18,7 +18,7 @@ const iconMap: Record<string, LucideIcon> = {
 export default function StatsSection({ data }: StatsSectionProps) {
     return (
         <section className="bg-white py-14 lg:py-20">
-            <div className="mx-auto max-w-[1260px] px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-[1395px] px-4 sm:px-6 lg:px-8">
                 <div className="overflow-hidden rounded-xl border border-[#273340] bg-[#08131d] shadow-2xl py-2">
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
                         {data.stats.map((item, index) => {

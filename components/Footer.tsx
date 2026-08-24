@@ -31,7 +31,7 @@ export default function Footer() {
     return (
         <footer className="relative overflow-hidden border-t border-amber-500/20 bg-[#051A2F] text-gray-300">
             {/* ================= MAIN CONTAINER ================= */}
-            <div className="relative z-10 mx-auto w-full px-5 py-12 sm:px-10 sm:py-16 md:px-16 lg:px-20 xl:px-24">
+            <div className="relative z-10 mx-auto w-full px-5 pb-6 pt-12 sm:px-10 sm:pb-8 sm:pt-16 md:px-16 lg:px-20 xl:px-24">
                 {/* ================= FOOTER GRID ================= */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -222,7 +222,7 @@ export default function Footer() {
                         alt="Justice Scale"
                         width={300}
                         height={300}
-                        className="h-auto w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96"
+                        className="h-auto w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64"
                     />
                 </div>
             </div>
