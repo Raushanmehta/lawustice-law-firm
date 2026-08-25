@@ -13,7 +13,7 @@ const iconMap: Record<string, LucideIcon> = {
     ShieldCheck,
 };
 
-const { process } = siteData;
+const { process } = siteData.services;
 
 export default function ProcessSection(): React.JSX.Element {
     return (
@@ -36,7 +36,7 @@ export default function ProcessSection(): React.JSX.Element {
 
                     <div className="mx-auto h-[2px] w-12 bg-[#d9983b]" />
 
-                    <p className="mx-auto max-w-xl text-lg font-base leading-relaxed text-gray-600 sm:text-ms">
+                    <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
                         {process.description}
                     </p>
                 </motion.div>
@@ -103,7 +103,7 @@ export default function ProcessSection(): React.JSX.Element {
                                             group-hover:shadow-md
                                         "
                                     >
-                                        <IconComponent className="h-12 w-12" />
+                                        <IconComponent className="h-8 w-8" />
                                     </div>
                                 </div>
 

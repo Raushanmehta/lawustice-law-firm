@@ -20,7 +20,7 @@ import type { TestimonialItem } from "@/types";
 
 const { testimonials } = siteData;
 
-export default function Testimonials() {
+export default function TestimonialSection() {
     const [api, setApi] = React.useState<CarouselApi>();
     const [current, setCurrent] = React.useState(0);
 
@@ -57,24 +57,18 @@ export default function Testimonials() {
                         <span className="h-px w-8 bg-[#d9983b]" />
                     </div>
 
-                    {/* Scale Icon */}
-                    <div className="flex items-center justify-center">
-                        <Scale
-                            className="h-14 w-14 text-[#e4a33b]"
-                            strokeWidth={1.5}
-                        />
-                    </div>
 
                     {/* Main Heading */}
                     <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl">
                         {testimonials.title}
                     </h2>
-
-                    {/* Divider */}
-                    <div className="mx-auto h-px w-12 bg-[#d99a32]" />
-
+                    <div className="flex items-center justify-center gap-3">
+                                                <span className="h-px w-12 bg-[#d9983b]/60" />
+                                                <Scale className="h-6 w-6 text-[#d9983b]" strokeWidth={1.5} />
+                                                <span className="h-px w-12 bg-[#d9983b]/60" />
+                                            </div>
                     {/* Description */}
-                    <p className="mx-auto max-w-xl text-lg font-base leading-relaxed text-gray-300 sm:text-ms">
+                    <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-300">
                         {testimonials.description}
                     </p>
                 </div>

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import TeamDetailPage from "@/components/_section/_page/TeamDetailPage";
+import TeamDetailPage from "@/components/_page/TeamDetailPage";
 import PageTopSection from "@/components/PageTopSection";
 import { teamData } from "@/data/teamData";
 

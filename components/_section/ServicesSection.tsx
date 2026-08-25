@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Scale, FileText, Gavel, Users, Building2, Landmark, ShieldCheck, Briefcase, ArrowRight, type LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import siteData from "@/data/data.json";
+import type { ServicesPageData } from "@/types";
 import {
     Carousel,
     CarouselContent,
@@ -26,6 +27,7 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 const { services } = siteData;
+const servicesData = services as ServicesPageData;
 
 export default function ServicesSection() {
     const [api, setApi] = React.useState<CarouselApi>();
@@ -34,19 +36,24 @@ export default function ServicesSection() {
 
     React.useEffect(() => {
         if (!api) return;
-        setCount(api.scrollSnapList().length);
-        setCurrent(api.selectedScrollSnap());
 
-        api.on("select", () => {
+        const syncCarouselState = () => {
+            setCount(api.scrollSnapList().length);
             setCurrent(api.selectedScrollSnap());
-        });
+        };
+
+        api.on("select", syncCarouselState);
+        queueMicrotask(syncCarouselState);
 
         // Auto-play interval (slides every 3 seconds)
         const timer = setInterval(() => {
             api.scrollNext();
         }, 3000);
 
-        return () => clearInterval(timer);
+        return () => {
+            clearInterval(timer);
+            api.off("select", syncCarouselState);
+        };
     }, [api]);
 
     return (
@@ -54,7 +61,7 @@ export default function ServicesSection() {
             {/* ================= TOP BACKGROUND IMAGE ================= */}
             <div className="pointer-events-none absolute inset-x-0 top-0 h-[520px]">
                 <Image
-                    src={services.bgImage}
+                    src={servicesData.bgImage}
                     alt=""
                     fill
                     sizes="100vw"
@@ -80,24 +87,24 @@ export default function ServicesSection() {
                     <div className="flex items-center justify-center gap-2">
                         <span className="h-px w-8 bg-[#d9983b]" />
                         <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
-                            {services.tagline}
+                            {servicesData.tagline}
                         </span>
                         <span className="h-px w-8 bg-[#d9983b]" />
                     </div>
 
                     {/* Main Heading */}
                     <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
-                        {services.title}
+                        {servicesData.title}
                         <br />
-                        Tailored To{" "}
+                        {servicesData.titleSuffix}{" "}
                         <span className="font-serif font-base text-[#d9983b]">
-                            {services.highlight}
+                            {servicesData.highlight}
                         </span>
                     </h2>
 
                     {/* Description */}
-                    <p className="mx-auto max-w-xl text-lg font-base leading-relaxed text-gray-600 sm:text-ms">
-                        {services.description}
+                    <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
+                        {servicesData.description}
                     </p>
                 </motion.div>
 
@@ -112,7 +119,7 @@ export default function ServicesSection() {
                         className="w-full"
                     >
                         <CarouselContent className="-ml-4 sm:-ml-6 py-4">
-                            {services.items.map((service, index) => {
+                            {servicesData.items.map((service) => {
                                 const IconComponent = iconMap[service.icon] ?? Scale;
 
                                 return (
@@ -142,7 +149,7 @@ export default function ServicesSection() {
                                             <div className="relative flex flex-grow flex-col items-center px-6 pb-8 pt-2 text-center">
                                                 {/* Icon */}
                                                 <div className="-mt-12 z-10 mb-4 flex h-20 w-20 items-center justify-center rounded-full border-2 border-gray-500 bg-[#111822] text-[#d9983b] shadow-lg transition-all duration-300 group-hover:bg-[#d9983b] group-hover:text-[#111822]">
-                                                    <IconComponent className="h-10 w-10" />
+                                                    <IconComponent className="h-8 w-8" />
                                                 </div>
 
                                                 {/* Title */}
@@ -160,10 +167,10 @@ export default function ServicesSection() {
 
                                                 {/* Learn More */}
                                                 <Link
-                                                    href={`#service-${service.id}`}
+                                                    href={service.linkUrl}
                                                     className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#d9983b] transition-colors hover:text-[#f3b353]"
                                                 >
-                                                    <span>Learn More</span>
+                                                    <span>{servicesData.learnMoreText}</span>
                                                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                                                 </Link>
                                             </div>
@@ -182,7 +189,7 @@ export default function ServicesSection() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="mt-10 flex items-center justify-center gap-2"
                     >
-                        {Array.from({ length: count || services.items.length }).map((_, i) => (
+                        {Array.from({ length: count || servicesData.items.length }).map((_, i) => (
                             <button
                                 key={i}
                                 onClick={() => api?.scrollTo(i)}

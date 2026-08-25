@@ -43,12 +43,12 @@ export default function StatsSection({ data }: StatsSectionProps) {
                                     )}
 
                                     {/* Icon */}
-                                    <div className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-[#d8aa52] bg-[#0b1722] shadow-[0_0_30px_rgba(216,170,82,0.35)] sm:h-20 sm:w-20 lg:h-24 lg:w-24">
+                                    <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-[#d8aa52] bg-[#0b1722] shadow-[0_0_30px_rgba(216,170,82,0.35)] sm:h-20 sm:w-20 lg:h-24 lg:w-24">
                                         {/* Glow */}
-                                        <div className="absolute h-12 w-12 rounded-full bg-[#d8aa52]/10 blur-xl" />
+                                        <div className="absolute h-16 w-16 rounded-full bg-[#d8aa52]/10 blur-xl" />
 
                                         <Icon
-                                            className="relative h-7 w-7 text-[#d8aa52] sm:h-8 sm:w-8 lg:h-10 lg:w-10"
+                                            className="relative h-8 w-8 text-[#d8aa52] sm:h-8 sm:w-8 lg:h-10 lg:w-10"
                                             strokeWidth={1.8}
                                         />
                                     </div>

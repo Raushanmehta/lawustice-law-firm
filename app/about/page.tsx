@@ -8,6 +8,9 @@ import StatsSection from "@/components/_section/StatsSection";
 import WhyChooseUsSection from "@/components/_section/WhyChooseUsSection";
 import PageTopSection from "@/components/PageTopSection";
 import siteData from "@/data/data.json";
+import type { OurApproachData } from "@/types";
+
+const approachData = siteData.ourApproach as OurApproachData;
 
 export default function AboutPage() {
     return (
@@ -17,7 +20,7 @@ export default function AboutPage() {
             <StatsSection data={siteData.statsSection} />
             <WhyChooseUsSection data={siteData.whyChooseUs} />
             <OurValuesSection data={siteData.ourValues}/>
-            <OurApproachSection data={siteData.ourApproach}/>
+            <OurApproachSection data={approachData}/>
             <NeedLegalSection
                 leftColumnImage={siteData.results.leftColumnImage}
                 rightBgImage={siteData.results.rightBgImage}

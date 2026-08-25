@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { UserRound, Scale, BriefcaseBusiness, Gavel, type LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
-import { GoLaw } from "react-icons/go";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { IconType } from "react-icons";
 import siteData from "@/data/data.json";
@@ -98,9 +97,11 @@ export default function TeamSection(): React.JSX.Element {
                     </div>
 
                     {/* Law Icon */}
-                    <div className="flex items-center justify-center">
-                        <GoLaw className="h-16 w-16 text-[#d9983b]" />
-                    </div>
+                    {/* <div className="flex items-center justify-center gap-3">
+                                                <span className="h-px w-12 bg-[#d9983b]/60" />
+                                                <Scale className="h-6 w-6 text-[#d9983b]" strokeWidth={1.5} />
+                                                <span className="h-px w-12 bg-[#d9983b]/60" />
+                                            </div> */}
 
                     {/* Main Heading */}
                     <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl">
@@ -155,7 +156,7 @@ export default function TeamSection(): React.JSX.Element {
                                             <div className="relative z-20 -mt-12 w-full mb-2 rounded-2xl border-t-[3px] border-b-[3px] border-[#d9983b] bg-white px-5 pb-6 pt-2 text-center shadow-2xl transition-all duration-300">
                                                 {/* Floating Badge Icon */}
                                                 <div className="-mt-11 mb-3 mx-auto flex h-20 w-20 items-center justify-center rounded-full border-2 border-[#d9983b] bg-white text-[#d9983b] shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#d9983b] group-hover:text-white">
-                                                    <IconComponent className="h-10 w-10" />
+                                                    <IconComponent className="h-8 w-8" />
                                                 </div>
 
                                                 {/* Name & Role */}

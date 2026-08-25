@@ -70,7 +70,7 @@ export default function AboutSection() {
                     />
 
                     {/* Description Paragraph */}
-                    <p className="text-sm font-base leading-7 text-slate-600 sm:text-base">
+                    <p className="text-sm leading-relaxed sm:text-base text-slate-800">
                         {about.description}
                     </p>
 
@@ -91,14 +91,14 @@ export default function AboutSection() {
                                     className="flex items-start gap-5"
                                 >
                                     <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-[#ece4d6] bg-[#f7f3eb] transition-transform duration-300 hover:scale-105">
-                                        <IconComponent className="h-10 w-10 text-[#d9983b]" />
+                                        <IconComponent className="h-8 w-8 text-[#d9983b]" />
                                     </div>
                                     <div className="space-y-1 border-l-2 border-slate-200 pl-4 max-w-sm">
                                         <h3 className="font-serif text-3xl font-medium text-[#0d131a]">
                                             {feat.title}
                                         </h3>
                                         <div className="my-1 h-[1.5px] w-6 bg-[#d9983b]" />
-                                        <p className="text-md leading-relaxed text-slate-500 sm:text-md">
+                                        <p className="text-sm leading-relaxed sm:text-base text-slate-800">
                                             {feat.description}
                                         </p>
                                     </div>

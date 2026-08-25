@@ -40,7 +40,7 @@ export default function TeamPage() {
                     </div>
 
                     {/* Main Heading */}
-                    <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
                         Dedicated Lawyers. {""}
 
                         <span className="font-serif text-[#d9983b]">
@@ -48,7 +48,7 @@ export default function TeamPage() {
                         </span>
                     </h2>
 
-                    <p className="mx-auto max-w-xl text-base leading-relaxed text-gray-600 sm:text-lg">
+                    <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
                         Our team of skilled attorneys is committed to providing exceptional legal representation across
                         a wide range of practice areas.
                     </p>

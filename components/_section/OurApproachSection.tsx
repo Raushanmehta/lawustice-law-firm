@@ -8,18 +8,18 @@ import {
     FaShieldAlt, 
     FaChevronRight 
 } from "react-icons/fa";
-import type { OurApproachData } from "@/types";
+import type { OurApproachData, OurApproachIcon } from "@/types";
 
 interface OurApproachProps {
     data: OurApproachData;
 }
 
-const iconMap: Record<string, React.ReactNode> = {
-    comments: <FaComments className="h-6 w-6 text-[#d9983b]" />,
-    search: <FaSearch className="h-6 w-6 text-[#d9983b]" />,
-    file: <FaFileAlt className="h-6 w-6 text-[#d9983b]" />,
-    user: <FaUserTie className="h-6 w-6 text-[#d9983b]" />,
-    shield: <FaShieldAlt className="h-6 w-6 text-[#d9983b]" />,
+const iconMap: Record<OurApproachIcon, React.ReactNode> = {
+    comments: <FaComments className="h-8 w-8 text-[#d9983b]" />,
+    search: <FaSearch className="h-8 w-8 text-[#d9983b]" />,
+    file: <FaFileAlt className="h-8 w-8 text-[#d9983b]" />,
+    user: <FaUserTie className="h-8 w-8 text-[#d9983b]" />,
+    shield: <FaShieldAlt className="h-8 w-8 text-[#d9983b]" />,
 };
 
 export default function OurApproachSection({ data }: OurApproachProps) {
@@ -37,11 +37,11 @@ export default function OurApproachSection({ data }: OurApproachProps) {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     className="mx-auto mb-16 max-w-2xl space-y-3 text-center"
                 >
-                    <h2 className="font-serif text-4xl sm:text-5xl text-[#0b1329]">
+                    <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight  sm:text-5xl md:text-5xl lg:text-6xl">
                         {titlePart1}{" "}
                         <span className="font-serif text-[#d9983b]">{titlePart2}</span>
                     </h2>
-                    <p className="text-sm sm:text-base leading-relaxed text-gray-600">
+                    <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
                         {subtitle}
                     </p>
                 </motion.div>
@@ -63,12 +63,12 @@ export default function OurApproachSection({ data }: OurApproachProps) {
                             <div className="relative flex h-full w-full flex-col items-center justify-between rounded-xl border border-[#f0ebde] bg-white p-6 pt-12 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_18px_35px_rgba(0,0,0,0.1)]">
                                 
                                 {/* Floating Circular Icon at Top */}
-                                <div className="absolute -top-7 flex h-16 w-16 text-5xl items-center justify-center rounded-full bg-[#fdfaf3] border border-[#f5eddce6] shadow-sm">
+                                <div className="absolute -top-7 flex h-20 w-20 text-5xl items-center justify-center rounded-full bg-[#fdfaf3] border border-[#f5eddce6] shadow-sm">
                                     {iconMap[step.icon]}
                                 </div>
 
                                 {/* Content Block */}
-                                <div className="space-y-3 w-full mt-2">
+                                <div className="space-y-3 w-full mt-4">
                                     {/* Step Number */}
                                     <span className="text-lg font-semibold tracking-wider text-[#d9983b]">
                                         {step.number}

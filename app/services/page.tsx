@@ -3,104 +3,90 @@
 import NeedLegalSection from "@/components/_section/NeedLegalSection";
 import PageTopSection from "@/components/PageTopSection";
 import ServiceCard from "@/components/ServiceCard";
-import { FaBalanceScale, FaChild, FaHome, FaHandHoldingHeart, FaFileContract, FaUserShield } from "react-icons/fa";
+import { Scale, FileText, Gavel, Users, Building2, Landmark, type LucideIcon } from "lucide-react";
+import { motion } from "framer-motion";
 import siteData from "@/data/data.json";
+import type { ServicesPageData } from "@/types";
 
-const servicesData = [
-    {
-        title: "Civil Litigation",
-        description: "We represent individuals and businesses in a broad range of civil disputes, advocating for your rights in court with confidence.",
-        image: "/images/law-banner.png",
-        icon: <FaBalanceScale className="h-7 w-7 text-[#d9983b]" />,
-        linkUrl: "/practice/civil-litigation"
-    },
-    {
-        title: "Family Law",
-        description: "Compassionate guidance through divorce, child custody, and support with personalized legal support.",
-        image: "/images/law-banner.png",
-        icon: <FaChild className="h-7 w-7 text-[#d9983b]" />,
-        linkUrl: "/practice/family-law"
-    },
-    {
-        title: "Property Division",
-        description: "Equitable division of marital assets and debts with a strategic approach tailored to your case.",
-        image: "/images/law-banner.png",
-        icon: <FaHome className="h-7 w-7 text-[#d9983b]" />,
-        linkUrl: "/practice/property-division"
-    },
-    {
-        title: "Spousal Support",
-        description: "Guidance on alimony and spousal maintenance suits, enforcement, and modifications.",
-        image: "/images/law-banner.png",
-        icon: <FaHandHoldingHeart className="h-7 w-7 text-[#d9983b]" />,
-        linkUrl: "/practice/spousal-support"
-    },
-    {
-        title: "Prenuptial Agreements",
-        description: "Drafting comprehensive agreements that protect your assets and provide peace of mind for the future.",
-        image: "/images/law-banner.png",
-        icon: <FaFileContract className="h-7 w-7 text-[#d9983b]" />,
-        linkUrl: "/practice/prenuptial-agreements"
-    },
-    {
-        title: "Criminal Defense",
-        description: "Aggressive and strategic legal defense to protect your rights, freedom, and record.",
-        image: "/images/law-banner.png",
-        icon: <FaUserShield className="h-7 w-7 text-[#d9983b]" />,
-        linkUrl: "/practice/criminal-defense"
-    }
-];
+const services = siteData.services as ServicesPageData;
+const iconMap: Record<string, LucideIcon> = { Scale, FileText, Gavel, Users, Building2, Landmark };
 
 export default function ServicesPage() {
     return (
         <main className="bg-[#fdfbf7] min-h-screen">
             {/* Top Banner Section */}
-            <PageTopSection title="Services" />
+            <PageTopSection title={services.pageTitle} />
 
             {/* Main Content Section */}
             <section className="px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
-                <div className="mx-auto max-w-7xl">
+                <div className="mx-auto ">
                     
                     {/* Header Info */}
-                    <div className="mx-auto mb-16 max-w-2xl text-center space-y-4">
+                    <motion.div
+                        initial={{ opacity: 0, y: 28 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        className="mx-auto mb-16 max-w-2xl text-center space-y-4"
+                    >
                         <div className="flex items-center justify-center gap-3">
                             <span className="h-px w-10 bg-[#d9983b]" />
-                            <span className="text-xs font-semibold uppercase tracking-widest text-[#d9983b]">
-                                What We Do
+                            <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
+                                {services.tagline}
                             </span>
                             <span className="h-px w-10 bg-[#d9983b]" />
                         </div>
 
-                        <h1 className="font-serif text-3xl sm:text-5xl text-[#0b1329]">
-                            Our <span className="font-serif text-[#d9983b]">Practice Areas</span>
+                        <h1 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl
+
+">
+                            {services.title} <span className="font-serif text-[#d9983b]">{services.highlight}</span>
                         </h1>
 
-                        <p className="text-sm sm:text-base leading-relaxed text-gray-600">
-                            Our experienced attorneys deliver focused representation in a wide range of legal areas. Click on any service to learn more about how we can help you.
+                        <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
+                            {services.description}
                         </p>
-                    </div>
+                    </motion.div>
 
                     {/* Services Cards Grid */}
                     <div className="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                        {servicesData.map((service, index) => (
-                            <ServiceCard 
-                                key={index}
-                                title={service.title}
-                                description={service.description}
-                                image={service.image}
-                                icon={service.icon}
-                                linkUrl={service.linkUrl}
-                            />
-                        ))}
+                        {services.items.map((service) => {
+                            const Icon = iconMap[service.icon];
+                            return (
+                                <motion.div
+                                    key={service.id}
+                                    initial={{ opacity: 0, y: 28 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, amount: 0.12 }}
+                                    transition={{ duration: 0.55, delay: (service.id - 1) * 0.08, ease: "easeOut" }}
+                                    className="w-full"
+                                >
+                                    <ServiceCard
+                                        title={service.title}
+                                        description={service.description}
+                                        image={service.image}
+                                        icon={<Icon className="h-7 w-7 text-[#d9983b]" />}
+                                        linkUrl={service.linkUrl}
+                                    />
+                                </motion.div>
+                            );
+                        })}
                     </div>
 
                 </div>
             </section>
-            <NeedLegalSection
-                leftColumnImage={siteData.results.leftColumnImage}
-                rightBgImage={siteData.results.rightBgImage}
-                phone={siteData.navbar.phone}
-            />
+            <motion.div
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+                <NeedLegalSection
+                    leftColumnImage={siteData.results.leftColumnImage}
+                    rightBgImage={siteData.results.rightBgImage}
+                    phone={siteData.navbar.phone}
+                />
+            </motion.div>
         </main>
     );
 }

@@ -34,7 +34,8 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "law.mpg.de",
-      }
+      },
+      
     ],
   },
 };

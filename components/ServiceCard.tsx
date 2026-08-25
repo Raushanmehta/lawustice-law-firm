@@ -19,7 +19,11 @@ export default function ServiceCard({
     linkUrl = "#"
 }: ServiceCardProps) {
     return (
-        <div className="group relative w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] border border-[#f0ebde] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.12)]">
+        <Link
+            href={linkUrl}
+            aria-label={`View ${title}`}
+            className="group relative block w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] border border-[#f0ebde] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.12)]"
+        >
             
             {/* ================= TOP BANNER IMAGE ================= */}
             <div className="relative h-44 w-full overflow-hidden bg-[#0b1329]">
@@ -55,17 +59,14 @@ export default function ServiceCard({
 
                 {/* Learn More Link */}
                 <div className="pt-2">
-                    <Link
-                        href={linkUrl}
-                        className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#d9983b] transition-colors hover:text-[#b87c2b]"
-                    >
+                    <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#d9983b] transition-colors group-hover:text-[#b87c2b]">
                         <span>LEARN MORE</span>
                         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </Link>
+                    </span>
                 </div>
 
             </div>
 
-        </div>
+        </Link>
     );
 }

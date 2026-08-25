@@ -53,20 +53,20 @@ export default function NeedLegalSection({
                     <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-3">
                         {/* Subheading with underline */}
                         <div className="flex flex-col items-center lg:items-start">
-                            <span className="text-xs font-semibold uppercase tracking-widest text-[#d9983b]">
+                            <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
                                 NEED LEGAL ASSISTANCE?
                             </span>
                             <div className="mt-1 h-[2px] w-10 bg-[#d9983b]" />
                         </div>
 
                         {/* Main Heading */}
-                        <h2 className="font-serif text-3xl  sm:text-6xl text-[#0b1329]">
+                        <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
                             Let’s Discuss <br />
                             <span className="font-serif text-[#d9983b]">Your Case</span>
                         </h2>
 
                         {/* Description */}
-                        <p className="max-w-md text-sm leading-relaxed text-gray-600 sm:text-base">
+                        <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
                             Our attorneys are ready to provide the guidance and representation you need. Contact us today for a confidential consultation.
                         </p>
                     </div>

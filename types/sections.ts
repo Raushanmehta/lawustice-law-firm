@@ -57,11 +57,13 @@ export interface StatsSectionData {
 }
 
 // ================= OUR APPROACH SECTION TYPES =================
+export type OurApproachIcon = "comments" | "search" | "file" | "user" | "shield";
+
 export interface OurApproachStep {
     number: string;
     title: string;
     description: string;
-    icon: string;
+    icon: OurApproachIcon;
 }
 
 export interface OurApproachData {
@@ -95,6 +97,28 @@ export interface Service {
     image: string;
 }
 
+export interface ServicesPageItem {
+    id: number;
+    title: string;
+    description: string;
+    icon: string;
+    image: string;
+    linkUrl: string;
+}
+
+export interface ServicesPageData {
+    pageTitle: string;
+    tagline: string;
+    title: string;
+    titleSuffix: string;
+    highlight: string;
+    description: string;
+    learnMoreText: string;
+    bgImage: string;
+    items: ServicesPageItem[];
+    detail: ServiceDetailData;
+}
+
 // ================= PROCESS SECTION TYPES =================
 export interface ProcessStep {
     step: string;
@@ -102,6 +126,71 @@ export interface ProcessStep {
     description: string;
     icon: LucideIcon;
     image: string;
+}
+
+// ================= SERVICE DETAIL PAGE TYPES =================
+export interface ServiceDetailPracticeArea {
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export interface ServiceDetailOverviewData {
+    heroImage: string;
+    phoneNumber: string;
+    titlePart1: string;
+    titleHighlight: string;
+    titlePart2: string;
+    description: string;
+    secondaryDescription: string;
+    practiceAreasLabel: string;
+    practiceAreasTitle: string;
+    practiceAreasHighlight: string;
+    practiceAreas: ServiceDetailPracticeArea[];
+}
+
+export interface ServiceDetailChooseUsData {
+    imageSrc: string;
+    smallHeading: string;
+    titlePart1: string;
+    titlePart2: string;
+    items: { text: string }[];
+}
+
+export interface ServiceDetailProcessStep {
+    step: string;
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export interface ServiceDetailFaq {
+    question: string;
+    answer: string;
+}
+
+export interface ServiceDetailPracticeAreaLink {
+    title: string;
+    url: string;
+}
+
+export interface ServiceDetailProcessData {
+    processLabel: string;
+    processTitle: string;
+    processHighlight: string;
+    steps: ServiceDetailProcessStep[];
+    faqsLabel: string;
+    faqsTitle: string;
+    faqsHighlight: string;
+    faqs: ServiceDetailFaq[];
+    relatedTitle: string;
+    practiceAreas: ServiceDetailPracticeAreaLink[];
+}
+
+export interface ServiceDetailData {
+    overview: ServiceDetailOverviewData;
+    chooseUs: ServiceDetailChooseUsData;
+    process: ServiceDetailProcessData;
 }
 
 // ================= TEAM SECTION TYPES =================

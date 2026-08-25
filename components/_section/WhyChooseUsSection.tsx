@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { GoLaw } from "react-icons/go";
 import type { WhyChooseUsData } from "@/types";
+import Image from "next/image";
 
 interface WhyChooseUsProps {
     data: WhyChooseUsData;
@@ -46,16 +47,16 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
                             className="space-y-4 text-center"
                         >
                             {/* Small Upper Title with Horizontal Rules */}
-                            <div className="flex items-center justify-center gap-3 text-center">
-                                <span className="h-px w-10 bg-[#d9983b]" />
-                                <span className="text-xs font-semibold uppercase tracking-widest text-[#d9983b]">
-                                    {data.tagline}
-                                </span>
-                                <span className="h-px w-10 bg-[#d9983b]" />
-                            </div>
+                            <div className="flex items-center justify-center gap-2">
+                        <span className="h-px w-8 bg-[#d9983b]" />
+                        <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
+                            {data.tagline}
+                        </span>
+                        <span className="h-px w-8 bg-[#d9983b]" />
+                    </div>
 
                             {/* Main Heading */}
-                            <h2 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-6xl text-[#0b1329]">
+                            <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
                                 {data.title}
                             </h2>
 
@@ -67,7 +68,7 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
                             </div>
 
                             {/* Introductory Description */}
-                            <p className="max-w-xl text-left text-sm leading-relaxed text-gray-600 pt-2 sm:text-base">
+                            <p className="max-w-xl text-left text-sm leading-relaxed sm:text-base text-slate-800">
                                 {data.description}
                             </p>
                         </motion.div>
@@ -84,7 +85,7 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
                                     className="flex items-start gap-4"
                                 >
                                     {/* Circular Dark Icon Container */}
-                                    <div className="flex border-2 h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#0b1329] border border-[#d9983b] shadow-md">
+                                    <div className="flex border-2 h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#0b1329] border border-[#d9983b] shadow-md">
                                         {iconMap[item.icon]}
                                     </div>
                                     
@@ -112,10 +113,12 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
                         className="lg:col-span-6"
                     >
                         <div className="relative overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.18)] border border-[#f0ebde]">
-                            <img
+                            <Image
                                 src={rightImage}
                                 alt="Law Scales and Books"
                                 className="h-[680px] w-full object-cover sm:h-[800px]"
+                                height={800}
+                                width={1200}
                             />
                         </div>
                     </motion.div>
