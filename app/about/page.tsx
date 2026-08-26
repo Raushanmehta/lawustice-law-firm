@@ -6,7 +6,7 @@ import OurApproachSection from "@/components/_section/OurApproachSection";
 import OurValuesSection from "@/components/_section/OurValuesSection";
 import StatsSection from "@/components/_section/StatsSection";
 import WhyChooseUsSection from "@/components/_section/WhyChooseUsSection";
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
 import siteData from "@/data/data.json";
 import type { OurApproachData } from "@/types";
 

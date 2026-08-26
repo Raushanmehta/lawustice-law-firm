@@ -1,9 +1,12 @@
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
+import FaqPageSection from "@/components/_section/FaqPageSection";
+import siteData from "@/data/data.json";
 
 export default function FaqsPage() {
     return (
         <main>
             <PageTopSection title="FAQs" />
+            <FaqPageSection data={siteData.faqsPage} />
         </main>
     );
 }

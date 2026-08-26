@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GoLaw } from "react-icons/go";
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
 import TeamPageCard from "@/components/TeamPageCard";
 import NeedLegalSection from "@/components/_section/NeedLegalSection";
 import { teamData } from "@/data/teamData";

@@ -35,6 +35,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "law.mpg.de",
       },
+      {
+        protocol: "https",
+        hostname: "nicepng.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.nicepng.com",
+      },
       
     ],
   },

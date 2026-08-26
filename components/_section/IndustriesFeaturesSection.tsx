@@ -9,7 +9,7 @@ import {
 interface FeatureItem {
     title: string;
     description: string;
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
 }
 
 interface IndustriesFeaturesSectionProps {
@@ -40,6 +40,13 @@ export default function IndustriesFeaturesSection({
         }
     ]
 }: IndustriesFeaturesSectionProps) {
+    const featureIcons = [
+        <FaUsers key="users" className="h-7 w-7 text-[#d9983b]" />,
+        <FaShieldAlt key="shield" className="h-7 w-7 text-[#d9983b]" />,
+        <FaHandshake key="handshake" className="h-7 w-7 text-[#d9983b]" />,
+        <FaCheckCircle key="check" className="h-7 w-7 text-[#d9983b]" />,
+    ];
+
     return (
         <section className="relative overflow-hidden bg-[#fdfbf7] px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
     <div className="mx-auto ">
@@ -62,7 +69,7 @@ export default function IndustriesFeaturesSection({
 
                             {/* Icon */}
                             <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-[#d9983b]/50 bg-[#0b1429] shadow-[0_0_15px_rgba(217,152,59,0.2)]">
-                                {item.icon}
+                                {item.icon ?? featureIcons[index % featureIcons.length]}
                             </div>
 
                             {/* Title + Underline */}

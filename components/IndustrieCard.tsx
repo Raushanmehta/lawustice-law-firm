@@ -19,11 +19,11 @@ export default function IndustrieCard({
     linkUrl = "#"
 }: IndustrieCardProps) {
     return (
-        <div className="group relative w-full max-w-sm overflow-hidden rounded-2xl bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] flex flex-col justify-between">
+        <div className="group relative w-full max-w-sm overflow-hidden rounded-2xl bg-white p-2 shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] flex flex-col justify-between">
             
-            <div className="space-y-6">
+            <div className="space-y-2">
                 {/* ================= TOP ROW: CIRCULAR ICON + TITLE ================= */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 p-2">
                     {/* Circular Icon Container */}
                     <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#fdfaf3] border border-[#f5eddce6] shadow-sm">
                         {icon}
@@ -43,7 +43,7 @@ export default function IndustrieCard({
                 </div>
 
                 {/* ================= MIDDLE BANNER IMAGE ================= */}
-                <div className="relative h-44 w-full overflow-hidden rounded-xl border border-[#f0ebde]">
+                <div className="relative h-44 w-full overflow-hidden rounded-sm border border-[#f0ebde]">
                     <Image
                         src={imageSrc}
                         alt={title}
@@ -53,13 +53,13 @@ export default function IndustrieCard({
                 </div>
 
                 {/* ================= DESCRIPTION ================= */}
-                <p className="text-xs sm:text-sm leading-relaxed text-gray-600">
+                <p className="text-xs sm:text-sm leading-relaxed text-gray-600 p-2">
                     {description}
                 </p>
             </div>
 
             {/* ================= BOTTOM LINK ================= */}
-            <div className="pt-6">
+            <div className=" p-2">
                 <Link
                     href={linkUrl}
                     className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-wide text-[#d9983b] transition-colors hover:text-[#b87c2b]"

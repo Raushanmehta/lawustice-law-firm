@@ -1,4 +1,27 @@
 {
+  "topNavbar": {
+    "phone": "+91 11 4356 0000",
+    "email": "info@lawfirm.com",
+    "address": "N-45, Connaught Place, New Delhi",
+    "socials": [
+      {
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      {
+        "label": "Twitter",
+        "href": "https://twitter.com"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
   "navbar": {
     "logo": "/images/law-logo.png",
     "phone": "1200 300 9000",
@@ -14,23 +37,31 @@
       },
       {
         "name": "Practice Areas",
-        "href": "/practice",
+        "href": "/services",
         "dropdown": [
           {
             "name": "Criminal Law",
-            "href": "/practice/criminal-law"
+            "href": "/services/criminal-law"
           },
           {
             "name": "Family Law",
-            "href": "/practice/family-law"
+            "href": "/services/family-law"
           },
           {
             "name": "Corporate Law",
-            "href": "/practice/corporate-law"
+            "href": "/services/corporate-law"
           },
           {
             "name": "Property Law",
-            "href": "/practice/property-law"
+            "href": "/services/property-law"
+          },
+          {
+            "name": "Contract Drafting",
+            "href": "/services/contract-drafting"
+          },
+          {
+            "name": "Civil Litigation",
+            "href": "/services/civil-litigation"
           }
         ]
       },
@@ -86,7 +117,7 @@
       },
       {
         "name": "Contact",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ]
   },
@@ -514,6 +545,79 @@
         ]
       }
     }
+  },
+  "industries": {
+    "pageTitle": "Industries",
+    "smallHeading": "Industries We Serve",
+    "title": "Legal Solutions",
+    "highlight": "Tailored To Your Industry",
+    "description": "We provide trusted legal guidance across a wide range of industries, delivering practical solutions tailored to the unique challenges and requirements of your business.",
+    "items": [
+      {
+        "id": 1,
+        "slug": "corporate-commercial",
+        "title": "Corporate & Commercial",
+        "description": "Practical legal guidance for businesses, from formation and contracts to governance, transactions, and commercial disputes.",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D",
+        "linkUrl": "/industries/corporate-commercial"
+      },
+      {
+        "id": 2,
+        "slug": "banking-financial-services",
+        "title": "Banking & Financial Services",
+        "description": "Strategic counsel for financial institutions and businesses navigating regulation, lending, compliance, and risk.",
+        "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+        "linkUrl": "/industries/banking-financial-services"
+      },
+      {
+        "id": 3,
+        "slug": "e-commerce-retail",
+        "title": "E-Commerce & Retail",
+        "description": "Legal support for online and retail businesses covering commercial agreements, privacy, and growth.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+        "linkUrl": "/industries/e-commerce-retail"
+      },
+      {
+        "id": 4,
+        "slug": "real-estate-construction",
+        "title": "Real Estate & Construction",
+        "description": "Trusted advice for development, acquisitions, construction contracts, leasing, zoning, and property disputes.",
+        "image": "https://images.unsplash.com/photo-1714192266857-585ffaac4adc?fm=jpg&q=60&w=1200&auto=format&fit=crop",
+        "linkUrl": "/industries/real-estate-construction"
+      },
+      {
+        "id": 5,
+        "slug": "healthcare-life-sciences",
+        "title": "Healthcare & Life Sciences",
+        "description": "Clear legal guidance for healthcare providers, pharmaceutical companies, biotechnology businesses, and researchers.",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+        "linkUrl": "/industries/healthcare-life-sciences"
+      },
+      {
+        "id": 6,
+        "slug": "technology-media-telecommunications",
+        "title": "Technology & Communications",
+        "description": "Forward-looking counsel for technology, media, and telecommunications companies handling innovation, data, and regulation.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        "linkUrl": "/industries/technology-media-telecommunications"
+      },
+      {
+        "id": 7,
+        "slug": "insurance-defense",
+        "title": "Insurance & Defense",
+        "description": "Focused representation and risk advice for insurers, policyholders, and organizations managing complex claims.",
+        "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+        "linkUrl": "/industries/insurance-defense"
+      },
+      {
+        "id": 8,
+        "slug": "manufacturing-industrial",
+        "title": "Manufacturing & Industrial",
+        "description": "Business-minded legal support for manufacturers and industrial companies across contracts, compliance, and disputes.",
+        "image": "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=80",
+        "linkUrl": "/industries/manufacturing-industrial"
+      }
+    ]
   },
   "team": {
     "tagline": "Our Attorneys",
@@ -947,6 +1051,340 @@
       }
     ]
   },
+  "awardsRecognition": {
+    "featured": {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXBuaStmq5mEiJUgHi5ffJ-YYQfibpPEAHQRMyYNdfR64exeYtmzGPjM&s=10",
+      "year": "2026",
+      "title": "Top Law Firm of the Year",
+      "organization": "Asian Legal Business (ALB) Awards",
+      "description": "Honored for our outstanding legal expertise, innovative approach, and consistent delivery of client-focused solutions across diverse practice areas.",
+      "link": "#"
+    },
+    "recentTitle": "Our Recent Awards",
+    "recentAwards": [
+      {
+        "year": "2026",
+        "title": "Top Law Firm of the Year",
+        "organization": "Asian Legal Business (ALB) Awards",
+        "category": "Category: Overall Excellence",
+        "icon": "/icons/star-icon.svg"
+      },
+      {
+        "year": "2026",
+        "title": "India Business Law Firm of the Year",
+        "organization": "IFLR Asia-Pacific Awards",
+        "category": "Category: Corporate Law",
+        "icon": "/icons/gloab-icon.svg"
+      },
+      {
+        "year": "2026",
+        "title": "Dispute Resolution Law Firm of the Year",
+        "organization": "Benchmark Litigation Asia-Pacific",
+        "category": "Category: Dispute Resolution",
+        "icon": "/icons/law-icon.svg"
+      }
+    ],
+    "stats": [
+      {
+        "value": "25+",
+        "label": "Awards Won",
+        "description": "Across practices and industries",
+        "icon": "trophy"
+      },
+      {
+        "value": "15+",
+        "label": "Years of Excellence",
+        "description": "Delivering trusted legal solutions",
+        "icon": "shield"
+      },
+      {
+        "value": "10",
+        "label": "Practice Areas",
+        "description": "Recognized for legal leadership",
+        "icon": "briefcase"
+      },
+      {
+        "value": "10+",
+        "label": "Industry Recognitions",
+        "description": "From leading legal institutions",
+        "icon": "award"
+      }
+    ],
+    "timelineTitle": "Recognition Timeline",
+    "timelineData": [
+      {
+        "year": "2026",
+        "achievements": [
+          {
+            "title": "Top Law Firm of the Year",
+            "org": "Asian Legal Business (ALB) Awards"
+          },
+          {
+            "title": "India Business Law Firm of the Year",
+            "org": "IFLR Asia-Pacific Awards"
+          }
+        ]
+      },
+      {
+        "year": "2025",
+        "achievements": [
+          {
+            "title": "Outstanding Firm in M&A",
+            "org": "Asialaw Profiles"
+          },
+          {
+            "title": "Market Leader in Corporate Law",
+            "org": "Legal 500 Asia-Pacific"
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "achievements": [
+          {
+            "title": "Dispute Resolution Law Firm of the Year",
+            "org": "Benchmark Litigation Asia-Pacific"
+          },
+          {
+            "title": "Top Tier Firm",
+            "org": "IFLR1000"
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "achievements": [
+          {
+            "title": "Rising Law Firm of the Year",
+            "org": "Legal Era Awards"
+          },
+          {
+            "title": "Excellence in Client Service",
+            "org": "Business World Legal Awards"
+          }
+        ]
+      }
+    ]
+  },
+  "faqsPage": {
+    "categories": [
+      {
+        "name": "All Questions",
+        "count": "08",
+        "icon": "briefcase"
+      },
+      {
+        "name": "Business Law",
+        "count": "01",
+        "icon": "balance"
+      },
+      {
+        "name": "Family Law",
+        "count": "01",
+        "icon": "users"
+      },
+      {
+        "name": "Criminal Defense",
+        "count": "01",
+        "icon": "gavel"
+      },
+      {
+        "name": "Real Estate Law",
+        "count": "01",
+        "icon": "home"
+      },
+      {
+        "name": "Employment Law",
+        "count": "01",
+        "icon": "contract"
+      },
+      {
+        "name": "Intellectual Property",
+        "count": "01",
+        "icon": "lightbulb"
+      },
+      {
+        "name": "Litigation",
+        "count": "01",
+        "icon": "briefcase"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I schedule a consultation with your firm?",
+        "answer": "You can schedule a consultation by filling out the contact form on our website, calling our office directly, or emailing us. Our team will get back to you promptly to confirm your appointment.",
+        "category": "All Questions"
+      },
+      {
+        "question": "What types of cases does your firm handle?",
+        "answer": "We handle a comprehensive range of legal matters including business law, family law, criminal defense, real estate, employment disputes, and civil litigation.",
+        "category": "All Questions"
+      },
+      {
+        "question": "How much do your legal services cost?",
+        "answer": "Our fee structure depends on the nature and complexity of your case. We discuss all costs transparently during your initial consultation.",
+        "category": "All Questions"
+      },
+      {
+        "question": "Do you offer services for businesses and corporations?",
+        "answer": "Yes, we provide extensive corporate and commercial legal services, ranging from entity formation to complex mergers and acquisitions.",
+        "category": "Business Law"
+      },
+      {
+        "question": "What should I bring to my first consultation?",
+        "answer": "Please bring any relevant contracts, official notices, identification documents, and a written summary of the facts related to your case.",
+        "category": "All Questions"
+      },
+      {
+        "question": "How long will my case take to resolve?",
+        "answer": "Case duration varies significantly depending on court availability, complexity, and whether a settlement or trial is pursued.",
+        "category": "Litigation"
+      },
+      {
+        "question": "Can you represent me if I'm outside your city/state?",
+        "answer": "Representation depends on jurisdiction and the specific court system involved. Contact our office to verify if we can assist you in your region.",
+        "category": "All Questions"
+      },
+      {
+        "question": "How will you keep me updated on my case?",
+        "answer": "We maintain regular communication through scheduled status calls, email updates, and secure client portal notifications.",
+        "category": "All Questions"
+      }
+    ],
+    "smallHeading": "NEED LEGAL HELP?",
+    "title": "Have More Questions?",
+    "description": "Our legal team is here to answer your questions and provide professional guidance tailored to your situation.",
+    "contactUrl": "/contact",
+    "phoneNumber": "+91 98765 43210",
+    "emailAddress": "info@example.com",
+    "officeHours": "Mon - Sat, 9:00 AM - 6:00 PM"
+  },
+  "careersJob": {
+    "backUrl": "/careers",
+    "jobTitle": "Associate - Corporate Law",
+    "location": "Mumbai",
+    "jobType": "Full-time",
+    "experience": "2-4 Years Experience",
+    "postedDate": "Posted: Aug 12, 2026",
+    "overviewText": "We are looking for a talented Associate to join our Corporate & Commercial Practice in Mumbai. The ideal candidate will have strong analytical skills, attention to detail, and a passion for corporate advisory and transactions.",
+    "responsibilities": [
+      "Assist in corporate advisory, due diligence, and transaction documentation.",
+      "Draft, review, and negotiate commercial contracts and agreements.",
+      "Provide legal research and analysis on corporate and regulatory matters.",
+      "Coordinate with internal teams and external counsel as required.",
+      "Manage timelines, deliverables, and client communications efficiently."
+    ],
+    "whatWeLookingFor": [
+      "2-4 years of post-qualification experience in Corporate Law.",
+      "Strong academic record from a reputed law school/institution.",
+      "Excellent drafting, research, and analytical skills.",
+      "Effective communication and interpersonal abilities.",
+      "Proficiency in MS Office and legal research tools."
+    ],
+    "preferredQualifications": [
+      "Experience in M&A, Private Equity, or General Corporate advisory.",
+      "Knowledge of regulatory and compliance frameworks in India.",
+      "Ability to work in a fast-paced, client-focused environment."
+    ]
+  },
+  "officeLocations": {
+    "pageTitle": "Office Locations",
+    "sectionTitle": "Our Offices",
+    "locations": [
+      {
+        "cityName": "Delhi",
+        "addressLine1": "N-45, Connaught Place,",
+        "addressLine2": "New Delhi - 110001",
+        "phone": "+91 11 4356 0000",
+        "email": "delhi@lawfirm.com",
+        "imageSrc": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "cityName": "Mumbai",
+        "addressLine1": "B-Wing, Nariman Point,",
+        "addressLine2": "Mumbai - 400021",
+        "phone": "+91 22 2288 0000",
+        "email": "mumbai@lawfirm.com",
+        "imageSrc": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "cityName": "Bangalore",
+        "addressLine1": "MG Road, Lavelle Road,",
+        "addressLine2": "Bangalore - 560001",
+        "phone": "+91 80 4122 0000",
+        "email": "bangalore@lawfirm.com",
+        "imageSrc": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "cityName": "Hyderabad",
+        "addressLine1": "Road No. 36, Jubilee Hills,",
+        "addressLine2": "Hyderabad - 500033",
+        "phone": "+91 40 4012 0000",
+        "email": "hyderabad@lawfirm.com",
+        "imageSrc": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "cityName": "Chennai",
+        "addressLine1": "Anna Salai, Teynampet,",
+        "addressLine2": "Chennai - 600018",
+        "phone": "+91 44 4200 0000",
+        "email": "chennai@lawfirm.com",
+        "imageSrc": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "cityName": "Kolkata",
+        "addressLine1": "Camac Street, Park Street,",
+        "addressLine2": "Kolkata - 700016",
+        "phone": "+91 33 4000 0000",
+        "email": "kolkata@lawfirm.com",
+        "imageSrc": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  "contactPage": {
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "Fill out the form below and our team will get back to you shortly.",
+      "buttonText": "SEND MESSAGE",
+      "securityNote": "Your information is safe with us."
+    },
+    "getInTouch": {
+      "title": "Get in Touch",
+      "description": "Choose the most convenient way to reach out to us. We are committed to providing you with the best legal assistance.",
+      "headOffice": {
+        "label": "Head Office",
+        "lines": [
+          "N-45, Connaught Place,",
+          "New Delhi – 110001, India"
+        ]
+      },
+      "phone": {
+        "label": "Phone",
+        "numbers": [
+          "+91 11 4356 0000",
+          "+91 11 4356 0001"
+        ]
+      },
+      "email": {
+        "label": "Email",
+        "emails": [
+          "info@lawfirm.com",
+          "consult@lawfirm.com"
+        ]
+      },
+      "workingHours": {
+        "label": "Working Hours",
+        "hours": [
+          "Mon – Sat: 9:00 AM – 7:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    "officesSection": {
+      "title": "Our Offices",
+      "mapImageSrc": "https://www.nicepng.com/png/full/213-2139583_united-way-india-india-map-for-powerpoint.png"
+    }
+  },
   "results": {
     "titleLine1": "Built On Experience.",
     "titleLine2": "Driven By",
@@ -1165,5 +1603,314 @@
       }
     ],
     "copyright": "2025 Lawustice. All Rights Reserved."
+  },
+  "legalPage": {
+    "contactUrl": "/contact-us",
+    "acknowledgementText": "By using our website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.",
+    "assistanceTitle": "Need Legal Assistance?",
+    "assistanceDescription": "If you have any questions about these Terms of Service or our legal services, our team is here to help.",
+    "buttonText": "CONTACT US",
+    "terms": [
+      {
+        "number": "1.",
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the Lawfirm website (the \"Site\"), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, you must not use our Site or services."
+      },
+      {
+        "number": "2.",
+        "title": "Use of Our Website",
+        "content": "You agree to use our Site only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use of the Site. You must not misuse our website by knowingly introducing viruses, trojans, or other harmful material."
+      },
+      {
+        "number": "3.",
+        "title": "Legal Information Disclaimer",
+        "content": "The content on this Site is for general informational purposes only and does not constitute legal advice or create an attorney-client relationship. You should not act or refrain from acting on the basis of any content on this Site without seeking appropriate legal advice."
+      },
+      {
+        "number": "4.",
+        "title": "Intellectual Property",
+        "content": "All content on this Site, including text, graphics, logos, images, and software, is the property of Lawfirm and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or create derivative works without our prior written permission."
+      },
+      {
+        "number": "5.",
+        "title": "Limitation of Liability",
+        "content": "Lawfirm shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of our Site or services."
+      },
+      {
+        "number": "6.",
+        "title": "Third-Party Links",
+        "content": "Our Site may contain links to third-party websites for your convenience. We are not responsible for the content, privacy policies, or practices of any third-party sites."
+      },
+      {
+        "number": "7.",
+        "title": "Changes to These Terms",
+        "content": "We may update or modify these Terms of Service at any time without prior notice. Your continued use of the Site after any changes constitutes your acceptance of the updated terms."
+      },
+      {
+        "number": "8.",
+        "title": "Governing Law",
+        "content": "These Terms shall be governed and construed in accordance with the laws of India, and any disputes shall be subject to the exclusive jurisdiction of the courts in New Delhi."
+      }
+    ],
+    "privacyPolicyTerms": [
+      {
+        "number": "1.",
+        "title": "Information Collection",
+        "content": "We collect information you provide directly to us when filling out contact forms, booking consultations, or subscribing to our newsletters. This includes name, email, phone number, and case details."
+      },
+      {
+        "number": "2.",
+        "title": "Use of Information",
+        "content": "Your information is strictly used to evaluate your legal inquiries, provide requested legal services, improve client communications, and comply with statutory obligations."
+      },
+      {
+        "number": "3.",
+        "title": "Data Protection & Security",
+        "content": "We implement robust administrative, technical, and physical security measures to safeguard your personal data against unauthorized access, loss, or disclosure."
+      },
+      {
+        "number": "4.",
+        "title": "Information Sharing",
+        "content": "We do not sell, rent, or trade your personal information. Data may only be shared with authorized legal professionals or under statutory court mandates."
+      },
+      {
+        "number": "5.",
+        "title": "Cookies and Tracking",
+        "content": "Our website uses essential cookies to enhance site navigation and analyze web traffic patterns to improve overall user experience."
+      },
+      {
+        "number": "6.",
+        "title": "Your Rights",
+        "content": "You have the right to access, rectify, or request deletion of your personal data stored with us at any time by contacting our legal team."
+      }
+    ],
+    "disclaimerTerms": [
+      {
+        "number": "1.",
+        "title": "No Attorney-Client Relationship",
+        "content": "Transmission and receipt of information contained on this website does not create an attorney-client relationship between you and our law firm."
+      },
+      {
+        "number": "2.",
+        "title": "General Information Only",
+        "content": "All materials provided on this website are for informational purposes only and should not be construed as legal advice on any matter."
+      },
+      {
+        "number": "3.",
+        "title": "Case Results Disclaimer",
+        "content": "Prior results and case statistics featured on this site do not guarantee or predict a similar outcome in future legal cases."
+      },
+      {
+        "number": "4.",
+        "title": "Third-Party Content",
+        "content": "We are not responsible for third-party content or external websites that may be accessed through links provided on our site."
+      }
+    ]
+  },
+  "bookConsultation": {
+    "pageTitle": "Book Consultation",
+    "title": "Consultation Details",
+    "description": "Please fill in the details below and we'll get back to you to confirm your appointment.",
+    "formLabels": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "emailAddress": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phoneNumber": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "practiceArea": "Practice Area",
+      "caseDescription": "Briefly Describe Your Case / Query",
+      "caseDescriptionPlaceholder": "Write a few lines about your legal issue",
+      "referralSource": "How did you hear about us?",
+      "termsText": "I agree to the Privacy Policy and Terms & Conditions.",
+      "buttonText": "BOOK CONSULTATION",
+      "securityNote": "Your information is safe with us."
+    },
+    "timeOptions": [
+      { "value": "morning", "label": "Morning (9 AM - 12 PM)" },
+      { "value": "afternoon", "label": "Afternoon (12 PM - 4 PM)" },
+      { "value": "evening", "label": "Evening (4 PM - 7 PM)" }
+    ],
+    "practiceAreaOptions": [
+      { "value": "civil", "label": "Civil Litigation" },
+      { "value": "corporate", "label": "Corporate & Commercial" },
+      { "value": "family", "label": "Family Law" },
+      { "value": "criminal", "label": "Criminal Defense" }
+    ],
+    "referralOptions": [
+      { "value": "google", "label": "Google Search" },
+      { "value": "social", "label": "Social Media" },
+      { "value": "referral", "label": "Friend / Referral" },
+      { "value": "other", "label": "Other" }
+    ],
+    "sidebar": {
+      "title": "Consultation Information",
+      "items": [
+        {
+          "title": "Duration",
+          "subtitle": "45 – 60 Minutes",
+          "description": "One-on-one session with our legal expert"
+        },
+        {
+          "title": "Mode",
+          "subtitle": "In-Person / Phone / Video Call",
+          "description": "Choose the mode convenient for you"
+        },
+        {
+          "title": "Consultation Fee",
+          "subtitle": "Transparent & Affordable",
+          "description": "The fee will be informed upon confirmation of your appointment"
+        }
+      ],
+      "immediateAssistance": {
+        "title": "Need Immediate Assistance?"
+      }
+    },
+    "whyConsult": {
+      "title": "Why Consult With Us?",
+      "features": [
+        {
+          "title": "Experienced Experts",
+          "description": "Consult with highly experienced lawyers across diverse practice areas."
+        },
+        {
+          "title": "Confidential & Secure",
+          "description": "Your information and case details are kept strictly confidential."
+        },
+        {
+          "title": "Practical Solutions",
+          "description": "We provide clear, practical and effective legal solutions tailored to your needs."
+        },
+        {
+          "title": "Client Focused",
+          "description": "Your case is our priority. We are committed to achieving the best outcome for you."
+        }
+      ]
+    }
+  },
+  "needLegal": {
+    "tagline": "NEED LEGAL ASSISTANCE?",
+    "title": "Let’s Discuss",
+    "titleHighlight": "Your Case",
+    "description": "Our attorneys are ready to provide the guidance and representation you need. Contact us today for a confidential consultation.",
+    "buttonText": "BOOK A CONSULTATION",
+    "leftColumnImage": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1000",
+    "rightBgImage": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?auto=format&fit=crop&q=80&w=1000"
+  },
+  "events": {
+    "title": "Upcoming Legal Seminars & Events",
+    "description": "Join our seasoned attorneys for live webinars, panel discussions, and industry conferences.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Corporate Governance & Compliance Summit 2026",
+        "date": "September 15, 2026",
+        "time": "10:00 AM - 4:00 PM IST",
+        "location": "Main Conference Hall, Connaught Place, New Delhi / Virtual",
+        "description": "An in-depth session covering key updates in corporate compliance, regulatory frameworks, and risk management strategies."
+      },
+      {
+        "id": 2,
+        "title": "Intellectual Property Rights Workshop",
+        "date": "October 08, 2026",
+        "time": "02:00 PM - 05:00 PM IST",
+        "location": "Online Webinar",
+        "description": "Practical guidance for startups and established enterprises on patent protection, trademark registration, and IP enforcement."
+      }
+    ]
+  },
+  "publications": {
+    "title": "Legal Publications & Insights",
+    "description": "Read authoritative articles, whitepapers, and legal analysis authored by our legal team.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Navigating Cross-Border M&A in South Asia",
+        "author": "Rajesh Kumar, Senior Partner",
+        "date": "August 2026",
+        "category": "Corporate Law",
+        "summary": "Key legal considerations and regulatory approvals required when executing cross-border mergers and acquisitions."
+      },
+      {
+        "id": 2,
+        "title": "Employment Contracts & Labor Law Compliance Guide",
+        "author": "Anita Sharma, Partner",
+        "date": "July 2026",
+        "category": "Employment Law",
+        "summary": "Essential clauses, non-compete enforcement, and dispute resolution mechanisms for corporate employers."
+      }
+    ]
+  },
+  "legalUpdates": {
+    "title": "Latest Legal Updates & Regulatory Alerts",
+    "description": "Stay informed on statutory amendments, landmark court rulings, and regulatory changes.",
+    "items": [
+      {
+        "id": 1,
+        "title": "New Amendments to Data Privacy Regulations Issued",
+        "date": "August 20, 2026",
+        "category": "Privacy & Technology",
+        "summary": "Overview of compliance requirements, mandatory breach notifications, and penalty structures under the revised framework."
+      },
+      {
+        "id": 2,
+        "title": "High Court Clarifies Arbitral Award Enforcement Standards",
+        "date": "August 10, 2026",
+        "category": "Civil Litigation",
+        "summary": "Key takeaways from recent judicial rulings governing international and domestic commercial arbitration awards."
+      }
+    ]
+  },
+  "sitemap": {
+    "title": "Website Sitemap",
+    "description": "Overview of all pages and resources available on the Lawfirm website.",
+    "sections": [
+      {
+        "category": "Main Pages",
+        "links": [
+          { "name": "Home", "href": "/" },
+          { "name": "About Us", "href": "/about" },
+          { "name": "Why Choose Us", "href": "/why-choose-us" },
+          { "name": "Our Approach", "href": "/our-approach" },
+          { "name": "Our Team", "href": "/team" },
+          { "name": "Contact Us", "href": "/contact-us" }
+        ]
+      },
+      {
+        "category": "Services & Practice Areas",
+        "links": [
+          { "name": "All Services", "href": "/services" },
+          { "name": "Corporate Law", "href": "/services/corporate-law" },
+          { "name": "Criminal Law", "href": "/services/criminal-law" },
+          { "name": "Family Law", "href": "/services/family-law" },
+          { "name": "Property Law", "href": "/services/property-law" },
+          { "name": "Contract Drafting", "href": "/services/contract-drafting" },
+          { "name": "Civil Litigation", "href": "/services/civil-litigation" }
+        ]
+      },
+      {
+        "category": "Resources & Insights",
+        "links": [
+          { "name": "Blog", "href": "/blog" },
+          { "name": "FAQs", "href": "/faqs" },
+          { "name": "Industries", "href": "/industries" },
+          { "name": "Careers", "href": "/careers" },
+          { "name": "Book Consultation", "href": "/book-consultation" },
+          { "name": "Events", "href": "/events" },
+          { "name": "Publications", "href": "/publications" },
+          { "name": "Legal Updates", "href": "/legal-updates" }
+        ]
+      },
+      {
+        "category": "Legal & Terms",
+        "links": [
+          { "name": "Terms & Conditions", "href": "/terms-conditions" },
+          { "name": "Privacy Policy", "href": "/privacy-policy" },
+          { "name": "Legal Disclaimer", "href": "/legal-disclaimer" }
+        ]
+      }
+    ]
   }
 }

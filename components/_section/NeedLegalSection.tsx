@@ -1,17 +1,28 @@
 import { FiPhoneCall } from "react-icons/fi";
+import siteData from "@/data/data.json";
 
 export interface NeedLegalSectionProps {
-    leftColumnImage: string;
-    rightBgImage: string;
-    phone: string;
+    leftColumnImage?: string;
+    rightBgImage?: string;
+    phone?: string;
     onBookConsultation?: () => void;
+    tagline?: string;
+    title?: string;
+    titleHighlight?: string;
+    description?: string;
+    buttonText?: string;
 }
 
 export default function NeedLegalSection({
-    leftColumnImage,
-    rightBgImage,
-    phone,
+    leftColumnImage = siteData.needLegal.leftColumnImage,
+    rightBgImage = siteData.needLegal.rightBgImage,
+    phone = siteData.topNavbar.phone,
     onBookConsultation,
+    tagline = siteData.needLegal.tagline,
+    title = siteData.needLegal.title,
+    titleHighlight = siteData.needLegal.titleHighlight,
+    description = siteData.needLegal.description,
+    buttonText = siteData.needLegal.buttonText,
 }: NeedLegalSectionProps) {
     return (
         <section className="relative overflow-hidden bg-[#fdfbf7] px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
@@ -54,20 +65,20 @@ export default function NeedLegalSection({
                         {/* Subheading with underline */}
                         <div className="flex flex-col items-center lg:items-start">
                             <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
-                                NEED LEGAL ASSISTANCE?
+                                {tagline}
                             </span>
                             <div className="mt-1 h-[2px] w-10 bg-[#d9983b]" />
                         </div>
 
                         {/* Main Heading */}
                         <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
-                            Let’s Discuss <br />
-                            <span className="font-serif text-[#d9983b]">Your Case</span>
+                            {title} <br />
+                            <span className="font-serif text-[#d9983b]">{titleHighlight}</span>
                         </h2>
 
                         {/* Description */}
                         <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
-                            Our attorneys are ready to provide the guidance and representation you need. Contact us today for a confidential consultation.
+                            {description}
                         </p>
                     </div>
 
@@ -78,7 +89,7 @@ export default function NeedLegalSection({
                             onClick={onBookConsultation}
                             className="group flex w-full sm:w-auto items-center justify-between gap-6 rounded-md bg-[#081225] px-8 py-5 text-sm font-semibold tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-[#111f3d]"
                         >
-                            <span>BOOK A CONSULTATION</span>
+                            <span>{buttonText}</span>
                             <svg
                                 className="h-4 w-4 text-[#d9983b] transition-transform duration-300 group-hover:translate-x-1"
                                 fill="none"
@@ -105,4 +116,4 @@ export default function NeedLegalSection({
             </div>
         </section>
     );
-}
+}

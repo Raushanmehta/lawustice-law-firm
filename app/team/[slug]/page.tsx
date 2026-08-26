@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import TeamDetailPage from "@/components/_page/TeamDetailPage";
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
 import { teamData } from "@/data/teamData";
 
 interface TeamDetailRouteProps {

@@ -16,7 +16,7 @@ export default function IndustriesServeSection({
     smallHeading = "INDUSTRIES WE SERVE",
     title = "Corporate & Commercial",
     description = "We provide end-to-end legal support to businesses at every stage of growth. From formation and contracts to mergers, acquisitions, and governance, our attorneys deliver practical solutions that help your business operate, grow, and succeed.",
-    imageSrc = "/images/corporate-skyscrapers.png", // Apna image path yahan dalein
+    imageSrc = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D", // Apna image path yahan dalein
     consultationUrl = "#",
     brochureUrl = "#"
 }: IndustriesServeSectionProps) {

@@ -1,6 +1,6 @@
 "use client";
 
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
 
 export default function BlogPage() {
     return (

@@ -96,13 +96,6 @@ export default function TeamSection(): React.JSX.Element {
                         <span className="h-px w-8 bg-[#d9983b]" />
                     </div>
 
-                    {/* Law Icon */}
-                    {/* <div className="flex items-center justify-center gap-3">
-                                                <span className="h-px w-12 bg-[#d9983b]/60" />
-                                                <Scale className="h-6 w-6 text-[#d9983b]" strokeWidth={1.5} />
-                                                <span className="h-px w-12 bg-[#d9983b]/60" />
-                                            </div> */}
-
                     {/* Main Heading */}
                     <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl">
                         {team.title}

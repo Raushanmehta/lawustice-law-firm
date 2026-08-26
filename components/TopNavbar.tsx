@@ -68,7 +68,7 @@ export default function TopNavbar() {
 
                 {/* Right Social Icons */}
                 <div className="flex items-center gap-1">
-                    {topNavbar.socials.map(({ label, href }) => {
+                    {topNavbar.socials.map(({ label, href }: { label: string; href: string }) => {
                         const Icon = socialIconMap[label];
                         if (!Icon) return null;
                         return (

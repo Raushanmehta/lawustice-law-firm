@@ -1,5 +1,5 @@
 import ServiceDetailPage from "@/components/_page/ServiceDetailPage";
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
 import siteData from "@/data/data.json";
 import type { ServicesPageData } from "@/types";
 

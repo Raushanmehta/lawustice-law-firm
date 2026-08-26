@@ -256,6 +256,43 @@ export interface ResultsSectionData {
     stats: StatItem[];
 }
 
+// ================= AWARDS SECTION TYPES =================
+export interface AwardItem {
+    year: string;
+    title: string;
+    organization: string;
+    category: string;
+    icon: string;
+}
+
+export interface AwardTimelineYear {
+    year: string;
+    achievements: { title: string; org: string }[];
+}
+
+export interface AwardStat {
+    value: string;
+    label: string;
+    description: string;
+    icon: string;
+}
+
+export interface AwardsRecognitionSectionData {
+    featured: {
+        image: string;
+        year: string;
+        title: string;
+        organization: string;
+        description: string;
+        link: string;
+    };
+    recentTitle: string;
+    recentAwards: AwardItem[];
+    stats: AwardStat[];
+    timelineTitle: string;
+    timelineData: AwardTimelineYear[];
+}
+
 // ================= TESTIMONIALS SECTION TYPES =================
 export interface TestimonialItem {
     id?: number;
@@ -269,6 +306,104 @@ export interface TestimonialsSectionData {
     description: string;
     bgImage: string;
     items: TestimonialItem[];
+}
+
+// ================= FAQ PAGE TYPES =================
+export interface FaqCategory {
+    name: string;
+    count: string;
+    icon: string;
+}
+
+export interface FaqQuestion {
+    question: string;
+    answer: string;
+    category: string;
+}
+
+export interface FaqPageData {
+    categories: FaqCategory[];
+    faqs: FaqQuestion[];
+    smallHeading: string;
+    title: string;
+    description: string;
+    contactUrl: string;
+    phoneNumber: string;
+    emailAddress: string;
+    officeHours: string;
+}
+
+// ================= CAREER JOB SECTION TYPES =================
+export interface CareerJobData {
+    backUrl: string;
+    jobTitle: string;
+    location: string;
+    jobType: string;
+    experience: string;
+    postedDate: string;
+    overviewText: string;
+    responsibilities: string[];
+    whatWeLookingFor: string[];
+    preferredQualifications: string[];
+}
+
+// ================= OFFICE LOCATIONS & CONTACT TYPES =================
+export interface OfficeLocation {
+    cityName: string;
+    city?: string;
+    addressLine1?: string;
+    addressLine2?: string;
+    address?: string;
+    phone: string;
+    email: string;
+    imageSrc?: string;
+}
+
+export interface OfficeLocationsData {
+    pageTitle: string;
+    sectionTitle: string;
+    locations: OfficeLocation[];
+}
+
+export interface ContactInfoItem {
+    label: string;
+    lines?: string[];
+    numbers?: string[];
+    emails?: string[];
+    hours?: string[];
+}
+
+export interface ContactGetInTouch {
+    title: string;
+    description: string;
+    headOffice: ContactInfoItem;
+    phone: ContactInfoItem;
+    email: ContactInfoItem;
+    workingHours: ContactInfoItem;
+}
+
+export interface ContactFormData {
+    title: string;
+    subtitle: string;
+    buttonText: string;
+    securityNote: string;
+}
+
+export interface ContactOfficesSection {
+    title: string;
+    mapImageSrc: string;
+}
+
+export interface ContactPageData {
+    form: ContactFormData;
+    getInTouch: ContactGetInTouch;
+    officesSection: ContactOfficesSection;
+}
+
+export interface ContactPageSectionProps {
+    offices?: OfficeLocation[];
+    mapImageSrc?: string;
+    onSubmitForm?: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
 // ================= BLOG SECTION TYPES =================
@@ -304,3 +439,223 @@ export interface PageTopProps {
     breadcrumbs?: BreadcrumbItem[];
     bgImage?: string;
 }
+
+// ================= LEGAL PAGE TYPES =================
+export interface TermsItem {
+    number: string;
+    title: string;
+    content: string;
+}
+
+export interface LegalPageData {
+    contactUrl: string;
+    acknowledgementText: string;
+    assistanceTitle: string;
+    assistanceDescription: string;
+    buttonText: string;
+    terms: TermsItem[];
+    privacyPolicyTerms: TermsItem[];
+    disclaimerTerms: TermsItem[];
+}
+
+// ================= BOOK CONSULTATION TYPES =================
+export interface SelectOption {
+    value: string;
+    label: string;
+}
+
+export interface ConsultationSidebarItem {
+    title: string;
+    subtitle: string;
+    description: string;
+}
+
+export interface ConsultationFeatureItem {
+    title: string;
+    description: string;
+}
+
+export interface BookConsultationData {
+    pageTitle: string;
+    title: string;
+    description: string;
+    formLabels: {
+        fullName: string;
+        fullNamePlaceholder: string;
+        emailAddress: string;
+        emailPlaceholder: string;
+        phoneNumber: string;
+        phonePlaceholder: string;
+        preferredDate: string;
+        preferredTime: string;
+        practiceArea: string;
+        caseDescription: string;
+        caseDescriptionPlaceholder: string;
+        referralSource: string;
+        termsText: string;
+        buttonText: string;
+        securityNote: string;
+    };
+    timeOptions: SelectOption[];
+    practiceAreaOptions: SelectOption[];
+    referralOptions: SelectOption[];
+    sidebar: {
+        title: string;
+        items: ConsultationSidebarItem[];
+        immediateAssistance: {
+            title: string;
+        };
+    };
+    whyConsult: {
+        title: string;
+        features: ConsultationFeatureItem[];
+    };
+}
+
+
+// ================= NEED LEGAL ASSISTANCE TYPES =================
+export interface NeedLegalData {
+    tagline: string;
+    title: string;
+    titleHighlight: string;
+    description: string;
+    buttonText: string;
+    leftColumnImage: string;
+    rightBgImage: string;
+}
+
+// ================= EVENTS TYPES =================
+export interface EventItem {
+    id: number;
+    title: string;
+    date: string;
+    time: string;
+    location: string;
+    description: string;
+}
+
+export interface EventsData {
+    title: string;
+    description: string;
+    items: EventItem[];
+}
+
+// ================= PUBLICATIONS TYPES =================
+export interface PublicationItem {
+    id: number;
+    title: string;
+    author: string;
+    date: string;
+    category: string;
+    summary: string;
+}
+
+export interface PublicationsData {
+    title: string;
+    description: string;
+    items: PublicationItem[];
+}
+
+// ================= LEGAL UPDATES TYPES =================
+export interface LegalUpdateItem {
+    id: number;
+    title: string;
+    date: string;
+    category: string;
+    summary: string;
+}
+
+export interface LegalUpdatesData {
+    title: string;
+    description: string;
+    items: LegalUpdateItem[];
+}
+
+// ================= SITEMAP TYPES =================
+export interface SitemapLink {
+    name: string;
+    href: string;
+}
+
+export interface SitemapCategory {
+    category: string;
+    links: SitemapLink[];
+}
+
+export interface SitemapData {
+    title: string;
+    description: string;
+    sections: SitemapCategory[];
+}
+
+// ================= MASTER SITE DATA INTERFACE =================
+export interface SiteData {
+    topNavbar: {
+        phone: string;
+        email: string;
+        address: string;
+        socials: { label: string; href: string }[];
+    };
+    navbar: {
+        logo: string;
+        phone: string;
+        phoneLabel: string;
+        navItems: { name: string; href: string; dropdown?: { name: string; href: string }[] }[];
+    };
+    hero: {
+        slides: HeroSlide[];
+    };
+    featureCards: FeatureCard[];
+    about: {
+        tagline: string;
+        title: string;
+        description: string;
+        image: string;
+        features: AboutFeature[];
+    };
+    whyChooseUs: WhyChooseUsData;
+    statsSection: StatsSectionData;
+    ourApproach: OurApproachData;
+    ourValues: OurValuesData;
+    services: ServicesPageData;
+    industries: {
+        titlePart1: string;
+        titlePart2: string;
+        description: string;
+        items: {
+            id: number;
+            slug: string;
+            title: string;
+            description: string;
+            image: string;
+            features: string[];
+            fullContent: string;
+        }[];
+    };
+    team: TeamSectionData;
+    awardsRecognition: AwardsRecognitionSectionData;
+    faqsPage: FaqPageData;
+    careersJob: CareerJobData;
+    officeLocations: OfficeLocationsData;
+    contactPage: ContactPageData;
+    results: ResultsSectionData;
+    testimonials: TestimonialsSectionData;
+    blog: BlogSectionData;
+    footer: {
+        logo: string;
+        tagline: string;
+        practiceAreas: string[];
+        usefulLinks: { label: string; href: string }[];
+        contacts: { icon: string; value: string[] }[];
+        socials: TeamSocial[];
+        copyright: string;
+    };
+    legalPage: LegalPageData;
+    bookConsultation: BookConsultationData;
+    needLegal: NeedLegalData;
+    events: EventsData;
+    publications: PublicationsData;
+    legalUpdates: LegalUpdatesData;
+    sitemap: SitemapData;
+}
+

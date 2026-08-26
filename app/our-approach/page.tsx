@@ -3,7 +3,7 @@
 import OurApproachSection from "@/components/_section/OurApproachSection";
 import StatsSection from "@/components/_section/StatsSection";
 import siteData from "@/data/data.json";
-import PageTopSection from "@/components/PageTopSection";
+import PageTopSection from "@/components/_page/PageTopSection";
 import type { OurApproachData } from "@/types";
 
 const approachData = siteData.ourApproach as OurApproachData;
