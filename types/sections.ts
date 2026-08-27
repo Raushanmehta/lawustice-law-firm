@@ -525,13 +525,40 @@ export interface NeedLegalData {
 }
 
 // ================= EVENTS TYPES =================
+export interface EventSpeaker {
+    name: string;
+    role: string;
+    image: string;
+    bio: string;
+    linkedin?: string;
+    email?: string;
+}
+
+export interface EventTimelineItem {
+    time: string;
+    title: string;
+    description: string;
+}
+
 export interface EventItem {
     id: number;
+    slug?: string;
+    category?: string;
     title: string;
     date: string;
     time: string;
     location: string;
+    author?: string;
+    readTime?: string;
     description: string;
+    fullDescription?: string;
+    image?: string;
+    iconType?: "file" | "laptop" | "calendar" | "shield" | "user" | string;
+    speaker?: string;
+    speakers?: EventSpeaker[];
+    timeline?: EventTimelineItem[];
+    agenda?: string[];
+    linkUrl?: string;
 }
 
 export interface EventsData {
@@ -541,13 +568,42 @@ export interface EventsData {
 }
 
 // ================= PUBLICATIONS TYPES =================
-export interface PublicationItem {
+export interface PublicationLegalFrameworkItem {
     id: number;
     title: string;
-    author: string;
+    description: string;
+}
+
+export interface PublicationRelated {
+    id: number;
+    title: string;
     date: string;
     category: string;
-    summary: string;
+    href: string;
+}
+
+export interface PublicationItem {
+    id: number;
+    slug: string;
+    badge?: string;
+    title: string;
+    date: string;
+    category: string;
+    readTime?: string;
+    image?: string;
+    imageAlt?: string;
+    description: string;
+    intro?: string;
+    introduction?: string;
+    recentDevelopments?: string;
+    conclusion?: string;
+    legalFramework?: PublicationLegalFrameworkItem[];
+    pdf?: {
+        name: string;
+        size: string;
+        href: string;
+    };
+    relatedPublications?: PublicationRelated[];
 }
 
 export interface PublicationsData {
@@ -586,6 +642,62 @@ export interface SitemapData {
     title: string;
     description: string;
     sections: SitemapCategory[];
+}
+
+// ================= CASE STUDIES TYPES =================
+export interface CaseStudyMetaItem {
+    label: string;
+    value: string;
+    icon: string;
+}
+
+export interface CaseStudyApproachItem {
+    title: string;
+}
+
+export interface CaseStudyResultItem {
+    value: string;
+    label: string;
+}
+
+export interface CaseStudyHighlightItem {
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export interface CaseStudyRelated {
+    slug: string;
+    category: string;
+    title: string;
+    description: string;
+    image: string;
+}
+
+export interface CaseStudyItem {
+    id: number;
+    slug: string;
+    category: string;
+    title: string;
+    description: string;
+    image: string;
+    overview: string;
+    challenge: string;
+    approachText: string;
+    approachItems: CaseStudyApproachItem[];
+    resultText: string;
+    resultItems: CaseStudyResultItem[];
+    testimonial: string;
+    testimonialAuthor: string;
+    metaItems: CaseStudyMetaItem[];
+    highlightItems: CaseStudyHighlightItem[];
+    relatedCaseStudies: CaseStudyRelated[];
+}
+
+export interface CaseStudiesData {
+    title: string;
+    description: string;
+    items: CaseStudyItem[];
 }
 
 // ================= MASTER SITE DATA INTERFACE =================
@@ -656,6 +768,7 @@ export interface SiteData {
     events: EventsData;
     publications: PublicationsData;
     legalUpdates: LegalUpdatesData;
+    caseStudies: CaseStudiesData;
     sitemap: SitemapData;
 }
 

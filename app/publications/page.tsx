@@ -1,26 +1,50 @@
 import PageTopSection from "@/components/_page/PageTopSection";
+import PublicationCard from "@/components/PublicationCard";
 import siteData from "@/data/data.json";
+import { PublicationsData } from "@/types/sections";
 
 export default function PublicationsPage() {
-    const { title, description, items } = siteData.publications;
+    const publicationsData = siteData.publications as PublicationsData;
+
     return (
-        <main className="min-h-screen bg-[#fdfbf7]">
-            <PageTopSection title={title} subtitle={description} />
-            <section className="mx-auto max-w-7xl px-5 py-16 sm:px-10 md:px-16 lg:px-20">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                    {items.map((pub) => (
-                        <div key={pub.id} className="rounded-xl border border-[#f0ebde] bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                            <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-[#d9983b]">
-                                <span>{pub.category}</span>
-                                <span>{pub.date}</span>
-                            </div>
-                            <h3 className="mt-3 font-serif text-2xl text-[#0b1329] font-medium">{pub.title}</h3>
-                            <p className="mt-2 text-xs font-medium text-gray-500">By {pub.author}</p>
-                            <p className="mt-4 text-sm leading-relaxed text-gray-600">{pub.summary}</p>
+        <main className="">
+            <PageTopSection title="Publications" />
+
+            <section className="px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
+                <div className="mx-auto ">
+                    {/* Header Info */}
+                    <div
+                        className="mx-auto mb-16 max-w-2xl text-center space-y-4"
+                    >
+                        <div className="flex items-center justify-center gap-3">
+                            <span className="h-px w-10 bg-[#d9983b]" />
+                            <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
+                                Our Publications
+                            </span>
+                            <span className="h-px w-10 bg-[#d9983b]" />
                         </div>
-                    ))}
+
+                        <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
+                            Publications
+                        </h2>
+
+                        <p className="mx-auto max-w-xl text-sm leading-relaxed sm:text-base text-slate-800">
+                            {publicationsData.description}
+                        </p>
+                    </div>
+
+                    {/* Publication Cards Grid */}
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+                        {publicationsData.items.slice(0, 3).map((publication) => (
+                            <PublicationCard
+                                key={publication.id}
+                                publication={publication}
+                            />
+                        ))}
+                    </div>
                 </div>
             </section>
+
         </main>
     );
-}
+}

@@ -70,12 +70,8 @@
         "href": "/pages",
         "dropdown": [
           {
-            "name": "Why Choose us",
-            "href": "/why-choose-us"
-          },
-          {
-            "name": "Our Approach",
-            "href": "/our-approach"
+            "name": "Events",
+            "href": "/events"
           },
           {
             "name": "Our Team",
@@ -86,13 +82,35 @@
             "href": "/industries"
           },
           {
-            "name": "Events",
-            "href": "/events"
-          },
-          {
             "name": "Publications",
             "href": "/publications"
           },
+          {
+            "name": "Why Choose us",
+            "href": "/why-choose-us"
+          },
+          {
+            "name": "Our Approach",
+            "href": "/our-approach"
+          },
+          {
+            "name": "Legal Updates",
+            "href": "/legal-updates"
+          },
+          {
+            "name": "News & Media",
+            "href": "news-media"
+          },
+          {
+            "name": "Case Studies",
+            "href": "/case-studies"
+          }
+        ]
+      },
+      {
+        "name": "About",
+        "href": "/about",
+        "dropdown": [
           {
             "name": "FAQs",
             "href": "/faqs"
@@ -102,14 +120,34 @@
             "href": "/careers"
           },
           {
-            "name": "Legal Updates",
-            "href": "/legal-updates"
+            "name": "Job Detail",
+            "href": "/job-detail"
+          },
+          {
+            "name": "Testimonials",
+            "href": "/testimonials"
+          },
+          {
+            "name": "Privacy Policy",
+            "href": "/privacy-policy"
+          },
+          {
+            "name": "Office Location",
+            "href": "office-locations"
+          },
+          {
+            "name": "Legal Disclaimer",
+            "href": "/legal-disclaimer"
+          },
+          {
+            "name": "Terms & Conditions",
+            "href": "/terms-conditions"
+          },
+          {
+            "name": "Awards & Recognition",
+            "href": "/awards-recognition"
           }
         ]
-      },
-      {
-        "name": "About",
-        "href": "/about"
       },
       {
         "name": "Blog",
@@ -1729,21 +1767,54 @@
       "securityNote": "Your information is safe with us."
     },
     "timeOptions": [
-      { "value": "morning", "label": "Morning (9 AM - 12 PM)" },
-      { "value": "afternoon", "label": "Afternoon (12 PM - 4 PM)" },
-      { "value": "evening", "label": "Evening (4 PM - 7 PM)" }
+      {
+        "value": "morning",
+        "label": "Morning (9 AM - 12 PM)"
+      },
+      {
+        "value": "afternoon",
+        "label": "Afternoon (12 PM - 4 PM)"
+      },
+      {
+        "value": "evening",
+        "label": "Evening (4 PM - 7 PM)"
+      }
     ],
     "practiceAreaOptions": [
-      { "value": "civil", "label": "Civil Litigation" },
-      { "value": "corporate", "label": "Corporate & Commercial" },
-      { "value": "family", "label": "Family Law" },
-      { "value": "criminal", "label": "Criminal Defense" }
+      {
+        "value": "civil",
+        "label": "Civil Litigation"
+      },
+      {
+        "value": "corporate",
+        "label": "Corporate & Commercial"
+      },
+      {
+        "value": "family",
+        "label": "Family Law"
+      },
+      {
+        "value": "criminal",
+        "label": "Criminal Defense"
+      }
     ],
     "referralOptions": [
-      { "value": "google", "label": "Google Search" },
-      { "value": "social", "label": "Social Media" },
-      { "value": "referral", "label": "Friend / Referral" },
-      { "value": "other", "label": "Other" }
+      {
+        "value": "google",
+        "label": "Google Search"
+      },
+      {
+        "value": "social",
+        "label": "Social Media"
+      },
+      {
+        "value": "referral",
+        "label": "Friend / Referral"
+      },
+      {
+        "value": "other",
+        "label": "Other"
+      }
     ],
     "sidebar": {
       "title": "Consultation Information",
@@ -1805,19 +1876,313 @@
     "items": [
       {
         "id": 1,
-        "title": "Corporate Governance & Compliance Summit 2026",
+        "slug": "corporate-governance-compliance-summit",
+        "category": "FIRM NEWS",
+        "title": "Lawustice Expands Corporate Practice with Senior Partner Onboarding",
         "date": "September 15, 2026",
-        "time": "10:00 AM - 4:00 PM IST",
+        "time": "10:00 AM - 04:00 PM IST",
         "location": "Main Conference Hall, Connaught Place, New Delhi / Virtual",
-        "description": "An in-depth session covering key updates in corporate compliance, regulatory frameworks, and risk management strategies."
+        "author": "By Admin",
+        "readTime": "3 min read",
+        "description": "We are pleased to welcome Mr. Arvind Mehra as Senior Partner in our Corporate Law Practice. His expertise will strengthen our ability to deliver exceptional solutions to clients.",
+        "fullDescription": "Lawustice is proud to announce the joining of Mr. Arvind Mehra as a Senior Partner in our Corporate & Commercial Litigation wing. With over two decades of distinguished experience handling high-stakes mergers & acquisitions, regulatory compliance, and cross-border commercial disputes, Mr. Mehra brings invaluable insight to the firm.",
+        "image": "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?auto=format&fit=crop&q=80&w=1000",
+        "iconType": "file",
+        "speaker": "Mr. Arvind Mehra & Senior Legal Partners",
+        "speakers": [
+          {
+            "name": "Adv. Arvind Mehra",
+            "role": "Senior Partner, Corporate Practice",
+            "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300",
+            "bio": "Specializes in corporate governance, M&A transactions, and regulatory compliance with 20+ years experience."
+          },
+          {
+            "name": "Adv. Riya Sharma",
+            "role": "Partner, Commercial Disputes",
+            "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300",
+            "bio": "Expert in risk mitigation, corporate litigation, and board dispute resolution strategies."
+          }
+        ],
+        "timeline": [
+          {
+            "time": "10:00 AM - 10:30 AM",
+            "title": "Registration & Welcome Tea",
+            "description": "Participant check-in, welcome kit distribution, and informal networking."
+          },
+          {
+            "time": "10:30 AM - 11:45 AM",
+            "title": "Keynote: Corporate Practice Expansion",
+            "description": "Overview of strategic advisory services and corporate governance updates."
+          },
+          {
+            "time": "11:45 AM - 01:00 PM",
+            "title": "Panel Discussion: Regulatory Mandates 2026",
+            "description": "Interactive session with corporate partners and regulatory experts."
+          },
+          {
+            "time": "01:00 PM - 02:00 PM",
+            "title": "Networking Luncheon",
+            "description": "Buffet luncheon and attendee interaction."
+          },
+          {
+            "time": "02:00 PM - 03:30 PM",
+            "title": "Q&A & Case Studies",
+            "description": "Practical analysis of recent corporate dispute resolutions."
+          }
+        ],
+        "agenda": [
+          "Welcome note and inauguration",
+          "Keynote address on strategic corporate governance",
+          "Interactive Q&A session with attendees",
+          "Networking luncheon"
+        ],
+        "linkUrl": "/events/corporate-governance-compliance-summit"
       },
       {
         "id": 2,
-        "title": "Intellectual Property Rights Workshop",
+        "slug": "legal-leaders-of-tomorrow-riya-sharma",
+        "category": "MEDIA COVERAGE",
+        "title": "Partner Riya Sharma Featured in ‘Legal Leaders of Tomorrow’ by Legal Era",
         "date": "October 08, 2026",
         "time": "02:00 PM - 05:00 PM IST",
         "location": "Online Webinar",
-        "description": "Practical guidance for startups and established enterprises on patent protection, trademark registration, and IP enforcement."
+        "author": "By Legal Era",
+        "readTime": "5 min read",
+        "description": "Riya Sharma, Partner at Lawustice, shares her insights on the evolving legal landscape and the future of dispute resolution in India.",
+        "fullDescription": "In an exclusive feature with Legal Era Magazine, Partner Riya Sharma delves into modern arbitration strategies, digital courtroom procedures, and the role of AI in streamlining litigation. The article highlights her leadership in landmark commercial litigation cases.",
+        "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=1000",
+        "iconType": "laptop",
+        "speaker": "Riya Sharma (Partner, Dispute Resolution)",
+        "speakers": [
+          {
+            "name": "Adv. Riya Sharma",
+            "role": "Partner, Dispute Resolution",
+            "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300",
+            "bio": "Featured in Legal Era as a pioneer in digital dispute resolution and arbitration."
+          }
+        ],
+        "timeline": [
+          {
+            "time": "02:00 PM - 02:15 PM",
+            "title": "Welcome Address",
+            "description": "Introduction by Legal Era editorial leadership."
+          },
+          {
+            "time": "02:15 PM - 03:30 PM",
+            "title": "Keynote: Future of Commercial Arbitration",
+            "description": "Riya Sharma presents insights on cross-border arbitration trends."
+          },
+          {
+            "time": "03:30 PM - 04:30 PM",
+            "title": "Interactive Audience Discussion",
+            "description": "Live Q&A covering dispute resolution strategies."
+          }
+        ],
+        "agenda": [
+          "Opening remarks by Legal Era editor",
+          "Future of alternative dispute resolution in 2026",
+          "Audience Q&A & key takeaways"
+        ],
+        "linkUrl": "/events/legal-leaders-of-tomorrow-riya-sharma"
+      },
+      {
+        "id": 3,
+        "slug": "emerging-trends-business-law",
+        "category": "EVENTS",
+        "title": "Lawustice Hosts Panel Discussion on Emerging Trends in Business Law",
+        "date": "October 22, 2026",
+        "time": "11:00 AM - 03:00 PM IST",
+        "location": "Grand Ballroom, Taj Palace, New Delhi",
+        "author": "By Admin",
+        "readTime": "4 min read",
+        "description": "The event brought together industry experts and legal professionals to discuss key legal trends shaping businesses in 2026 and beyond.",
+        "fullDescription": "This national panel discussion focuses on the intersection of technology, ESG compliance, and international trade law. Experts from legal academia, corporate boardrooms, and judiciary will discuss emerging regulatory frameworks.",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1000",
+        "iconType": "calendar",
+        "speaker": "Industry Leaders & Lawustice Panelists",
+        "speakers": [
+          {
+            "name": "Adv. Rajesh Kumar",
+            "role": "Senior Partner, Business Law",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300",
+            "bio": "25+ years experience advising Fortune 500 companies on international commerce."
+          },
+          {
+            "name": "Adv. Anita Sharma",
+            "role": "Partner, Corporate Governance",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300",
+            "bio": "Specialist in corporate ESG mandates and regulatory compliance."
+          }
+        ],
+        "timeline": [
+          {
+            "time": "11:00 AM - 11:30 AM",
+            "title": "Registration & Morning Tea",
+            "description": "Welcome tea and participant check-in."
+          },
+          {
+            "time": "11:30 AM - 12:45 PM",
+            "title": "Panel 1: Navigating Global Regulatory Changes",
+            "description": "Discussion on ESG compliance and international trade laws."
+          },
+          {
+            "time": "12:45 PM - 02:00 PM",
+            "title": "Panel 2: Corporate Tech Adoption",
+            "description": "Analysis of AI regulations and data privacy frameworks."
+          },
+          {
+            "time": "02:00 PM - 03:00 PM",
+            "title": "Networking & High Tea",
+            "description": "Participant networking session."
+          }
+        ],
+        "agenda": [
+          "Panel 1: Navigating Global Regulatory Changes",
+          "Panel 2: Corporate ESG & Sustainability Mandates",
+          "Closing remarks & networking high tea"
+        ],
+        "linkUrl": "/events/emerging-trends-business-law"
+      },
+      {
+        "id": 4,
+        "slug": "corporate-law-firm-of-the-year-2026",
+        "category": "ACHIEVEMENTS",
+        "title": "Lawustice Recognized as Top Corporate Law Firm of the Year 2026",
+        "date": "November 05, 2026",
+        "time": "06:00 PM - 09:30 PM IST",
+        "location": "Imperial Hotel, New Delhi",
+        "author": "By Legal Awards",
+        "readTime": "4 min read",
+        "description": "We are honored to be awarded the Corporate Law Firm of the Year for our outstanding dedication, client satisfaction, and professional excellence.",
+        "fullDescription": "Lawustice has been conferred the prestigious Corporate Law Firm of the Year Award at the India Legal Leadership Summit. The recognition reflects our firm's commitment to delivering top-tier legal advice, pioneering deal structures, and achieving client success.",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1000",
+        "iconType": "file",
+        "speaker": "Executive Board & Managing Partners",
+        "speakers": [
+          {
+            "name": "Adv. Raihanul Islam",
+            "role": "Senior Partner & Founder",
+            "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300",
+            "bio": "Founding partner leading the firm's strategic expansion and corporate excellence."
+          }
+        ],
+        "timeline": [
+          {
+            "time": "06:00 PM - 07:00 PM",
+            "title": "Welcome Reception",
+            "description": "Arrival of guests and red carpet reception."
+          },
+          {
+            "time": "07:00 PM - 08:30 PM",
+            "title": "Awards Ceremony & Keynote",
+            "description": "Presentation of Corporate Law Firm of the Year Award."
+          },
+          {
+            "time": "08:30 PM - 09:30 PM",
+            "title": "Gala Dinner & Celebration",
+            "description": "Formal dinner and networking."
+          }
+        ],
+        "agenda": [
+          "Awards presentation ceremony",
+          "Acceptance address by Managing Partner",
+          "Gala dinner & celebration"
+        ],
+        "linkUrl": "/events/corporate-law-firm-of-the-year-2026"
+      },
+      {
+        "id": 5,
+        "slug": "annual-legal-tech-summit-2026",
+        "category": "FIRM NEWS",
+        "title": "Annual Legal Tech Summit Hosted Successfully in New Delhi",
+        "date": "November 20, 2026",
+        "time": "09:30 AM - 05:00 PM IST",
+        "location": "Vigyan Bhawan, New Delhi / Hybrid Stream",
+        "author": "By Admin",
+        "readTime": "6 min read",
+        "description": "Our firm successfully hosted the annual legal tech conference, bringing together tech innovators, lawyers, and policymakers to discuss digital transformation.",
+        "fullDescription": "The Legal Tech Summit 2026 highlighted groundbreaking innovations in automated contract review, legal AI assistants, e-discovery platforms, and cyber law security protocols. Over 500 legal practitioners attended both in-person and online.",
+        "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1000",
+        "iconType": "laptop",
+        "speaker": "Legal Tech Founders & Lawustice Tech Team",
+        "speakers": [
+          {
+            "name": "Adv. Nusrat Jahan",
+            "role": "Associate Lawyer & Tech Policy Lead",
+            "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300",
+            "bio": "Leads law tech policy, AI governance, and automated contract workflows."
+          }
+        ],
+        "timeline": [
+          {
+            "time": "09:30 AM - 10:00 AM",
+            "title": "Keynote: AI in Modern Legal Practice",
+            "description": "Overview of AI assistants and smart contracts."
+          },
+          {
+            "time": "10:00 AM - 12:30 PM",
+            "title": "Live Demo: E-Discovery and Smart Contracts",
+            "description": "Demonstrations of automated legal tools."
+          },
+          {
+            "time": "01:30 PM - 05:00 PM",
+            "title": "Roundtable on Data Privacy Laws",
+            "description": "Expert insights on data protection statutes."
+          }
+        ],
+        "agenda": [
+          "Keynote: AI in Modern Legal Practice",
+          "Live Demo: E-Discovery and Smart Contracts",
+          "Roundtable on Data Privacy Laws"
+        ],
+        "linkUrl": "/events/annual-legal-tech-summit-2026"
+      },
+      {
+        "id": 6,
+        "slug": "global-arbitration-forum-2026",
+        "category": "EVENTS",
+        "title": "Global Arbitration Forum 2026: Key Takeaways for Businesses",
+        "date": "December 10, 2026",
+        "time": "10:00 AM - 02:00 PM IST",
+        "location": "Convention Center, Mumbai / Live Stream",
+        "author": "By Legal Team",
+        "readTime": "5 min read",
+        "description": "Our partners shared expert commentary on international commercial arbitration trends during the global summit held earlier this month.",
+        "fullDescription": "The Global Arbitration Forum provided a comprehensive breakdown of international dispute resolution mechanisms, cross-border award enforcement, and emergency arbitrator powers under international arbitration rules.",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000",
+        "iconType": "calendar",
+        "speaker": "International Arbitrators & Partners",
+        "speakers": [
+          {
+            "name": "Adv. Arvind Mehra",
+            "role": "Senior Partner, Arbitration",
+            "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300",
+            "bio": "Experienced arbitrator handling international commercial disputes."
+          }
+        ],
+        "timeline": [
+          {
+            "time": "10:00 AM - 11:30 AM",
+            "title": "Enforcing Foreign Arbitral Awards",
+            "description": "Key judicial precedents and enforcement procedural steps."
+          },
+          {
+            "time": "11:30 AM - 01:00 PM",
+            "title": "Emergency Injunctions in Commercial Disputes",
+            "description": "Strategies for securing immediate interim relief."
+          },
+          {
+            "time": "01:00 PM - 02:00 PM",
+            "title": "Open Q&A and Networking",
+            "description": "Interactive question and answer session."
+          }
+        ],
+        "agenda": [
+          "Enforcing Foreign Arbitral Awards",
+          "Emergency Injunctions in Commercial Disputes",
+          "Open Q&A and networking"
+        ],
+        "linkUrl": "/events/global-arbitration-forum-2026"
       }
     ]
   },
@@ -1827,19 +2192,196 @@
     "items": [
       {
         "id": 1,
-        "title": "Navigating Cross-Border M&A in South Asia",
-        "author": "Rajesh Kumar, Senior Partner",
-        "date": "August 2026",
-        "category": "Corporate Law",
-        "summary": "Key legal considerations and regulatory approvals required when executing cross-border mergers and acquisitions."
+        "slug": "overview-of-ma-laws-in-india",
+        "badge": "ARTICLE",
+        "title": "Overview of M&A laws in India",
+        "date": "Aug 07, 2026",
+        "category": "Corporate / Mergers & Acquisitions",
+        "readTime": "8 min read",
+        "image": "https://www.iilsindia.com/blogs/wp-content/uploads/2023/10/iils-Web-Blog-2.jpg",
+        "imageAlt": "Overview of M&A laws in India",
+        "description": "An overview of M&A framework in India, key legal developments and practical insights for businesses.",
+        "intro": "An overview of the legal framework governing mergers and acquisitions in India, key regulations, compliance requirements, and recent developments impacting deal-making.",
+        "introduction": "Mergers and Acquisitions (M&A) continue to play a pivotal role in India's economic growth and corporate restructuring. The legal framework governing M&A transactions in India is multi-faceted, involving company law, competition law, securities regulations, foreign exchange laws, taxation, and sector-specific regulations.",
+        "recentDevelopments": "Recent amendments and policy updates aim to simplify procedures, improve transparency, and promote ease of doing business for M&A transactions in India.",
+        "conclusion": "A clear understanding of the legal landscape is essential for structuring successful M&A deals and mitigating regulatory risks.",
+        "legalFramework": [
+          {
+            "id": 1,
+            "title": "Companies Act, 2013",
+            "description": "The primary legislation governing corporate mergers, amalgamations, and acquisitions in India."
+          },
+          {
+            "id": 2,
+            "title": "Competition Act, 2002",
+            "description": "Regulates combinations and acquisitions that may have an appreciable adverse effect on competition."
+          },
+          {
+            "id": 3,
+            "title": "SEBI Regulations",
+            "description": "Disclosure and compliance requirements for listed companies and substantial acquisitions."
+          },
+          {
+            "id": 4,
+            "title": "Foreign Exchange Management Act (FEMA)",
+            "description": "Governs foreign investments and cross-border transactions."
+          },
+          {
+            "id": 5,
+            "title": "Taxation Laws",
+            "description": "Provides the framework for tax implications arising from M&A transactions."
+          }
+        ],
+        "pdf": {
+          "name": "Overview of M&A laws in India",
+          "size": "820 KB",
+          "href": "#"
+        },
+        "relatedPublications": [
+          {
+            "id": 2,
+            "title": "Data Confidentiality as a Corporate Governance Imperative Protecting the Company's Invisible Assets",
+            "date": "Aug 07, 2026",
+            "category": "Corporate / Data Privacy",
+            "href": "/publications/data-confidentiality-as-a-corporate-governance-imperative"
+          },
+          {
+            "id": 3,
+            "title": "Copyright Puts AI on Trial: Key Takeaways from ANI v. OpenAI",
+            "date": "Aug 05, 2026",
+            "category": "IP Law / AI",
+            "href": "/publications/copyright-puts-ai-on-trial-key-takeaways-from-ani-v-openai"
+          },
+          {
+            "id": 4,
+            "title": "FCRA AMENDMENT RULES, 2026: INDIA REVAMPS THE FCRA REGIME",
+            "date": "Aug 04, 2026",
+            "category": "Banking & Finance",
+            "href": "/publications/fcra-amendment-rules-2026-india-revamps-the-fcra-regime"
+          }
+        ]
       },
       {
         "id": 2,
-        "title": "Employment Contracts & Labor Law Compliance Guide",
-        "author": "Anita Sharma, Partner",
-        "date": "July 2026",
-        "category": "Employment Law",
-        "summary": "Essential clauses, non-compete enforcement, and dispute resolution mechanisms for corporate employers."
+        "slug": "data-confidentiality-as-a-corporate-governance-imperative",
+        "badge": "GOVERNANCE",
+        "title": "Data Confidentiality as a Corporate Governance Imperative Protecting the Company's Invisible Assets",
+        "date": "Aug 07, 2026",
+        "category": "Corporate / Data Privacy & Protection",
+        "readTime": "6 min read",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDLlNfDNLx0jksU5osZJto3O79LVZ6H6oO0vT9BiZNA&s=10",
+        "imageAlt": "Data Confidentiality as a Corporate Governance Imperative",
+        "description": "Understanding how corporate boards and executive leadership must treat data confidentiality as a strategic corporate governance priority to protect intangible assets.",
+        "intro": "Data confidentiality is no longer just an IT or security issue; it has evolved into a central tenet of corporate governance, fiduciary responsibility, and enterprise risk management.",
+        "introduction": "In the modern digital economy, a corporation's invisible assets—trade secrets, proprietary code, customer data, and strategic documentation—often hold far greater value than its physical property. Boards of directors and executive officers are now legally and operationally accountable for implementing robust confidentiality protocols.",
+        "recentDevelopments": "With stricter enforcement from regulatory bodies and enhanced personal liability for directors under corporate and data protection statutes, organizations must establish cross-functional data governance committees.",
+        "conclusion": "Protecting invisible assets requires a top-down culture of data privacy, comprehensive non-disclosure frameworks, and continuous board oversight.",
+        "legalFramework": [
+          {
+            "id": 1,
+            "title": "Digital Personal Data Protection (DPDP) Act",
+            "description": "Mandates strict organizational measures and board accountability for safeguarding personal and confidential data."
+          },
+          {
+            "id": 2,
+            "title": "Fiduciary Duties under Companies Act",
+            "description": "Requires directors to exercise due care, skill, and diligence in safeguarding corporate assets including intellectual property."
+          },
+          {
+            "id": 3,
+            "title": "Information Technology Security Rules",
+            "description": "Sets baseline technical standards and breach reporting requirements for commercial enterprises."
+          }
+        ],
+        "pdf": {
+          "name": "Data Confidentiality Imperative",
+          "size": "650 KB",
+          "href": "#"
+        },
+        "relatedPublications": [
+          {
+            "id": 1,
+            "title": "Overview of M&A laws in India",
+            "date": "Aug 07, 2026",
+            "category": "Corporate / Mergers & Acquisitions",
+            "href": "/publications/overview-of-ma-laws-in-india"
+          },
+          {
+            "id": 3,
+            "title": "Copyright Puts AI on Trial: Key Takeaways from ANI v. OpenAI",
+            "date": "Aug 05, 2026",
+            "category": "IP Law / AI",
+            "href": "/publications/copyright-puts-ai-on-trial-key-takeaways-from-ani-v-openai"
+          },
+          {
+            "id": 4,
+            "title": "FCRA AMENDMENT RULES, 2026: INDIA REVAMPS THE FCRA REGIME",
+            "date": "Aug 04, 2026",
+            "category": "Banking & Finance",
+            "href": "/publications/fcra-amendment-rules-2026-india-revamps-the-fcra-regime"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "copyright-puts-ai-on-trial-key-takeaways-from-ani-v-openai",
+        "badge": "INTELLECTUAL PROPERTY",
+        "title": "Copyright Puts AI on Trial: Key Takeaways from ANI v. OpenAI",
+        "date": "Aug 05, 2026",
+        "category": "IP Law / Artificial Intelligence",
+        "readTime": "10 min read",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20221111/pngtree-copyright-law-document-and-a-judge-gavel-wooden-document-paper-photo-image_27182196.jpg",
+        "imageAlt": "Copyright Puts AI on Trial",
+        "description": "Key takeaways and legal ramifications from the landmark ANI v. OpenAI copyright infringement lawsuit impacting generative AI training models.",
+        "intro": "The ongoing legal battle in ANI v. OpenAI represents a watershed moment for copyright jurisprudence, content creators, and AI development companies operating in India and global jurisdictions.",
+        "introduction": "As Generative AI systems ingest massive volumes of proprietary news articles, literature, and media for model training, courts are confronted with novel questions: Does AI model ingestion constitute fair dealing, or does it amount to systemic copyright infringement?",
+        "recentDevelopments": "Judicial scrutiny is increasingly focusing on data scraping practices, opt-out mechanisms for publishers, and whether machine learning outputs undermine the market value of original works.",
+        "conclusion": "AI developers and content publishers must prepare for licensing frameworks, technical watermarking standards, and revised IP compliance protocols as precedent develops.",
+        "legalFramework": [
+          {
+            "id": 1,
+            "title": "Copyright Act, 1957",
+            "description": "Defines exclusive rights of news publishers and exceptions under fair dealing provisions."
+          },
+          {
+            "id": 2,
+            "title": "Doctrine of Fair Dealing vs. Fair Use",
+            "description": "Analyzes whether commercial AI model training falls under statutory educational or research exemptions."
+          },
+          {
+            "id": 3,
+            "title": "Intermediary Liability Guidelines",
+            "description": "Evaluates platform liability for hosting or outputting copyright-infringing content generated by AI."
+          }
+        ],
+        "pdf": {
+          "name": "ANI v. OpenAI Key Takeaways",
+          "size": "940 KB",
+          "href": "#"
+        },
+        "relatedPublications": [
+          {
+            "id": 1,
+            "title": "Overview of M&A laws in India",
+            "date": "Aug 07, 2026",
+            "category": "Corporate / Mergers & Acquisitions",
+            "href": "/publications/overview-of-ma-laws-in-india"
+          },
+          {
+            "id": 2,
+            "title": "Data Confidentiality as a Corporate Governance Imperative Protecting the Company's Invisible Assets",
+            "date": "Aug 07, 2026",
+            "category": "Corporate / Data Privacy",
+            "href": "/publications/data-confidentiality-as-a-corporate-governance-imperative"
+          },
+          {
+            "id": 4,
+            "title": "FCRA AMENDMENT RULES, 2026: INDIA REVAMPS THE FCRA REGIME",
+            "date": "Aug 04, 2026",
+            "category": "Banking & Finance",
+            "href": "/publications/fcra-amendment-rules-2026-india-revamps-the-fcra-regime"
+          }
+        ]
       }
     ]
   },
@@ -1863,6 +2405,252 @@
       }
     ]
   },
+  "caseStudies": {
+    "title": "Case Studies",
+    "description": "Real-world legal victories — explore how our attorneys have delivered results for clients across practice areas.",
+    "items": [
+      {
+        "id": 1,
+        "slug": "successful-merger-multi-state-company",
+        "category": "CORPORATE & COMMERCIAL",
+        "title": "Successful Merger for a Multi-State Company",
+        "description": "We advised a leading services company on a complex merger deal, ensuring regulatory compliance and minimizing business disruption across multiple states.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4E-qX4qXAcXhHD-iMowMcCIJE9pWXmEaZWrg1ECntkYVF5erjdA1dCw&s=10",
+        "overview": "Our client, a rapidly growing professional services company, acquired three regional firms across different states to expand its footprint and service offerings. The transaction involved complex regulatory approvals, multi-state compliance, and the integration of operational and legal frameworks.",
+        "challenge": "The merger involved multiple jurisdictions, each with unique regulatory requirements. The client needed to ensure a smooth transition while minimizing downtime, retaining key talent, and maintaining client trust throughout the process.",
+        "approachText": "Our legal team provided end-to-end support, including due diligence, contract review, regulatory filings, and risk assessment. We developed a tailored integration plan that addressed legal, operational, and compliance considerations in each state.",
+        "approachItems": [
+          { "title": "Comprehensive Due Diligence" },
+          { "title": "Risk Mitigation Strategy" },
+          { "title": "Regulatory Compliance Management" },
+          { "title": "Integration & Implementation Support" }
+        ],
+        "resultText": "The merger was completed seamlessly across all states, with all regulatory approvals obtained on time. The client achieved operational synergies quickly and saw a 25% increase in market expansion within the first year.",
+        "resultItems": [
+          { "value": "100%", "label": "Regulatory Approvals Obtained On Time" },
+          { "value": "25%", "label": "Increase in Market Expansion" },
+          { "value": "Seamless", "label": "Integration Across All States" }
+        ],
+        "testimonial": "Their expertise and attention to detail were instrumental in making a complex multi-state merger feel seamless and efficient.",
+        "testimonialAuthor": "CEO, Leading Services Company",
+        "metaItems": [
+          { "label": "Industry", "value": "Professional Services", "icon": "FaBuilding" },
+          { "label": "Client", "value": "Leading Services Co.", "icon": "FaUserTie" },
+          { "label": "Duration", "value": "6 Months", "icon": "FaCalendarAlt" },
+          { "label": "Location", "value": "Multiple States", "icon": "FaMapMarkerAlt" }
+        ],
+        "highlightItems": [
+          { "title": "Multi-State Compliance", "description": "Navigated complex regulatory landscapes across multiple states.", "icon": "FaFileAlt" },
+          { "title": "Risk Mitigation", "description": "Identified and mitigated potential legal and operational risks.", "icon": "FaShieldAlt" },
+          { "title": "Seamless Integration", "description": "Ensured smooth integration of business operations and legal frameworks.", "icon": "FaCogs" },
+          { "title": "Business Growth", "description": "Enabled the client to expand market presence and achieve significant growth.", "icon": "FaChartLine" }
+        ],
+        "relatedCaseStudies": [
+          {
+            "slug": "resolving-high-value-property-dispute",
+            "category": "REAL ESTATE",
+            "title": "Resolving a High-Value Property Dispute",
+            "description": "Successfully defended client rights in a complex multi-million dollar real estate litigation.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDLlNfDNLx0jksU5osZJto3O79LVZ6H6oO0vT9BiZNA&s=10"
+          },
+          {
+            "slug": "favorable-verdict-commercial-litigation",
+            "category": "LITIGATION",
+            "title": "Favorable Verdict in a Commercial Litigation",
+            "description": "Represented corporate entity in high-stakes breach of contract dispute.",
+            "image": "https://png.pngtree.com/thumb_back/fh260/background/20221111/pngtree-copyright-law-document-and-a-judge-gavel-wooden-document-paper-photo-image_27182196.jpg"
+          },
+          {
+            "slug": "securing-best-outcome-child-custody",
+            "category": "FAMILY LAW",
+            "title": "Securing the Best Outcome for Child Custody",
+            "description": "Guided client through delicate family proceedings with a favorable custody arrangement.",
+            "image": "https://www.iilsindia.com/blogs/wp-content/uploads/2023/10/iils-Web-Blog-2.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "resolving-high-value-property-dispute",
+        "category": "REAL ESTATE",
+        "title": "Resolving a High-Value Property Dispute",
+        "description": "Successfully defended client rights in a complex multi-million dollar real estate litigation involving contested ownership and title fraud.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDLlNfDNLx0jksU5osZJto3O79LVZ6H6oO0vT9BiZNA&s=10",
+        "overview": "Our client, a real estate developer, faced a high-value property dispute involving contested title, fraudulent documents, and multiple competing claimants. The matter required urgent interim relief and a comprehensive litigation strategy.",
+        "challenge": "The property dispute spanned multiple courts with conflicting interim orders. The client faced financial loss, project delays, and reputational risk due to the uncertainty surrounding ownership rights.",
+        "approachText": "We conducted an exhaustive title investigation, engaged forensic document experts, and filed for immediate injunctive relief. Our team coordinated across civil, criminal, and revenue court proceedings simultaneously.",
+        "approachItems": [
+          { "title": "Title Verification & Forensic Analysis" },
+          { "title": "Emergency Injunction Filing" },
+          { "title": "Multi-Forum Litigation Strategy" },
+          { "title": "Negotiated Settlement Framework" }
+        ],
+        "resultText": "The court ruled in favour of our client, declaring clear title and ordering compensation from the opposing parties. The property project resumed within 3 months of the verdict.",
+        "resultItems": [
+          { "value": "₹12Cr+", "label": "Property Value Recovered" },
+          { "value": "3 Months", "label": "Time to Project Resumption" },
+          { "value": "Full Title", "label": "Clear Ownership Declared by Court" }
+        ],
+        "testimonial": "We were on the verge of losing everything. Their strategy and persistence turned the case completely in our favor.",
+        "testimonialAuthor": "Managing Director, Real Estate Developer",
+        "metaItems": [
+          { "label": "Industry", "value": "Real Estate", "icon": "FaBuilding" },
+          { "label": "Client", "value": "Property Developer", "icon": "FaUserTie" },
+          { "label": "Duration", "value": "14 Months", "icon": "FaCalendarAlt" },
+          { "label": "Location", "value": "Delhi & NCR", "icon": "FaMapMarkerAlt" }
+        ],
+        "highlightItems": [
+          { "title": "Title Fraud Exposed", "description": "Identified and proved fraudulent documentation through forensic analysis.", "icon": "FaShieldAlt" },
+          { "title": "Emergency Relief Secured", "description": "Obtained injunction preventing further transfer of disputed property.", "icon": "FaFileAlt" },
+          { "title": "Multi-Court Strategy", "description": "Coordinated simultaneous civil, criminal, and revenue proceedings.", "icon": "FaCogs" },
+          { "title": "Full Recovery", "description": "Client regained complete ownership and received compensation.", "icon": "FaChartLine" }
+        ],
+        "relatedCaseStudies": [
+          {
+            "slug": "successful-merger-multi-state-company",
+            "category": "CORPORATE & COMMERCIAL",
+            "title": "Successful Merger for a Multi-State Company",
+            "description": "We advised a leading services company on a complex multi-state merger with full regulatory compliance.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4E-qX4qXAcXhHD-iMowMcCIJE9pWXmEaZWrg1ECntkYVF5erjdA1dCw&s=10"
+          },
+          {
+            "slug": "favorable-verdict-commercial-litigation",
+            "category": "LITIGATION",
+            "title": "Favorable Verdict in a Commercial Litigation",
+            "description": "Represented corporate entity in high-stakes breach of contract dispute.",
+            "image": "https://png.pngtree.com/thumb_back/fh260/background/20221111/pngtree-copyright-law-document-and-a-judge-gavel-wooden-document-paper-photo-image_27182196.jpg"
+          },
+          {
+            "slug": "securing-best-outcome-child-custody",
+            "category": "FAMILY LAW",
+            "title": "Securing the Best Outcome for Child Custody",
+            "description": "Guided client through delicate family proceedings with a favorable custody arrangement.",
+            "image": "https://www.iilsindia.com/blogs/wp-content/uploads/2023/10/iils-Web-Blog-2.jpg"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "favorable-verdict-commercial-litigation",
+        "category": "LITIGATION",
+        "title": "Favorable Verdict in a Commercial Litigation",
+        "description": "Represented a corporate entity in a high-stakes breach of contract dispute, securing a landmark favorable verdict and substantial damages.",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20221111/pngtree-copyright-law-document-and-a-judge-gavel-wooden-document-paper-photo-image_27182196.jpg",
+        "overview": "A mid-sized manufacturing company engaged us after a major distributor breached a long-term supply agreement worth ₹8 crore, causing severe cash flow disruption and reputational damage with downstream buyers.",
+        "challenge": "The opposing party disputed the contract's enforceability, raised counterclaims of defective goods, and sought to delay proceedings through repeated adjournments. Our client needed a swift, decisive legal outcome.",
+        "approachText": "We built an airtight case based on documented communications, delivery records, and expert testimony. Our team pre-empted delay tactics and moved for summary judgment on uncontested issues.",
+        "approachItems": [
+          { "title": "Documentary Evidence Compilation" },
+          { "title": "Expert Witness Coordination" },
+          { "title": "Summary Judgment Motion" },
+          { "title": "Counterclaim Defense Strategy" }
+        ],
+        "resultText": "The court delivered a clear judgment in favour of our client, awarding full contract damages plus interest. The counterclaims were dismissed entirely. The case concluded in under 11 months.",
+        "resultItems": [
+          { "value": "₹8Cr+", "label": "Damages Awarded" },
+          { "value": "11 Months", "label": "Case Duration" },
+          { "value": "0", "label": "Counterclaims Upheld" }
+        ],
+        "testimonial": "They were thorough, aggressive where needed, and always kept us informed. The outcome exceeded our expectations.",
+        "testimonialAuthor": "CEO, Manufacturing Corporation",
+        "metaItems": [
+          { "label": "Industry", "value": "Manufacturing", "icon": "FaBuilding" },
+          { "label": "Client", "value": "Corporate Entity", "icon": "FaUserTie" },
+          { "label": "Duration", "value": "11 Months", "icon": "FaCalendarAlt" },
+          { "label": "Location", "value": "Mumbai, India", "icon": "FaMapMarkerAlt" }
+        ],
+        "highlightItems": [
+          { "title": "Contract Enforcement", "description": "Proved enforceability of disputed long-term supply agreement.", "icon": "FaFileAlt" },
+          { "title": "Counterclaim Defeat", "description": "Successfully dismissed all counterclaims filed by opposing party.", "icon": "FaShieldAlt" },
+          { "title": "Expert Testimony", "description": "Coordinated industry experts to validate quality and delivery standards.", "icon": "FaCogs" },
+          { "title": "Full Recovery", "description": "Client recovered complete damages plus statutory interest.", "icon": "FaChartLine" }
+        ],
+        "relatedCaseStudies": [
+          {
+            "slug": "successful-merger-multi-state-company",
+            "category": "CORPORATE & COMMERCIAL",
+            "title": "Successful Merger for a Multi-State Company",
+            "description": "We advised a leading services company on a complex multi-state merger.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4E-qX4qXAcXhHD-iMowMcCIJE9pWXmEaZWrg1ECntkYVF5erjdA1dCw&s=10"
+          },
+          {
+            "slug": "resolving-high-value-property-dispute",
+            "category": "REAL ESTATE",
+            "title": "Resolving a High-Value Property Dispute",
+            "description": "Successfully defended client rights in complex multi-million dollar real estate litigation.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDLlNfDNLx0jksU5osZJto3O79LVZ6H6oO0vT9BiZNA&s=10"
+          },
+          {
+            "slug": "securing-best-outcome-child-custody",
+            "category": "FAMILY LAW",
+            "title": "Securing the Best Outcome for Child Custody",
+            "description": "Guided client through delicate family proceedings with a favorable custody arrangement.",
+            "image": "https://www.iilsindia.com/blogs/wp-content/uploads/2023/10/iils-Web-Blog-2.jpg"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "securing-best-outcome-child-custody",
+        "category": "FAMILY LAW",
+        "title": "Securing the Best Outcome for Child Custody",
+        "description": "Guided a parent through a highly sensitive child custody dispute, achieving a court-ordered shared custody arrangement that protected the child's best interests.",
+        "image": "https://www.iilsindia.com/blogs/wp-content/uploads/2023/10/iils-Web-Blog-2.jpg",
+        "overview": "Our client, a working professional, sought primary custody of their two children following a contested separation. The opposing party made serious allegations and the matter required sensitivity, speed, and expert handling of both legal and welfare considerations.",
+        "challenge": "False allegations of neglect were filed against our client. The matter involved child welfare authorities, school testimonies, and multiple interim hearings. The emotional complexity required both legal precision and compassionate advocacy.",
+        "approachText": "We filed for interim custody backed by character references, school records, and independent welfare reports. Our team worked with family counselors and coordinated with child welfare officers to present a holistic case.",
+        "approachItems": [
+          { "title": "Interim Custody Application" },
+          { "title": "Welfare Report Coordination" },
+          { "title": "Counter-Allegations Defense" },
+          { "title": "Mediation & Parenting Plan" }
+        ],
+        "resultText": "The court granted our client primary residence rights with structured shared custody. All allegations against our client were dismissed, and a detailed parenting plan was approved.",
+        "resultItems": [
+          { "value": "Primary", "label": "Residence Rights Granted" },
+          { "value": "Dismissed", "label": "All Allegations Against Client" },
+          { "value": "Approved", "label": "Detailed Parenting Plan" }
+        ],
+        "testimonial": "They fought for my children as if they were their own. I could not have navigated this without their support and expertise.",
+        "testimonialAuthor": "Parent, Family Law Client",
+        "metaItems": [
+          { "label": "Practice Area", "value": "Family Law", "icon": "FaBuilding" },
+          { "label": "Client", "value": "Parent (Confidential)", "icon": "FaUserTie" },
+          { "label": "Duration", "value": "9 Months", "icon": "FaCalendarAlt" },
+          { "label": "Location", "value": "New Delhi, India", "icon": "FaMapMarkerAlt" }
+        ],
+        "highlightItems": [
+          { "title": "Interim Relief Secured", "description": "Obtained interim custody order within the first two hearings.", "icon": "FaShieldAlt" },
+          { "title": "Allegations Dismissed", "description": "Systematically refuted all false allegations with documented evidence.", "icon": "FaFileAlt" },
+          { "title": "Welfare-First Approach", "description": "Collaborated with counselors and welfare officers for the child's benefit.", "icon": "FaCogs" },
+          { "title": "Parenting Plan Approved", "description": "Court approved a structured shared custody and visitation schedule.", "icon": "FaChartLine" }
+        ],
+        "relatedCaseStudies": [
+          {
+            "slug": "successful-merger-multi-state-company",
+            "category": "CORPORATE & COMMERCIAL",
+            "title": "Successful Merger for a Multi-State Company",
+            "description": "We advised a leading services company on a complex multi-state merger.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4E-qX4qXAcXhHD-iMowMcCIJE9pWXmEaZWrg1ECntkYVF5erjdA1dCw&s=10"
+          },
+          {
+            "slug": "resolving-high-value-property-dispute",
+            "category": "REAL ESTATE",
+            "title": "Resolving a High-Value Property Dispute",
+            "description": "Successfully defended client rights in complex real estate litigation.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDLlNfDNLx0jksU5osZJto3O79LVZ6H6oO0vT9BiZNA&s=10"
+          },
+          {
+            "slug": "favorable-verdict-commercial-litigation",
+            "category": "LITIGATION",
+            "title": "Favorable Verdict in a Commercial Litigation",
+            "description": "Represented corporate entity in high-stakes breach of contract dispute.",
+            "image": "https://png.pngtree.com/thumb_back/fh260/background/20221111/pngtree-copyright-law-document-and-a-judge-gavel-wooden-document-paper-photo-image_27182196.jpg"
+          }
+        ]
+      }
+    ]
+  },
   "sitemap": {
     "title": "Website Sitemap",
     "description": "Overview of all pages and resources available on the Lawfirm website.",
@@ -1870,45 +2658,117 @@
       {
         "category": "Main Pages",
         "links": [
-          { "name": "Home", "href": "/" },
-          { "name": "About Us", "href": "/about" },
-          { "name": "Why Choose Us", "href": "/why-choose-us" },
-          { "name": "Our Approach", "href": "/our-approach" },
-          { "name": "Our Team", "href": "/team" },
-          { "name": "Contact Us", "href": "/contact-us" }
+          {
+            "name": "Home",
+            "href": "/"
+          },
+          {
+            "name": "About Us",
+            "href": "/about"
+          },
+          {
+            "name": "Why Choose Us",
+            "href": "/why-choose-us"
+          },
+          {
+            "name": "Our Approach",
+            "href": "/our-approach"
+          },
+          {
+            "name": "Our Team",
+            "href": "/team"
+          },
+          {
+            "name": "Contact Us",
+            "href": "/contact-us"
+          }
         ]
       },
       {
         "category": "Services & Practice Areas",
         "links": [
-          { "name": "All Services", "href": "/services" },
-          { "name": "Corporate Law", "href": "/services/corporate-law" },
-          { "name": "Criminal Law", "href": "/services/criminal-law" },
-          { "name": "Family Law", "href": "/services/family-law" },
-          { "name": "Property Law", "href": "/services/property-law" },
-          { "name": "Contract Drafting", "href": "/services/contract-drafting" },
-          { "name": "Civil Litigation", "href": "/services/civil-litigation" }
+          {
+            "name": "All Services",
+            "href": "/services"
+          },
+          {
+            "name": "Corporate Law",
+            "href": "/services/corporate-law"
+          },
+          {
+            "name": "Criminal Law",
+            "href": "/services/criminal-law"
+          },
+          {
+            "name": "Family Law",
+            "href": "/services/family-law"
+          },
+          {
+            "name": "Property Law",
+            "href": "/services/property-law"
+          },
+          {
+            "name": "Contract Drafting",
+            "href": "/services/contract-drafting"
+          },
+          {
+            "name": "Civil Litigation",
+            "href": "/services/civil-litigation"
+          }
         ]
       },
       {
         "category": "Resources & Insights",
         "links": [
-          { "name": "Blog", "href": "/blog" },
-          { "name": "FAQs", "href": "/faqs" },
-          { "name": "Industries", "href": "/industries" },
-          { "name": "Careers", "href": "/careers" },
-          { "name": "Book Consultation", "href": "/book-consultation" },
-          { "name": "Events", "href": "/events" },
-          { "name": "Publications", "href": "/publications" },
-          { "name": "Legal Updates", "href": "/legal-updates" }
+          {
+            "name": "Blog",
+            "href": "/blog"
+          },
+          {
+            "name": "FAQs",
+            "href": "/faqs"
+          },
+          {
+            "name": "Industries",
+            "href": "/industries"
+          },
+          {
+            "name": "Careers",
+            "href": "/careers"
+          },
+          {
+            "name": "Book Consultation",
+            "href": "/book-consultation"
+          },
+          {
+            "name": "Events",
+            "href": "/events"
+          },
+          {
+            "name": "Publications",
+            "href": "/publications"
+          },
+          {
+            "name": "Legal Updates",
+            "href": "/legal-updates"
+          }
         ]
       },
       {
         "category": "Legal & Terms",
         "links": [
-          { "name": "Terms & Conditions", "href": "/terms-conditions" },
-          { "name": "Privacy Policy", "href": "/privacy-policy" },
-          { "name": "Legal Disclaimer", "href": "/legal-disclaimer" }
+          {
+            "name": "Terms & Conditions",
+            "href": "/terms-conditions"
+          },
+          {
+            "name": "Privacy Policy",
+            "href": "/privacy-policy"
+          },
+          {
+            "name": "Legal Disclaimer",
+            "href": "/legal-disclaimer"
+          }
         ]
       }
     ]

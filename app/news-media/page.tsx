@@ -3,13 +3,12 @@ import EventPageSection from "@/components/_section/EventPageSection";
 import siteData from "@/data/data.json";
 import { EventsData } from "@/types/sections";
 
-export default function EventsPage() {
+export default function NewsAndMediaPage() {
     const eventsData = siteData.events as EventsData;
-
     return (
-        <main className="min-h-screen bg-[#fdfbf7]">
-            <PageTopSection title="Events" />
+        <main>
+            <PageTopSection title="News & Media" />
             <EventPageSection eventsData={eventsData} />
         </main>
-    );
+    )
 }
