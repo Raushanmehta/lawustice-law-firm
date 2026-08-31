@@ -215,159 +215,110 @@ export default function Navbar() {
             <AnimatePresence>
                 {mobileMenu && (
                     <motion.div
-                        initial={{
-                            opacity: 0,
-                            height: 0,
-                        }}
-                        animate={{
-                            opacity: 1,
-                            height: "auto",
-                        }}
-                        exit={{
-                            opacity: 0,
-                            height: 0,
-                        }}
-                        transition={{
-                            duration: 0.25,
-                            ease: "easeInOut",
-                        }}
-                        className="overflow-hidden border-t border-white/10 bg-[#031224] shadow-lg lg:hidden"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.28, ease: "easeInOut" }}
+                        className="overflow-hidden border-t border-white/10 bg-[#051A2F] shadow-2xl lg:hidden"
                     >
-                        <nav className="px-5 py-5">
-                            <ul className="space-y-1">
-                                {navItems.map((item) => (
-                                    <li
+                        <nav className="px-5 pb-6 pt-3">
+                            <ul className="space-y-0">
+                                {navItems.map((item, idx) => (
+                                    <motion.li
                                         key={item.name}
+                                        initial={{ opacity: 0, x: -16 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.2, delay: idx * 0.05 }}
                                         className="border-b border-white/10 last:border-0"
                                     >
-                                        {/* Mobile Nav Item */}
+                                        {/* Mobile Nav Item Row */}
                                         <div className="flex items-center justify-between">
                                             <Link
                                                 href={item.href || "#"}
                                                 onClick={() => {
-                                                    if (!item.dropdown) {
-                                                        closeMobileMenu();
-                                                    }
+                                                    if (!item.dropdown) closeMobileMenu();
                                                 }}
-                                                className="flex-1 py-3 text-sm font-medium text-white/90 transition-colors duration-200 hover:text-[#DAA734]"
+                                                className="flex-1 py-3.5 text-[15px] font-medium text-white transition-colors duration-200 hover:text-[#DAA734]"
                                             >
                                                 {item.name}
                                             </Link>
 
-                                            {/* Mobile Dropdown Button */}
+                                            {/* Chevron toggle for dropdown */}
                                             {item.dropdown && (
                                                 <button
                                                     type="button"
-                                                    onClick={() =>
-                                                        toggleDropdown(
-                                                            item.name
-                                                        )
-                                                    }
-                                                    className="p-3 text-white/60 transition-colors duration-200 hover:text-[#DAA734]"
+                                                    onClick={() => toggleDropdown(item.name)}
+                                                    className="p-3 text-white/50 transition-colors duration-200 hover:text-[#DAA734]"
                                                     aria-label={`Toggle ${item.name} submenu`}
-                                                    aria-expanded={
-                                                        openDropdown ===
-                                                        item.name
-                                                    }
+                                                    aria-expanded={openDropdown === item.name}
                                                 >
                                                     <motion.div
-                                                        animate={{
-                                                            rotate:
-                                                                openDropdown ===
-                                                                    item.name
-                                                                    ? 180
-                                                                    : 0,
-                                                        }}
-                                                        transition={{
-                                                            duration: 0.2,
-                                                        }}
+                                                        animate={{ rotate: openDropdown === item.name ? 180 : 0 }}
+                                                        transition={{ duration: 0.2 }}
                                                     >
-                                                        <ChevronDown
-                                                            size={18}
-                                                        />
+                                                        <ChevronDown size={18} />
                                                     </motion.div>
                                                 </button>
                                             )}
                                         </div>
 
-                                        {/* ================= MOBILE DROPDOWN ================= */}
+                                        {/* Mobile Dropdown */}
                                         <AnimatePresence>
-                                            {item.dropdown &&
-                                                openDropdown ===
-                                                item.name && (
-                                                    <motion.div
-                                                        initial={{
-                                                            opacity: 0,
-                                                            height: 0,
-                                                        }}
-                                                        animate={{
-                                                            opacity: 1,
-                                                            height: "auto",
-                                                        }}
-                                                        exit={{
-                                                            opacity: 0,
-                                                            height: 0,
-                                                        }}
-                                                        transition={{
-                                                            duration: 0.2,
-                                                        }}
-                                                        className="ml-3 mb-2 overflow-hidden border-l-2 border-[#DAA734] pl-4"
-                                                    >
-                                                        {item.dropdown.map(
-                                                            (
-                                                                dropdownItem
-                                                            ) => (
-                                                                <Link
-                                                                    key={
-                                                                        dropdownItem.name
-                                                                    }
-                                                                    href={
-                                                                        dropdownItem.href
-                                                                    }
-                                                                    onClick={
-                                                                        closeMobileMenu
-                                                                    }
-                                                                    className="block py-2 text-sm text-gray-600 transition-colors duration-200 hover:text-[#DAA734]"
-                                                                >
-                                                                    {
-                                                                        dropdownItem.name
-                                                                    }
-                                                                </Link>
-                                                            )
-                                                        )}
-                                                    </motion.div>
-                                                )}
+                                            {item.dropdown && openDropdown === item.name && (
+                                                <motion.div
+                                                    initial={{ opacity: 0, height: 0 }}
+                                                    animate={{ opacity: 1, height: "auto" }}
+                                                    exit={{ opacity: 0, height: 0 }}
+                                                    transition={{ duration: 0.22 }}
+                                                    className="mb-3 ml-3 overflow-hidden border-l-2 border-[#DAA734] pl-4"
+                                                >
+                                                    {item.dropdown.map((dropdownItem) => (
+                                                        <Link
+                                                            key={dropdownItem.name}
+                                                            href={dropdownItem.href}
+                                                            onClick={closeMobileMenu}
+                                                            className="block py-2 text-sm font-medium text-white/70 transition-all duration-200 hover:translate-x-1 hover:text-[#DAA734]"
+                                                        >
+                                                            {dropdownItem.name}
+                                                        </Link>
+                                                    ))}
+                                                </motion.div>
+                                            )}
                                         </AnimatePresence>
-                                    </li>
+                                    </motion.li>
                                 ))}
-
-                                {/* ================= MOBILE PHONE ================= */}
-                                <li className="mt-3 border-t border-gray-200 pt-4">
-                                    <a
-                                        href={`tel:${navData.phone.replace(/\s/g, "")}`}
-                                        className="group flex items-center gap-3"
-                                    >
-                                        {/* Phone Icon */}
-                                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#DAA734]/10">
-                                            <Phone
-                                                size={18}
-                                                className="text-[#DAA734]"
-                                            />
-                                        </div>
-
-                                        {/* Phone Details */}
-                                        <div>
-                                            <p className="text-xs font-medium text-gray-500">
-                                                {navData.phoneLabel}
-                                            </p>
-
-                                            <p className="text-sm font-bold text-gray-900 transition-colors duration-200 group-hover:text-[#DAA734]">
-                                                {navData.phone}
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
                             </ul>
+
+                            {/* ================= MOBILE PHONE + CTA ================= */}
+                            <div className="mt-5 border-t border-white/10 pt-5 space-y-4">
+                                {/* Phone */}
+                                <a
+                                    href={`tel:${navData.phone.replace(/\s/g, "")}`}
+                                    onClick={closeMobileMenu}
+                                    className="group flex items-center gap-3"
+                                >
+                                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#DAA734]/10">
+                                        <FaPhoneAlt size={18} className="text-[#DAA734]" />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-medium text-white/50">
+                                            {navData.phoneLabel}
+                                        </p>
+                                        <p className="text-sm font-bold text-white transition-colors duration-200 group-hover:text-[#DAA734]">
+                                            {navData.phone}
+                                        </p>
+                                    </div>
+                                </a>
+
+                                {/* Book Consultation CTA */}
+                                <Link
+                                    href="/book-consultation"
+                                    onClick={closeMobileMenu}
+                                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DAA734] px-5 py-3 text-sm font-bold text-[#051A2F] transition-all duration-200 hover:bg-[#c99620] active:scale-95"
+                                >
+                                    Book Consultation
+                                </Link>
+                            </div>
                         </nav>
                     </motion.div>
                 )}
