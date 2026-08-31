@@ -33,7 +33,7 @@ export default function ContactPageSection({
                 {form.title}
               </h2>
               <div className="h-[2px] w-10 bg-[#d9983b]" />
-              <p className="text-xs sm:text-sm text-gray-600 pt-1">
+              <p className="text-sm sm:text-md text-gray-600 pt-1">
                 {form.subtitle}
               </p>
             </div>
@@ -42,25 +42,25 @@ export default function ContactPageSection({
               {/* Row 1: Full Name & Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-[#0b1329] block">
+                  <label className="text-sm font-semibold text-[#0b1329] block">
                     Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
                     placeholder="Enter your full name"
                     required
-                    className="w-full rounded-lg border border-[#f0ebde] bg-[#fdfbf7] px-4 py-3 text-xs text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
+                    className="w-full rounded-lg border border-[#f0ebde]  px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
                   />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-[#0b1329] block">
+                  <label className="text-sm font-semibold text-[#0b1329] block">
                     Email Address <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
                     placeholder="Enter your email address"
                     required
-                    className="w-full rounded-lg border border-[#f0ebde] bg-[#fdfbf7] px-4 py-3 text-xs text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
+                    className="w-full rounded-lg border border-[#f0ebde] px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
                   />
                 </div>
               </div>
@@ -68,24 +68,24 @@ export default function ContactPageSection({
               {/* Row 2: Phone Number & Subject */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-[#0b1329] block">
+                  <label className="text-sm font-semibold text-[#0b1329] block">
                     Phone Number <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="tel"
                     placeholder="Enter your phone number"
                     required
-                    className="w-full rounded-lg border border-[#f0ebde] bg-[#fdfbf7] px-4 py-3 text-xs text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
+                    className="w-full rounded-lg border border-[#f0ebde] px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
                   />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-[#0b1329] block">
+                  <label className="text-sm font-semibold text-[#0b1329] block">
                     Subject <span className="text-red-500">*</span>
                   </label>
                   <select
                     defaultValue=""
                     required
-                    className="w-full rounded-lg border border-[#f0ebde] bg-[#fdfbf7] px-4 py-3 text-xs text-gray-500 focus:border-[#d9983b] focus:outline-none"
+                    className="w-full rounded-lg border border-[#f0ebde] px-4 py-3 text-sm text-gray-500 focus:border-[#d9983b] focus:outline-none"
                   >
                     <option value="" disabled>
                       Select a subject
@@ -100,27 +100,27 @@ export default function ContactPageSection({
 
               {/* How can we help you? */}
               <div className="space-y-1.5">
-                <label className="text-xs font-semibold text-[#0b1329] block">
+                <label className="text-sm font-semibold text-[#0b1329] block">
                   How can we help you? <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
                   placeholder="Briefly describe your query"
                   required
-                  className="w-full rounded-lg border border-[#f0ebde] bg-[#fdfbf7] px-4 py-3 text-xs text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
+                  className="w-full rounded-lg border border-[#f0ebde] px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none"
                 />
               </div>
 
               {/* Your Message */}
               <div className="space-y-1.5">
-                <label className="text-xs font-semibold text-[#0b1329] block">
+                <label className="text-sm font-semibold text-[#0b1329] block">
                   Your Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   rows={4}
                   placeholder="Write your message here..."
                   required
-                  className="w-full rounded-lg border border-[#f0ebde] bg-[#fdfbf7] px-4 py-3 text-xs text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none resize-none"
+                  className="w-full rounded-lg border border-[#f0ebde] px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:border-[#d9983b] focus:outline-none resize-none"
                 />
               </div>
 
@@ -128,13 +128,13 @@ export default function ContactPageSection({
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
                 <button
                   type="submit"
-                  className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-lg bg-[#081225] px-8 py-4 text-xs font-semibold tracking-wider text-white shadow-md transition-all duration-300 hover:bg-[#111f3d]"
+                  className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-lg bg-[#081225] px-8 py-4 text-sm font-semibold tracking-wider text-white shadow-md transition-all duration-300 hover:bg-[#111f3d]"
                 >
                   <span>{form.buttonText}</span>
                   <FaArrowRight className="h-3 w-3 text-[#d9983b] transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
 
-                <div className="flex items-center gap-2 text-gray-500 text-xs">
+                <div className="flex items-center gap-2 text-gray-500 text-sm">
                   <span className="h-2 w-2 rounded-full bg-green-500" />
                   <span>{form.securityNote}</span>
                 </div>
@@ -145,9 +145,9 @@ export default function ContactPageSection({
           {/* RIGHT: Get in Touch Dark Sidebar (Col Span 5) */}
           <div className="lg:col-span-5 rounded-2xl bg-[#070f22] p-8 sm:p-10 text-white shadow-xl border border-[#162340] flex flex-col justify-between space-y-8">
             <div className="space-y-2">
-              <h3 className="font-serif text-2xl text-white">{getInTouch.title}</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl text-white">{getInTouch.title}</h3>
               <div className="h-[2px] w-10 bg-[#d9983b]" />
-              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed pt-2">
+              <p className="text-sm sm:text-md text-gray-300 leading-relaxed pt-2">
                 {getInTouch.description}
               </p>
             </div>
@@ -155,14 +155,14 @@ export default function ContactPageSection({
             <div className="space-y-6 divide-y divide-[#1b2b4c]">
               {/* Head Office */}
               <div className="flex items-start gap-4 pt-4 first:pt-0">
-                <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
-                  <FaMapMarkerAlt className="h-4 w-4" />
+                <div className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
+                  <FaMapMarkerAlt className="h-8 w-8" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#d9983b] block">
+                  <span className="text-sm font-semibold uppercase tracking-wider text-[#d9983b] block">
                     {getInTouch.headOffice.label}
                   </span>
-                  <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                  <p className="text-md sm:text-md text-gray-200 leading-relaxed">
                     {getInTouch.headOffice.lines?.map((line, idx) => (
                       <React.Fragment key={idx}>
                         {line}
@@ -175,14 +175,14 @@ export default function ContactPageSection({
 
               {/* Phone */}
               <div className="flex items-start gap-4 pt-4">
-                <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
-                  <FaPhoneAlt className="h-4 w-4" />
+                <div className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
+                  <FaPhoneAlt className="h-8 w-8" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#d9983b] block">
+                  <span className="text-sm font-semibold uppercase tracking-wider text-[#d9983b] block">
                     {getInTouch.phone.label}
                   </span>
-                  <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                  <p className="text-md sm:text-md text-gray-200 leading-relaxed">
                     {getInTouch.phone.numbers?.map((num, idx) => (
                       <React.Fragment key={idx}>
                         <a
@@ -199,14 +199,14 @@ export default function ContactPageSection({
 
               {/* Email */}
               <div className="flex items-start gap-4 pt-4">
-                <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
-                  <FaEnvelope className="h-4 w-4" />
+                <div className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
+                  <FaEnvelope className="h-8 w-8" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#d9983b] block">
+                  <span className="text-sm font-semibold uppercase tracking-wider text-[#d9983b] block">
                     {getInTouch.email.label}
                   </span>
-                  <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                  <p className="text-md sm:text-md text-gray-200 leading-relaxed">
                     {getInTouch.email.emails?.map((mail, idx) => (
                       <React.Fragment key={idx}>
                         <a
@@ -223,14 +223,14 @@ export default function ContactPageSection({
 
               {/* Working Hours */}
               <div className="flex items-start gap-4 pt-4">
-                <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
-                  <FaClock className="h-4 w-4" />
+                <div className="mt-1 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#0b1429] border border-[#d9983b]/50 text-[#d9983b]">
+                  <FaClock className="h-8 w-8" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#d9983b] block">
+                  <span className="text-sm font-semibold uppercase tracking-wider text-[#d9983b] block">
                     {getInTouch.workingHours.label}
                   </span>
-                  <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                  <p className="text-md sm:text-md text-gray-200 leading-relaxed">
                     {getInTouch.workingHours.hours?.map((hour, idx) => (
                       <React.Fragment key={idx}>
                         {hour}
@@ -261,13 +261,13 @@ export default function ContactPageSection({
           {/* Grid: Map on Left vs Office Cards List on Right */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             {/* Left Map Image Box (Col Span 6) */}
-            <div className="lg:col-span-6 rounded-2xl bg-white p-6 sm:p-8 border border-[#f0ebde] shadow-[0_10px_30px_rgba(0,0,0,0.04)]">
-              <div className="relative h-[450px] sm:h-[520px] w-full overflow-hidden rounded-xl">
+            <div className="lg:col-span-6 rounded-2xl bg-white p- sm:p- border border-[#f0ebde] shadow-[0_10px_30px_rgba(0,0,0,0.04)]">
+              <div className="relative h-[400px] sm:h-[820px] w-full overflow-hidden rounded-xl">
                 <Image
                   src={mapImageSrc}
                   alt="India Map Office Locations"
                   fill
-                  className="object-cover object-center"
+                  className="object-contain object-center"
                 />
               </div>
             </div>
@@ -289,23 +289,23 @@ export default function ContactPageSection({
                   >
                     {/* Left Building Icon & Details */}
                     <div className="flex items-start gap-4">
-                      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#fdfaf3] border border-[#f5eddce6] text-[#d9983b]">
-                        <FaBuilding className="h-6 w-6" />
+                      <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#fdfaf3] border border-[#f5eddce6] text-[#d9983b]">
+                        <FaBuilding className="h-8 w-8" />
                       </div>
 
                       <div className="space-y-1.5">
-                        <h3 className="font-serif text-xl text-[#0b1329] font-semibold">
+                        <h3 className="font-serif text-2xl text-[#0b1329] ">
                           {cityName}
                         </h3>
-                        <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-xs">
+                        <p className="text-md sm:text-md text-gray-600 leading-relaxed max-w-xs">
                           {address}
                         </p>
 
                         {/* Phone & Email Row */}
-                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-xs text-gray-600">
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-gray-600">
                           {office.phone && (
                             <div className="flex items-center gap-2">
-                              <FaPhoneAlt className="text-[#d9983b] h-3 w-3" />
+                              <FaPhoneAlt className="text-[#d9983b] h-4 w-4" />
                               <a
                                 href={`tel:${office.phone.replace(/\s+/g, "")}`}
                                 className="hover:text-[#d9983b] font-medium"

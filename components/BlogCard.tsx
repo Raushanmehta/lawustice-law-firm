@@ -17,7 +17,7 @@ interface BlogCardProps {
 
 export default function BlogCard({
     category = "FAMILY LAW",
-    imageSrc = "/images/news-event.png", // Aap apni image ka path yahan de sakte hain
+    imageSrc = "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
     date = "May 20, 2024",
     readTime = "6 Min Read",
     title = "Important Things to Know Before Filing for Divorce",
@@ -51,7 +51,7 @@ export default function BlogCard({
 
                 <div className="space-y-3">
                     {/* Date and Read Time Meta */}
-                    <div className="flex items-center gap-3 text-xs text-gray-500 font-medium">
+                    <div className="flex items-center gap-3 text-sm text-gray-500 font-medium">
                         <div className="flex items-center gap-1.5 text-[#b87c55]">
                             <FaCalendarAlt className="h-3.5 w-3.5" />
                             <span>{date}</span>

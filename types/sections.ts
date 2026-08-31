@@ -407,24 +407,59 @@ export interface ContactPageSectionProps {
 }
 
 // ================= BLOG SECTION TYPES =================
+export interface BlogSectionItem {
+    heading: string;
+    content: string;
+    points?: string[];
+}
+
+export interface BlogQuote {
+    text: string;
+    author?: string;
+}
+
+export interface BlogPostDate {
+    day: string;
+    month: string;
+    year?: string;
+}
+
 export interface BlogPost {
     id: number;
-    title: string;
-    description: string;
-    image: string;
-    date: {
-        day: string;
-        month: string;
-    };
-    author: string;
-    commentsCount: string;
     slug: string;
+    title: string;
+    category: string;
+    description: string;
+    intro?: string;
+    image: string;
+    date: BlogPostDate;
+    formattedDate?: string;
+    readTime: string;
+    author: string;
+    authorRole?: string;
+    commentsCount?: string;
+    quote?: BlogQuote | string;
+    sections?: BlogSectionItem[];
+    conclusion?: string;
+    tags?: string[];
+}
+
+export interface BlogCategory {
+    name: string;
+    count: number;
 }
 
 export interface BlogSectionData {
     tagline: string;
     title: string;
+    categories?: BlogCategory[];
     posts: BlogPost[];
+}
+
+export interface BlogDetailPageProps {
+    post: BlogPost;
+    allPosts?: BlogPost[];
+    categories?: BlogCategory[];
 }
 
 // ================= PAGE TOP BANNER TYPES =================
@@ -613,18 +648,69 @@ export interface PublicationsData {
 }
 
 // ================= LEGAL UPDATES TYPES =================
+export interface LegalUpdateSectionQuote {
+    text: string;
+    source?: string;
+}
+
+export interface LegalUpdateFactorCard {
+    icon: string;
+    title: string;
+}
+
+export interface LegalUpdateSection {
+    number: string;
+    heading: string;
+    content: string;
+    quote?: LegalUpdateSectionQuote;
+    points?: string[];
+    factorCards?: LegalUpdateFactorCard[];
+}
+
+export interface LegalUpdateInThisArticleItem {
+    number: string;
+    title: string;
+}
+
+export interface LegalUpdatePracticeArea {
+    name: string;
+}
+
+export interface LegalUpdatePopularPost {
+    title: string;
+    date: string;
+    slug?: string;
+    image?: string;
+}
+
 export interface LegalUpdateItem {
     id: number;
+    slug: string;
     title: string;
     date: string;
     category: string;
-    summary: string;
+    author: string;
+    readTime: string;
+    excerpt: string;
+    summary?: string;
+    image: string;
+    intro?: string;
+    inThisArticle?: LegalUpdateInThisArticleItem[];
+    sections?: LegalUpdateSection[];
 }
 
 export interface LegalUpdatesData {
     title: string;
     description: string;
+    practiceAreas?: LegalUpdatePracticeArea[];
+    popularPosts?: LegalUpdatePopularPost[];
     items: LegalUpdateItem[];
+}
+
+export interface LegalUpdateDetailPageProps {
+    update: LegalUpdateItem;
+    practiceAreas?: LegalUpdatePracticeArea[];
+    popularPosts?: LegalUpdatePopularPost[];
 }
 
 // ================= SITEMAP TYPES =================

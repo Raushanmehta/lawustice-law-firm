@@ -1513,46 +1513,497 @@
   },
   "blog": {
     "tagline": "OUR BLOG",
-    "title": "Latest News & Articles",
+    "title": "Latest Insights & Legal Articles",
+    "categories": [
+      {
+        "name": "Family Law",
+        "count": 2
+      },
+      {
+        "name": "Corporate Law",
+        "count": 2
+      },
+      {
+        "name": "Contract Law",
+        "count": 2
+      },
+      {
+        "name": "Litigation",
+        "count": 4
+      },
+      {
+        "name": "Employment Law",
+        "count": 3
+      },
+      {
+        "name": "Real Estate Law",
+        "count": 2
+      }
+    ],
     "posts": [
       {
         "id": 1,
-        "title": "How Select Appropriate Attorney for Your Case?",
-        "description": "Lawyer texting is a way for lawyers to communicate with clients using text messages.",
-        "image": "https://img.magnific.com/free-photo/gavel-scales-justice-law-books_23-2151998158.jpg?semt=ais_hybrid&w=740&q=80",
+        "slug": "important-things-to-know-before-filing-for-divorce",
+        "title": "Important Things to Know Before Filing for Divorce",
+        "category": "Family Law",
+        "description": "Filing for divorce is a major life transition with critical legal, financial, and emotional ramifications. Here is what every individual must know before entering the family court process.",
+        "intro": "Filing for divorce is a significant decision that comes with profound legal, emotional, and financial considerations. In India, matrimonial disputes are governed by personal laws based on religious affiliation—such as the Hindu Marriage Act, 1955, the Special Marriage Act, 1954, the Indian Divorce Act, 1869, and Muslim Personal Law. Understanding your rights, financial entitlements, and court procedures beforehand is essential to protecting yourself and your children.",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
         "date": {
           "day": "20",
-          "month": "Jun"
+          "month": "May",
+          "year": "2024"
         },
-        "author": "Admin",
-        "commentsCount": "02 Comments",
-        "slug": "how-select-appropriate-attorney-for-your-case"
+        "formattedDate": "May 20, 2024",
+        "readTime": "6 Min Read",
+        "author": "Adv. Rajesh Sharma",
+        "authorRole": "Senior Family Law Specialist",
+        "commentsCount": "04 Comments",
+        "quote": {
+          "text": "A well-structured divorce strategy prioritizes the long-term welfare of children and equitable financial division over prolonged court battles.",
+          "author": "Family Law Practice Head"
+        },
+        "sections": [
+          {
+            "heading": "1. Mutual Consent Divorce vs. Contested Divorce",
+            "content": "The first crucial distinction is whether the dissolution will proceed through mutual consent or a contested petition. Mutual consent divorce (under Section 13B of the Hindu Marriage Act or Section 28 of the Special Marriage Act) is faster, less acrimonious, and cost-effective, typically taking 6 to 18 months. Contested divorces, filed on grounds such as cruelty, desertion, adultery, or mental illness, require evidentiary substantiation and can span several years.",
+            "points": [
+              "Mutual consent requires both spouses to agree on alimony, child custody, and asset division.",
+              "A mandatory cooling-off period of 6 months can be waived by the Supreme Court/Family Court under exceptional circumstances.",
+              "Contested petitions require documented proof, witness testimonies, and cross-examinations."
+            ]
+          },
+          {
+            "heading": "2. Financial Documentation and Stridhan Recovery",
+            "content": "Thorough financial disclosure is paramount. Both parties are required by Supreme Court guidelines (Rajnesh v. Neha) to file comprehensive Affidavits of Assets and Liabilities. Furthermore, a woman holds absolute ownership over her Stridhan (gifts, jewelry, and assets given before, during, or after marriage), which must be returned upon separation.",
+            "points": [
+              "Compile income tax returns (ITRs), bank statements, and salary slips of the past 3 years.",
+              "Create an itemized inventory of all Stridhan jewelry and gifts with purchase receipts.",
+              "Document joint properties, fixed deposits, mutual funds, and loan liabilities."
+            ]
+          },
+          {
+            "heading": "3. Interim Maintenance and Permanent Alimony",
+            "content": "The law provides for both interim maintenance (pendente lite) to sustain the financially dependent spouse during litigation, and permanent alimony determined upon final decree. The court evaluates factors such as the husband and wife earning capacity, standard of living enjoyed during marriage, and age/health of the parties.",
+            "points": [
+              "Interim maintenance covers basic living costs, medical expenses, and child schooling.",
+              "Permanent alimony may be awarded as a one-time lump sum or recurring monthly payments.",
+              "Maintenance claims can be made under Section 24/25 of HMA, Section 125 of CrPC, and the Domestic Violence Act."
+            ]
+          },
+          {
+            "heading": "4. Child Custody and Visitation Arrangements",
+            "content": "Indian courts strictly adhere to the doctrine of the welfare of the minor child as the paramount consideration. Custody is rarely treated as a parental right; rather, the court evaluates which parent can provide a stable, nurturing, and emotionally supportive environment.",
+            "points": [
+              "Physical custody determines where the child resides, while legal custody covers decision-making.",
+              "Non-custodial parents are generally granted structured visitation and holiday access rights.",
+              "Custody arrangements remain subject to modification as the child grows older."
+            ]
+          },
+          {
+            "heading": "5. Court-Mandated Mediation and Settlement",
+            "content": "Before proceeding with contested trials, Family Courts refer couples to trained counselors and mediators. Mediation provides a confidential platform to negotiate settlement terms, alimony amounts, and parenting schedules without public litigation.",
+            "points": [
+              "Mediation proceedings are strictly confidential and cannot be used as evidence in court.",
+              "A mediated settlement agreement is binding and incorporated into the final court decree."
+            ]
+          }
+        ],
+        "conclusion": "Navigating a divorce requires a measured approach, thorough documentation, and competent legal guidance. Engaging an experienced family law practitioner early helps you evaluate settlement options, protect your financial entitlements, and safeguard your parental rights with minimal emotional distress.",
+        "tags": [
+          "Family Law",
+          "Divorce",
+          "Alimony",
+          "Child Custody",
+          "Stridhan",
+          "Legal Guide"
+        ]
       },
       {
         "id": 2,
-        "title": "A case study where you successfully negotiated",
-        "description": "Lawyer texting is a way for lawyers to communicate with clients using text messages.",
-        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3fGVufDB8fDB8fHww",
+        "slug": "how-to-start-a-business-in-india-legal-essentials",
+        "title": "How to Start a Business in India: Legal Essentials",
+        "category": "Corporate Law",
+        "description": "Starting a business in India offers massive growth potential, but setting up the correct legal structure and obtaining mandatory compliance approvals is vital for sustainable success.",
+        "intro": "India is one of the fastest-growing startup ecosystems in the world. However, transitioning from a business idea to a fully compliant commercial entity requires navigating corporate regulations, tax structures, labor laws, and intellectual property registrations. Setting up the right legal foundation from day one protects founders equity and ensures seamless investor onboarding.",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
         "date": {
-          "day": "25",
-          "month": "Feb"
+          "day": "12",
+          "month": "Jun",
+          "year": "2024"
         },
-        "author": "Admin",
-        "commentsCount": "02 Comments",
-        "slug": "case-study-where-you-successfully-negotiated"
+        "formattedDate": "Jun 12, 2024",
+        "readTime": "8 Min Read",
+        "author": "Adv. Vikram Sethi",
+        "authorRole": "Corporate Law Partner",
+        "commentsCount": "06 Comments",
+        "quote": {
+          "text": "Solid legal scaffolding in the early stages of an enterprise prevents costly shareholder disputes and ensures smooth investor due diligence.",
+          "author": "Corporate & M&A Group"
+        },
+        "sections": [
+          {
+            "heading": "1. Choosing the Right Business Structure",
+            "content": "Selecting the optimal legal vehicle depends on your business model, capital requirements, and long-term vision. The most common structures include Private Limited Companies (ideal for venture capital backing), Limited Liability Partnerships (suitable for professional services and bootstrapped firms), and Sole Proprietorships.",
+            "points": [
+              "Private Limited Company: Offers limited liability, separate legal personality, and easy equity transfer.",
+              "LLP: Combines partnership flexibility with limited liability and lower compliance costs.",
+              "One Person Company (OPC): Enables solo entrepreneurs to enjoy corporate status."
+            ]
+          },
+          {
+            "heading": "2. MCA Incorporation via SPICe+ Portal",
+            "content": "The Ministry of Corporate Affairs (MCA) has streamlined incorporation through the SPICe+ integrated web form. This single application covers name reservation, DIN allotment, PAN/TAN generation, EPFO and ESIC registrations, and corporate bank account opening.",
+            "points": [
+              "Obtain Digital Signature Certificates (DSC) for all designated directors.",
+              "Draft Memorandum of Association (MOA) and Articles of Association (AOA).",
+              "File SPICe+ Part A for name approval and Part B for complete incorporation."
+            ]
+          },
+          {
+            "heading": "3. Mandatory Tax Registrations and Licenses",
+            "content": "Once incorporated, businesses must secure sector-specific registrations. Goods and Services Tax (GST) registration is mandatory if turnover crosses prescribed thresholds or for interstate and e-commerce operations. MSME/Udyam registration unlocks government subsidies and priority lending.",
+            "points": [
+              "GST Registration for commercial sales and service delivery.",
+              "Shop and Establishment Act registration from the local municipal authority.",
+              "MSME (Udyam) registration for startup benefits, subsidies, and tender preferences."
+            ]
+          },
+          {
+            "heading": "4. Founders Agreement and IP Assignment",
+            "content": "One of the most overlooked essentials is the Founders Agreement. This document defines equity ownership, vesting schedules, intellectual property transfer, decision-making powers, and exit mechanisms, preventing fatal disputes among co-founders down the line.",
+            "points": [
+              "Clearly define equity ownership and milestone-based vesting schedules.",
+              "Execute IP Assignment agreements transferring all code, designs, and branding to the company.",
+              "Include non-compete, confidentiality, and dispute resolution mechanisms."
+            ]
+          },
+          {
+            "heading": "5. Trademark Protection and Brand Securitization",
+            "content": "Securing your brand name and logo under the Trade Marks Act, 1999 prevents competitors from infringing on your goodwill. Filing trademark applications under relevant classes should be executed before publicly launching marketing campaigns.",
+            "points": [
+              "Conduct comprehensive TM search across relevant NICE classification classes.",
+              "File TM-A application to secure legal priority and exclusive brand usage."
+            ]
+          }
+        ],
+        "conclusion": "Building a legally resilient business requires careful planning and regulatory compliance from the outset. Seeking specialized corporate legal counsel ensures your startup is structured for scalable growth and ready for institutional investments.",
+        "tags": [
+          "Startup Law",
+          "Company Incorporation",
+          "Corporate Law",
+          "GST",
+          "Founders Agreement",
+          "Trademark"
+        ]
       },
       {
         "id": 3,
-        "title": "One of the most effective lawyer blog topic",
-        "description": "Lawyer texting is a way for lawyers to communicate with clients using text messages.",
-        "image": "https://media.istockphoto.com/id/2202761531/photo/justice-statue-gavel-with-law-justice-lawyers-having-team-meeting-at-law-firm-background.jpg?s=612x612&w=0&k=20&c=wpcgr8UuSl9pzg664rpk8dUH-aLC1XQp_v6FEW4YRCM=",
+        "slug": "essential-clauses-every-contract-must-have",
+        "title": "Essential Clauses Every Contract Must Have",
+        "category": "Contract Law",
+        "description": "A robust commercial contract protects your business from financial exposure, liability, and costly litigation. Discover the non-negotiable clauses every agreement must contain.",
+        "intro": "Commercial agreements are the bedrock of any successful business relationship. However, poorly drafted contracts with vague terminology or missing safeguards can lead to catastrophic legal disputes and financial liabilities. A properly negotiated contract balances commercial objectives with airtight legal protection under the Indian Contract Act, 1872.",
+        "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
         "date": {
-          "day": "27",
-          "month": "Nov"
+          "day": "28",
+          "month": "Jun",
+          "year": "2024"
         },
-        "author": "Admin",
-        "commentsCount": "02 Comments",
-        "slug": "one-of-the-most-effective-lawyer-blog-topic"
+        "formattedDate": "Jun 28, 2024",
+        "readTime": "7 Min Read",
+        "author": "Adv. Priya Nair",
+        "authorRole": "Head of Commercial Contracts",
+        "commentsCount": "03 Comments",
+        "quote": {
+          "text": "Ambiguity in contracts breeds litigation. Precision in obligations, indemnities, and termination mechanisms protects your bottom line.",
+          "author": "Commercial Drafting Practice"
+        },
+        "sections": [
+          {
+            "heading": "1. Scope of Work, Deliverables and Acceptance Criteria",
+            "content": "The core of every commercial agreement is the precise definition of obligations. Ambiguity in deliverables, timelines, and acceptance protocols is the leading cause of service disputes.",
+            "points": [
+              "Clearly itemize milestones, delivery schedules, and key performance indicators (KPIs).",
+              "Include structured acceptance and review periods with explicit sign-off requirements.",
+              "Establish change-management protocols for scope modifications and additional billing."
+            ]
+          },
+          {
+            "heading": "2. Payment Terms, Default Penalties and Invoicing",
+            "content": "Payment provisions must be unambiguous regarding invoice schedules, credit periods, late-payment interest, and applicable statutory taxes such as GST and TDS withholdings.",
+            "points": [
+              "Specify payment triggers (e.g., net 30 days from undisputed invoice submission).",
+              "Incorporate late-payment interest clauses to discourage delayed payments.",
+              "Define tax responsibility clearly to avoid indirect tax exposure."
+            ]
+          },
+          {
+            "heading": "3. Representations, Warranties and Indemnification",
+            "content": "Indemnity clauses allocate financial risk by requiring one party to compensate the other for losses caused by breach of contract, third-party IP infringement, negligence, or regulatory non-compliance.",
+            "points": [
+              "Draft mutual representations confirming legal capacity and regulatory compliance.",
+              "Include specific indemnities for intellectual property infringement and data breaches.",
+              "Demand explicit defense procedures and prompt notice of third-party claims."
+            ]
+          },
+          {
+            "heading": "4. Limitation of Liability and Consequential Damages",
+            "content": "Without a limitation of liability clause, your potential financial exposure could be virtually unlimited. A standard provision caps total damages to the contract value and excludes indirect or consequential losses.",
+            "points": [
+              "Cap aggregate liability at the total fees paid or payable under the contract.",
+              "Include mutual exclusion of lost profits, business interruption, and punitive damages.",
+              "Carve out exceptions only for gross negligence, intentional fraud, or confidentiality breach."
+            ]
+          },
+          {
+            "heading": "5. Termination Mechanisms and Dispute Resolution",
+            "content": "A contract must provide clear exit strategies for both parties, distinguishing between termination for convenience (with notice) and termination for material breach (with cure periods).",
+            "points": [
+              "Provide 30-day notice for termination for convenience.",
+              "Define material breach with a mandatory 15-day cure notice.",
+              "Include arbitration clauses specifying the seat, venue, and governing language under the Arbitration and Conciliation Act, 1996."
+            ]
+          }
+        ],
+        "conclusion": "Drafting clear, balanced, and enforceable contract clauses is vital to mitigating commercial risk. Relying on generic templates often leaves critical loopholes that can jeopardize your enterprise during disputes.",
+        "tags": [
+          "Contract Law",
+          "Commercial Agreements",
+          "Indemnity",
+          "Arbitration",
+          "Risk Management"
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "child-custody-law-in-india-what-parents-should-know",
+        "title": "Child Custody Law in India: What Parents Should Know",
+        "category": "Family Law",
+        "description": "Understanding child custody regulations, parental rights, and court procedures in India to ensure the welfare and best interests of your child are protected.",
+        "intro": "When marriages dissolve, questions regarding child custody and guardianship are inevitably the most emotionally charged. Under Indian jurisprudence, child custody decisions are guided by one supreme principle: the best interest and welfare of the minor child. Courts prioritize the emotional, psychological, and physical well-being of the child over parental rivalry.",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+        "date": {
+          "day": "05",
+          "month": "Jul",
+          "year": "2024"
+        },
+        "formattedDate": "Jul 05, 2024",
+        "readTime": "6 Min Read",
+        "author": "Adv. Rajesh Sharma",
+        "authorRole": "Senior Family Law Specialist",
+        "commentsCount": "05 Comments",
+        "quote": {
+          "text": "Custody is not a victory for one parent over another; it is the legal affirmation of what serves the child holistic development and stability.",
+          "author": "Child Welfare Advocacy Desk"
+        },
+        "sections": [
+          {
+            "heading": "1. Types of Custody Recognized in Indian Courts",
+            "content": "Indian family courts award different forms of custody depending on the age, health, and emotional needs of the child, as well as the parents capability to provide care.",
+            "points": [
+              "Physical Custody: The child resides primarily with one parent, who manages daily care.",
+              "Legal Custody: Both parents retain equal rights to make major life decisions regarding education, health, and religion.",
+              "Joint Custody: Both parents share physical time and legal authority through alternating schedules.",
+              "Interim Custody: Temporary custody granted during the pendency of the divorce litigation."
+            ]
+          },
+          {
+            "heading": "2. The Legal Framework Governing Custody in India",
+            "content": "Custody matters are adjudicated under the Guardians and Wards Act, 1890 (GWA), alongside personal religious laws like the Hindu Minority and Guardianship Act, 1956 (HMGA) and secular provisions under the Special Marriage Act.",
+            "points": [
+              "Section 6(a) of HMGA recognizes the father as the natural guardian, but custody of children under 5 years is ordinarily given to the mother.",
+              "The Supreme Court has repeatedly ruled that personal statutory rules are subservient to the paramount consideration of the child welfare."
+            ]
+          },
+          {
+            "heading": "3. Factors Courts Evaluate in Determining Custody",
+            "content": "Family Court judges evaluate a wide range of holistic factors before passing custody orders, often ordering child welfare counselor reports to assess family dynamics.",
+            "points": [
+              "Emotional bonding between the child and each parent.",
+              "Financial stability and capacity to provide quality education and medical care.",
+              "Ethical, moral, and safe living environment in the household.",
+              "Wishes of the child if they are of sufficient maturity (typically above 9 years of age)."
+            ]
+          },
+          {
+            "heading": "4. Structured Visitation and Holiday Parenting Plans",
+            "content": "The non-custodial parent is almost always granted comprehensive visitation rights to maintain a healthy parent-child relationship, unless there is proven abuse or endangerment.",
+            "points": [
+              "Weekend physical visitation and weekday telephone/video calling schedules.",
+              "Equitable sharing of summer and winter school vacations and major festivals.",
+              "Permission protocols for domestic and overseas holiday travel."
+            ]
+          },
+          {
+            "heading": "5. Modification of Custody and Guardianship Orders",
+            "content": "Custody decrees are never permanent. If circumstances materially change—such as parental relocation, remarriage impacting the child, or neglect—either parent can petition for a custody modification.",
+            "points": [
+              "File a modification petition demonstrating a substantial change in circumstances.",
+              "Present updated school records, psychological evaluations, or evidence of changed living conditions."
+            ]
+          }
+        ],
+        "conclusion": "In custody disputes, parents should strive to resolve arrangements amicably through counseling and parenting plans. Placing the child emotional stability first helps minimize long-term psychological distress.",
+        "tags": [
+          "Family Law",
+          "Child Custody",
+          "Guardianship",
+          "Parenting Plan",
+          "Visitation Rights"
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "private-limited-vs-llp-which-is-right-for-you",
+        "title": "Private Limited vs LLP: Which is Right for You?",
+        "category": "Corporate Law",
+        "description": "A comprehensive comparative analysis between Private Limited Companies and Limited Liability Partnerships in India to help you pick the ideal entity structure.",
+        "intro": "When launching a new commercial venture in India, one of the first critical strategic choices is deciding between a Private Limited Company (Pvt Ltd) and a Limited Liability Partnership (LLP). While both protect promoters personal assets with limited liability, they differ significantly in compliance obligations, tax treatment, ownership structures, and ability to raise external investment.",
+        "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+        "date": {
+          "day": "19",
+          "month": "Jul",
+          "year": "2024"
+        },
+        "formattedDate": "Jul 19, 2024",
+        "readTime": "7 Min Read",
+        "author": "Adv. Vikram Sethi",
+        "authorRole": "Corporate Law Partner",
+        "commentsCount": "08 Comments",
+        "quote": {
+          "text": "Choose an LLP if you seek low-cost compliance and flexibility; choose a Private Limited company if institutional venture capital is on your roadmap.",
+          "author": "Venture & Corporate Advisory"
+        },
+        "sections": [
+          {
+            "heading": "1. Ownership Structure, Share Capital and ESOPs",
+            "content": "A Private Limited company is governed by the Companies Act, 2013, with ownership represented by distinct shares. This structure allows seamless issuance of equity shares, preference shares, and Employee Stock Ownership Plans (ESOPs). In contrast, an LLP is governed by the LLP Act, 2008, where ownership is based on partner contribution percentages.",
+            "points": [
+              "Pvt Ltd can issue equity shares, convertible debentures, and ESOPs to incentivize key employees.",
+              "LLP ownership is defined by the LLP Agreement and partner capital contribution shares.",
+              "Equity transfer in a Pvt Ltd is straightforward compared to restructuring partner rights in an LLP."
+            ]
+          },
+          {
+            "heading": "2. Fundraising and Investor Preference",
+            "content": "Venture capital funds, angel investors, and private equity firms almost universally prefer investing in Private Limited companies because of standardized equity instruments, board representation, and clear liquidation preferences.",
+            "points": [
+              "Pvt Ltd companies can raise seed, Series A, and growth funding with ease.",
+              "LLPs cannot issue shares to non-partner investors, making institutional venture funding practically impossible."
+            ]
+          },
+          {
+            "heading": "3. Compliance Burden and Statutory Audit Requirements",
+            "content": "One of the biggest advantages of an LLP is its relaxed statutory compliance framework. LLPs are exempt from mandatory statutory audits unless annual turnover exceeds ₹40 Lakhs or capital contribution exceeds ₹25 Lakhs.",
+            "points": [
+              "Pvt Ltd: Mandatory annual statutory audit, annual general meetings (AGMs), quarterly board meetings, and extensive MCA filings (AOC-4, MGT-7).",
+              "LLP: Minimal compliance filings (Form 8 and Form 11), with no requirement for mandatory board meetings or AGMs if below audit thresholds."
+            ]
+          },
+          {
+            "heading": "4. Taxation and Profit Distribution",
+            "content": "Both entities are taxed at flat corporate tax rates, but profit distribution differs significantly. LLPs do not attract additional taxes when distributing profits to partners, whereas companies may face dividend taxation in shareholders hands.",
+            "points": [
+              "Pvt Ltd corporate tax rate is 22% (or 15% for new manufacturing units) plus surcharge/cess, with dividends taxed in shareholders hands.",
+              "LLP profit share is completely tax-free in the hands of partners under Section 10(2A) of the Income Tax Act."
+            ]
+          },
+          {
+            "heading": "5. Entity Conversion and Dissolution",
+            "content": "If your business starts as an LLP and later requires venture funding, it can be converted into a Private Limited company under Chapter XXI of the Companies Act, 2013, subject to regulatory steps.",
+            "points": [
+              "LLP to Pvt Ltd conversion requires unanimous partner consent and MCA approval.",
+              "Winding up an LLP is simpler and less expensive than liquidating a company."
+            ]
+          }
+        ],
+        "conclusion": "If your business is a bootstrapped agency, consulting firm, or service provider requiring lean compliance, an LLP is the most cost-effective option. If you plan to build a tech startup, issue ESOPs, and raise venture capital, a Private Limited Company is the undisputed choice.",
+        "tags": [
+          "Corporate Law",
+          "Pvt Ltd vs LLP",
+          "Startup Law",
+          "Taxation",
+          "Venture Capital"
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "how-to-review-a-contract-like-a-legal-expert",
+        "title": "How to Review a Contract Like a Legal Expert",
+        "category": "Contract Law",
+        "description": "A step-by-step master guide to reviewing commercial contracts, spotting hidden liabilities, and negotiating favorable terms like a seasoned attorney.",
+        "intro": "Signing a contract without a meticulous clause-by-clause review is one of the biggest risks a business or individual can take. Contracts are legally binding instruments that dictate financial obligations, operational liabilities, and legal recourse. Adopting a structured legal review methodology ensures you spot traps, unilateral terms, and hidden risks before affixing your signature.",
+        "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+        "date": {
+          "day": "02",
+          "month": "Aug",
+          "year": "2024"
+        },
+        "formattedDate": "Aug 02, 2024",
+        "readTime": "8 Min Read",
+        "author": "Adv. Priya Nair",
+        "authorRole": "Head of Commercial Contracts",
+        "commentsCount": "07 Comments",
+        "quote": {
+          "text": "A contract signed without thorough review is a future dispute in disguise. Scrutinize every definition, remedy, and default trigger.",
+          "author": "Contract Negotiation Practice"
+        },
+        "sections": [
+          {
+            "heading": "1. Verifying Parties, Authority and Recitals",
+            "content": "Begin by confirming the exact legal names, corporate identification numbers (CIN/LLPIN), and registered office addresses of all contracting parties. Ensure that the individual executing the agreement has verified signing authority through a Board Resolution or Power of Attorney.",
+            "points": [
+              "Verify accurate corporate entity names against official MCA database records.",
+              "Ensure the recitals (Preamble) accurately articulate the commercial context of the deal.",
+              "Check for required board resolutions or signing authorization documents."
+            ]
+          },
+          {
+            "heading": "2. Spotting One-Sided Indemnities and Liabilities",
+            "content": "Inspect the indemnity clause with extreme care. Unilateral indemnities force you to bear all third-party losses without reciprocal protection. Insist on mutual indemnities with well-defined liability caps.",
+            "points": [
+              "Ensure indemnification is tied strictly to direct damages resulting from material breach or gross negligence.",
+              "Reject indemnification clauses covering indirect, consequential, or speculative business losses.",
+              "Demand immediate written notice and right to control defense for any indemnified claim."
+            ]
+          },
+          {
+            "heading": "3. Checking Intellectual Property Ownership and Assignment",
+            "content": "Ensure clarity on who owns pre-existing Background IP versus Foreground IP created during the contractual engagement. Avoid signing broad assignment clauses that transfer your proprietary methodologies or tools.",
+            "points": [
+              "Retain complete ownership of your pre-existing tools, source code, and trade secrets.",
+              "Grant a limited, non-exclusive license rather than an outright assignment of your core IP.",
+              "Clearly define the deliverables that transfer to the client upon full payment."
+            ]
+          },
+          {
+            "heading": "4. Evaluating Termination Clauses and Cure Periods",
+            "content": "A contract must provide reasonable exit mechanisms. Ensure you are not locked into unfavorable long-term commitments without the ability to terminate for convenience or for unresolved breach.",
+            "points": [
+              "Ensure a mandatory 15 to 30 day written notice and cure period before termination for breach.",
+              "Check post-termination transition obligations and immediate return of confidential data.",
+              "Verify that all earned and undisputed fees must be paid upon early termination."
+            ]
+          },
+          {
+            "heading": "5. Scrutinizing Governing Law, Jurisdiction and Dispute Mechanisms",
+            "content": "Always verify the governing law and designated court jurisdiction. Multi-tiered dispute resolution clauses (negotiation followed by mediation, then institutional arbitration) are preferred for commercial contracts.",
+            "points": [
+              "Designate a neutral seat and venue for arbitration under the Arbitration and Conciliation Act, 1996.",
+              "Specify the number of arbitrators and the language of proceedings.",
+              "Ensure exclusive jurisdiction is assigned to a convenient and recognized High Court."
+            ]
+          }
+        ],
+        "conclusion": "Reviewing a contract like a legal expert requires attention to detail, proactive risk mitigation, and commercial foresight. Whenever executing high-stakes commercial agreements, always engage specialized legal counsel to conduct a comprehensive legal review.",
+        "tags": [
+          "Contract Review",
+          "Legal Audit",
+          "Commercial Law",
+          "Indemnity",
+          "Negotiation Guide"
+        ]
       }
     ]
   },
@@ -2388,20 +2839,492 @@
   "legalUpdates": {
     "title": "Latest Legal Updates & Regulatory Alerts",
     "description": "Stay informed on statutory amendments, landmark court rulings, and regulatory changes.",
+    "practiceAreas": [
+      {
+        "name": "All Practice Areas"
+      },
+      {
+        "name": "Family Law"
+      },
+      {
+        "name": "Business Law"
+      },
+      {
+        "name": "Criminal Law"
+      },
+      {
+        "name": "Property Law"
+      },
+      {
+        "name": "Employment Law"
+      },
+      {
+        "name": "Civil Law"
+      },
+      {
+        "name": "Tax Law"
+      }
+    ],
+    "popularPosts": [
+      {
+        "title": "Corporate Laws: A Complete Guide",
+        "date": "April 20, 2024",
+        "slug": "corporate-laws-complete-guide",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=300&q=80"
+      },
+      {
+        "title": "How to Protect Your Business Legally",
+        "date": "April 15, 2024",
+        "slug": "how-to-protect-your-business-legally",
+        "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=300&q=80"
+      },
+      {
+        "title": "Understanding MoUs vs Contracts",
+        "date": "April 10, 2024",
+        "slug": "understanding-mous-vs-contracts",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=300&q=80"
+      }
+    ],
     "items": [
       {
         "id": 1,
-        "title": "New Amendments to Data Privacy Regulations Issued",
-        "date": "August 20, 2026",
-        "category": "Privacy & Technology",
-        "summary": "Overview of compliance requirements, mandatory breach notifications, and penalty structures under the revised framework."
+        "slug": "new-child-custody-guidelines-what-you-need-to-know",
+        "category": "FAMILY LAW",
+        "title": "New Child Custody Guidelines: What You Need to Know",
+        "date": "May 20, 2024",
+        "author": "Ayasha Rahman",
+        "readTime": "6 min read",
+        "excerpt": "The recent amendments to child custody laws aim to prioritize the best interests of the child. Here is what parents need to know about the new guidelines.",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+        "intro": "The recent amendments to child custody laws aim to prioritize the best interests of the child. Here is what parents need to know about the new guidelines and judicial considerations.",
+        "inThisArticle": [
+          {
+            "number": "01",
+            "title": "Best Interest of the Child"
+          },
+          {
+            "number": "02",
+            "title": "Parental Responsibilities"
+          },
+          {
+            "number": "03",
+            "title": "Factors Considered by Courts"
+          },
+          {
+            "number": "04",
+            "title": "Visitation & Rights"
+          },
+          {
+            "number": "05",
+            "title": "How We Can Help"
+          }
+        ],
+        "sections": [
+          {
+            "number": "1",
+            "heading": "1. Best Interest of the Child",
+            "content": "The primary consideration in any custody decision is the child welfare and holistic development. Courts will now closely evaluate the emotional, educational, and physical well-being of the child before issuing any interim or permanent custody order.",
+            "quote": {
+              "text": "The welfare and best interest of the child shall be the paramount consideration in all custody and guardianship matters.",
+              "source": "Family Court Guidelines & Precedents"
+            }
+          },
+          {
+            "number": "2",
+            "heading": "2. Parental Responsibilities",
+            "content": "Both parents are encouraged to share responsibilities unless there is evidence of neglect, abuse, or inability to provide proper care. Legal custody remains distinct from physical day-to-day residence.",
+            "points": [
+              "Ensuring access to quality education and comprehensive healthcare",
+              "Providing a safe, supportive, and nurturing domestic environment",
+              "Maintaining emotional stability and continuous communication"
+            ]
+          },
+          {
+            "number": "3",
+            "heading": "3. Factors Considered by Courts",
+            "content": "Courts consider holistic factors while determining custody arrangements, balancing parental capabilities with the psychological comfort of the minor.",
+            "factorCards": [
+              {
+                "icon": "👶",
+                "title": "Child age and preference"
+              },
+              {
+                "icon": "💛",
+                "title": "Emotional ties with parents"
+              },
+              {
+                "icon": "🛡️",
+                "title": "Ability to provide stable care"
+              },
+              {
+                "icon": "🏠",
+                "title": "Home environment & stability"
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "heading": "4. Visitation & Rights",
+            "content": "Non-custodial parents have an enforceable right to reasonable visitation and holiday contact schedules unless proven detrimental to the minor safety. Courts establish structured parenting plans to prevent disputes."
+          },
+          {
+            "number": "5",
+            "heading": "5. How We Can Help",
+            "content": "Our family law specialists assist in drafting parenting agreements, representing clients in contested custody proceedings, and ensuring your parental rights are fully protected under current statutory frameworks."
+          }
+        ]
       },
       {
         "id": 2,
-        "title": "High Court Clarifies Arbitral Award Enforcement Standards",
-        "date": "August 10, 2026",
-        "category": "Civil Litigation",
-        "summary": "Key takeaways from recent judicial rulings governing international and domestic commercial arbitration awards."
+        "slug": "key-changes-in-contract-law-you-should-know-in-2025",
+        "category": "BUSINESS LAW",
+        "title": "Key Changes in Contract Law You Should Know in 2025",
+        "date": "May 16, 2024",
+        "author": "Imtiaz Hasan",
+        "readTime": "6 min read",
+        "excerpt": "From digital contracts to new enforcement rules, 2025 brings important changes to contract law. Learn how these updates affect your business.",
+        "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+        "intro": "Commercial transactions are rapidly adopting electronic execution, digital stamp duties, and streamlined dispute mechanisms under amended contract rules.",
+        "inThisArticle": [
+          {
+            "number": "01",
+            "title": "Electronic Signatures Validity"
+          },
+          {
+            "number": "02",
+            "title": "Force Majeure & Hardship"
+          },
+          {
+            "number": "03",
+            "title": "Liquidated Damages Standards"
+          },
+          {
+            "number": "04",
+            "title": "Arbitration Seat Protocols"
+          },
+          {
+            "number": "05",
+            "title": "Compliance Recommendations"
+          }
+        ],
+        "sections": [
+          {
+            "number": "1",
+            "heading": "1. Electronic Signatures and E-Contracts",
+            "content": "Amendments reinforce the evidentiary enforceability of digital contracts, e-signatures, and click-wrap commercial agreements, setting standards for cryptographic verification.",
+            "quote": {
+              "text": "Digital contracts bearing valid electronic signatures hold equivalent legal status to traditional written deeds.",
+              "source": "Commercial Law Review"
+            }
+          },
+          {
+            "number": "2",
+            "heading": "2. Force Majeure & Hardship Clauses",
+            "content": "Courts have narrowed the threshold for invoking force majeure, mandating clear definitions of unforeseeable commercial disruptions and mitigation steps.",
+            "points": [
+              "Requirement of prompt formal notice within statutory or contractual timelines",
+              "Demonstration of good-faith efforts to mitigate operational delays",
+              "Explicit exclusion of normal price fluctuations from force majeure"
+            ]
+          },
+          {
+            "number": "3",
+            "heading": "3. Liquidated Damages & Penalty Assessment",
+            "content": "The assessment of pre-estimated damages now requires demonstration of genuine pre-estimates of loss rather than punitive deductions.",
+            "factorCards": [
+              {
+                "icon": "📜",
+                "title": "Genuine Loss Pre-Estimate"
+              },
+              {
+                "icon": "⚖️",
+                "title": "Reasonableness Test"
+              },
+              {
+                "icon": "💼",
+                "title": "Proof of Actual Inconvenience"
+              },
+              {
+                "icon": "🛡️",
+                "title": "Cap on Maximum Liability"
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "heading": "4. Seat vs. Venue in Arbitration Clauses",
+            "content": "Clear distinction between the supervisory jurisdiction (seat) and the physical hearing location (venue) is now strictly enforced to prevent jurisdictional challenges."
+          },
+          {
+            "number": "5",
+            "heading": "5. Commercial Compliance Recommendations",
+            "content": "Businesses should conduct comprehensive audits of their vendor agreements, master service contracts, and standard terms of service to reflect these legal developments."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "supreme-court-ruling-on-property-disputes-key-takeaways",
+        "category": "LEGAL NEWS",
+        "title": "Supreme Court Ruling on Property Disputes: Key Takeaways",
+        "date": "May 10, 2024",
+        "author": "Farzana Alam",
+        "readTime": "6 min read",
+        "excerpt": "The latest Supreme Court ruling sets a significant precedent for property dispute cases. Here are the key takeaways and what they mean for you.",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
+        "intro": "The Supreme Court recently delivered a landmark verdict concerning ancestral title partition, registered power of attorney transfers, and adverse possession criteria.",
+        "inThisArticle": [
+          {
+            "number": "01",
+            "title": "Sale via GPA Disallowed"
+          },
+          {
+            "number": "02",
+            "title": "Ancestral Property Rights"
+          },
+          {
+            "number": "03",
+            "title": "Adverse Possession Threshold"
+          },
+          {
+            "number": "04",
+            "title": "Registration & Mutation Rules"
+          },
+          {
+            "number": "05",
+            "title": "Actionable Steps for Buyers"
+          }
+        ],
+        "sections": [
+          {
+            "number": "1",
+            "heading": "1. Invalidation of Property Transfers via General Power of Attorney",
+            "content": "The apex court reiterated that General Power of Attorney (GPA) and Agreement to Sell transactions do not convey legal title or ownership without a registered conveyance deed.",
+            "quote": {
+              "text": "Immovable property can be legally transferred only through a registered deed of conveyance duly stamped.",
+              "source": "Supreme Court Landmark Judgment"
+            }
+          },
+          {
+            "number": "2",
+            "heading": "2. Coparcenary Rights in Ancestral Property",
+            "content": "The court reaffirmed coparcenary rights for daughters and coparceners by birth, invalidating unilateral family settlements executed without consensus.",
+            "points": [
+              "Coparcenary status is inherent by birth and persists irrespective of prior informal partitions",
+              "Registered partition deeds or court decrees are required to extinguish coparcenary claims",
+              "Full disclosure of ancestral lineage is mandatory before commercial property sales"
+            ]
+          },
+          {
+            "number": "3",
+            "heading": "3. Adverse Possession Rigorous Standards",
+            "content": "Claiming adverse possession requires conclusive proof of continuous, hostile, open, and undisputed possession for the entire statutory limitation period.",
+            "factorCards": [
+              {
+                "icon": "📅",
+                "title": "Continuous 12-Year Possession"
+              },
+              {
+                "icon": "🏛️",
+                "title": "Open & Hostile Intent"
+              },
+              {
+                "icon": "📄",
+                "title": "Documented Municipal Records"
+              },
+              {
+                "icon": "🛡️",
+                "title": "True Owner Knowledge"
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "heading": "4. Title Due Diligence Mandate",
+            "content": "Buyers and lenders must conduct a minimum 30-year title trace to identify encumbrances, pending civil suits, or undisclosed equitable mortgages."
+          },
+          {
+            "number": "5",
+            "heading": "5. How Our Real Estate Team Can Assist",
+            "content": "We provide end-to-end title verification, drafting of registered conveyance deeds, and representation in partition and title declaration suits."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "data-protection-act-2025-what-businesses-must-comply-with",
+        "category": "BUSINESS LAW",
+        "title": "Data Protection Act 2025: What Businesses Must Comply With",
+        "date": "May 5, 2024",
+        "author": "Humayun Kabir",
+        "readTime": "7 min read",
+        "excerpt": "The new Data Protection Act introduces strict compliance requirements. Find out how your business can stay compliant and avoid penalties.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        "intro": "Modern digital enterprises face strict new accountability standards covering customer data processing, cross-border data transfer, and mandatory breach disclosures.",
+        "inThisArticle": [
+          {
+            "number": "01",
+            "title": "Data Fiduciary Obligations"
+          },
+          {
+            "number": "02",
+            "title": "Consent Management Framework"
+          },
+          {
+            "number": "03",
+            "title": "Data Principal Rights"
+          },
+          {
+            "number": "04",
+            "title": "Breach Reporting Timelines"
+          },
+          {
+            "number": "05",
+            "title": "Penalties & Mitigation"
+          }
+        ],
+        "sections": [
+          {
+            "number": "1",
+            "heading": "1. Classification of Data Fiduciaries & Processors",
+            "content": "Enterprises collecting user personal data are designated as Data Fiduciaries, with heightened obligations for Significant Data Fiduciaries handling voluminous data.",
+            "quote": {
+              "text": "Personal data shall be processed only for a lawful purpose with explicit, affirmative consent.",
+              "source": "Digital Data Protection Authority"
+            }
+          },
+          {
+            "number": "2",
+            "heading": "2. Consent Architecture and Opt-In Protocols",
+            "content": "Pre-ticked consent boxes, forced bundling of services, and obscure privacy terms are prohibited. Users must be provided unambiguous consent requests in clear language.",
+            "points": [
+              "Right of users to easily withdraw consent through accessible digital interfaces",
+              "Strict ban on processing behavioral data for minors without verified parental consent",
+              "Maintenance of auditable records of all user consents and processing logs"
+            ]
+          },
+          {
+            "number": "3",
+            "heading": "3. Data Principal Rights",
+            "content": "Individuals enjoy enforceable rights to access their stored personal data, request correction or erasure, and nominate representatives.",
+            "factorCards": [
+              {
+                "icon": "👁️",
+                "title": "Right to Access & Summary"
+              },
+              {
+                "icon": "✏️",
+                "title": "Right to Correction"
+              },
+              {
+                "icon": "🗑️",
+                "title": "Right to Erasure / Forgetting"
+              },
+              {
+                "icon": "🛡️",
+                "title": "Grievance Redressal"
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "heading": "4. Mandatory Security Breach Notification",
+            "content": "In the event of a security breach or data compromise, organizations must inform the Data Protection Authority and impacted users within prescribed statutory hours."
+          },
+          {
+            "number": "5",
+            "heading": "5. Compliance Roadmaps & Privacy Audits",
+            "content": "We assist tech firms, e-commerce platforms, and corporations in drafting compliant privacy notices, implementing data processing agreements, and appointing Data Protection Officers."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "new-labor-law-updates-rights-and-responsibilities-of-employers",
+        "category": "EMPLOYMENT LAW",
+        "title": "New Labor Law Updates: Rights & Responsibilities of Employers",
+        "date": "Apr 28, 2024",
+        "author": "Samira Sultana",
+        "readTime": "5 min read",
+        "excerpt": "Understanding the latest labor law updates is essential for maintaining a fair, compliant, and productive workplace.",
+        "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+        "intro": "The latest revisions to employment regulations reform wage calculations, social security enrollments, occupational safety standards, and employment dispute procedures.",
+        "inThisArticle": [
+          {
+            "number": "01",
+            "title": "Unified Wage Definitions"
+          },
+          {
+            "number": "02",
+            "title": "Fixed-Term Employment Rules"
+          },
+          {
+            "number": "03",
+            "title": "Workplace Safety & POSH Mandates"
+          },
+          {
+            "number": "04",
+            "title": "Severance & Gratuity Calculation"
+          },
+          {
+            "number": "05",
+            "title": "Employer Action Checklist"
+          }
+        ],
+        "sections": [
+          {
+            "number": "1",
+            "heading": "1. Unified Definition of Wages and Allowances",
+            "content": "The revised wage definition caps allowances at 50% of total compensation, directly increasing provident fund and gratuity liability calculations for employers.",
+            "quote": {
+              "text": "Equal treatment, statutory social protection, and transparent compensation are core tenets of modern labor reforms.",
+              "source": "Employment & Labor Review"
+            }
+          },
+          {
+            "number": "2",
+            "heading": "2. Formalization of Fixed-Term Employment",
+            "content": "Employers can now engage contract employees for fixed tenures with statutory parity in working hours, medical benefits, and proportionate gratuity.",
+            "points": [
+              "Proportionate gratuity eligibility even for tenures shorter than 5 years under fixed-term contracts",
+              "Prohibition of wage discrimination between permanent and fixed-term personnel",
+              "Clear written notice requirements prior to contract termination or non-renewal"
+            ]
+          },
+          {
+            "number": "3",
+            "heading": "3. Occupational Health, Safety & POSH Compliance",
+            "content": "Mandatory workplace safety standards and strict constitution of Internal Complaints Committees (ICC) under prevention of sexual harassment laws.",
+            "factorCards": [
+              {
+                "icon": "👥",
+                "title": "Internal Complaints Committee"
+              },
+              {
+                "icon": "🏥",
+                "title": "Annual Health Checkups"
+              },
+              {
+                "icon": "🕒",
+                "title": "Regulated Overtime Hours"
+              },
+              {
+                "icon": "🛡️",
+                "title": "Maternity Benefit Compliance"
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "heading": "4. Dispute Resolution & Conciliation",
+            "content": "Statutory conciliation mechanisms are mandated before approaching labor tribunals, promoting mediated dispute settlement."
+          },
+          {
+            "number": "5",
+            "heading": "5. Corporate HR Legal Audit Checklist",
+            "content": "Our employment practice assists corporations in reviewing offer letters, updating HR handbooks, aligning PF/Gratuity compensation structures, and conducting POSH training."
+          }
+        ]
       }
     ]
   },
@@ -2420,30 +3343,79 @@
         "challenge": "The merger involved multiple jurisdictions, each with unique regulatory requirements. The client needed to ensure a smooth transition while minimizing downtime, retaining key talent, and maintaining client trust throughout the process.",
         "approachText": "Our legal team provided end-to-end support, including due diligence, contract review, regulatory filings, and risk assessment. We developed a tailored integration plan that addressed legal, operational, and compliance considerations in each state.",
         "approachItems": [
-          { "title": "Comprehensive Due Diligence" },
-          { "title": "Risk Mitigation Strategy" },
-          { "title": "Regulatory Compliance Management" },
-          { "title": "Integration & Implementation Support" }
+          {
+            "title": "Comprehensive Due Diligence"
+          },
+          {
+            "title": "Risk Mitigation Strategy"
+          },
+          {
+            "title": "Regulatory Compliance Management"
+          },
+          {
+            "title": "Integration & Implementation Support"
+          }
         ],
         "resultText": "The merger was completed seamlessly across all states, with all regulatory approvals obtained on time. The client achieved operational synergies quickly and saw a 25% increase in market expansion within the first year.",
         "resultItems": [
-          { "value": "100%", "label": "Regulatory Approvals Obtained On Time" },
-          { "value": "25%", "label": "Increase in Market Expansion" },
-          { "value": "Seamless", "label": "Integration Across All States" }
+          {
+            "value": "100%",
+            "label": "Regulatory Approvals Obtained On Time"
+          },
+          {
+            "value": "25%",
+            "label": "Increase in Market Expansion"
+          },
+          {
+            "value": "Seamless",
+            "label": "Integration Across All States"
+          }
         ],
         "testimonial": "Their expertise and attention to detail were instrumental in making a complex multi-state merger feel seamless and efficient.",
         "testimonialAuthor": "CEO, Leading Services Company",
         "metaItems": [
-          { "label": "Industry", "value": "Professional Services", "icon": "FaBuilding" },
-          { "label": "Client", "value": "Leading Services Co.", "icon": "FaUserTie" },
-          { "label": "Duration", "value": "6 Months", "icon": "FaCalendarAlt" },
-          { "label": "Location", "value": "Multiple States", "icon": "FaMapMarkerAlt" }
+          {
+            "label": "Industry",
+            "value": "Professional Services",
+            "icon": "FaBuilding"
+          },
+          {
+            "label": "Client",
+            "value": "Leading Services Co.",
+            "icon": "FaUserTie"
+          },
+          {
+            "label": "Duration",
+            "value": "6 Months",
+            "icon": "FaCalendarAlt"
+          },
+          {
+            "label": "Location",
+            "value": "Multiple States",
+            "icon": "FaMapMarkerAlt"
+          }
         ],
         "highlightItems": [
-          { "title": "Multi-State Compliance", "description": "Navigated complex regulatory landscapes across multiple states.", "icon": "FaFileAlt" },
-          { "title": "Risk Mitigation", "description": "Identified and mitigated potential legal and operational risks.", "icon": "FaShieldAlt" },
-          { "title": "Seamless Integration", "description": "Ensured smooth integration of business operations and legal frameworks.", "icon": "FaCogs" },
-          { "title": "Business Growth", "description": "Enabled the client to expand market presence and achieve significant growth.", "icon": "FaChartLine" }
+          {
+            "title": "Multi-State Compliance",
+            "description": "Navigated complex regulatory landscapes across multiple states.",
+            "icon": "FaFileAlt"
+          },
+          {
+            "title": "Risk Mitigation",
+            "description": "Identified and mitigated potential legal and operational risks.",
+            "icon": "FaShieldAlt"
+          },
+          {
+            "title": "Seamless Integration",
+            "description": "Ensured smooth integration of business operations and legal frameworks.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Business Growth",
+            "description": "Enabled the client to expand market presence and achieve significant growth.",
+            "icon": "FaChartLine"
+          }
         ],
         "relatedCaseStudies": [
           {
@@ -2480,30 +3452,79 @@
         "challenge": "The property dispute spanned multiple courts with conflicting interim orders. The client faced financial loss, project delays, and reputational risk due to the uncertainty surrounding ownership rights.",
         "approachText": "We conducted an exhaustive title investigation, engaged forensic document experts, and filed for immediate injunctive relief. Our team coordinated across civil, criminal, and revenue court proceedings simultaneously.",
         "approachItems": [
-          { "title": "Title Verification & Forensic Analysis" },
-          { "title": "Emergency Injunction Filing" },
-          { "title": "Multi-Forum Litigation Strategy" },
-          { "title": "Negotiated Settlement Framework" }
+          {
+            "title": "Title Verification & Forensic Analysis"
+          },
+          {
+            "title": "Emergency Injunction Filing"
+          },
+          {
+            "title": "Multi-Forum Litigation Strategy"
+          },
+          {
+            "title": "Negotiated Settlement Framework"
+          }
         ],
         "resultText": "The court ruled in favour of our client, declaring clear title and ordering compensation from the opposing parties. The property project resumed within 3 months of the verdict.",
         "resultItems": [
-          { "value": "₹12Cr+", "label": "Property Value Recovered" },
-          { "value": "3 Months", "label": "Time to Project Resumption" },
-          { "value": "Full Title", "label": "Clear Ownership Declared by Court" }
+          {
+            "value": "₹12Cr+",
+            "label": "Property Value Recovered"
+          },
+          {
+            "value": "3 Months",
+            "label": "Time to Project Resumption"
+          },
+          {
+            "value": "Full Title",
+            "label": "Clear Ownership Declared by Court"
+          }
         ],
         "testimonial": "We were on the verge of losing everything. Their strategy and persistence turned the case completely in our favor.",
         "testimonialAuthor": "Managing Director, Real Estate Developer",
         "metaItems": [
-          { "label": "Industry", "value": "Real Estate", "icon": "FaBuilding" },
-          { "label": "Client", "value": "Property Developer", "icon": "FaUserTie" },
-          { "label": "Duration", "value": "14 Months", "icon": "FaCalendarAlt" },
-          { "label": "Location", "value": "Delhi & NCR", "icon": "FaMapMarkerAlt" }
+          {
+            "label": "Industry",
+            "value": "Real Estate",
+            "icon": "FaBuilding"
+          },
+          {
+            "label": "Client",
+            "value": "Property Developer",
+            "icon": "FaUserTie"
+          },
+          {
+            "label": "Duration",
+            "value": "14 Months",
+            "icon": "FaCalendarAlt"
+          },
+          {
+            "label": "Location",
+            "value": "Delhi & NCR",
+            "icon": "FaMapMarkerAlt"
+          }
         ],
         "highlightItems": [
-          { "title": "Title Fraud Exposed", "description": "Identified and proved fraudulent documentation through forensic analysis.", "icon": "FaShieldAlt" },
-          { "title": "Emergency Relief Secured", "description": "Obtained injunction preventing further transfer of disputed property.", "icon": "FaFileAlt" },
-          { "title": "Multi-Court Strategy", "description": "Coordinated simultaneous civil, criminal, and revenue proceedings.", "icon": "FaCogs" },
-          { "title": "Full Recovery", "description": "Client regained complete ownership and received compensation.", "icon": "FaChartLine" }
+          {
+            "title": "Title Fraud Exposed",
+            "description": "Identified and proved fraudulent documentation through forensic analysis.",
+            "icon": "FaShieldAlt"
+          },
+          {
+            "title": "Emergency Relief Secured",
+            "description": "Obtained injunction preventing further transfer of disputed property.",
+            "icon": "FaFileAlt"
+          },
+          {
+            "title": "Multi-Court Strategy",
+            "description": "Coordinated simultaneous civil, criminal, and revenue proceedings.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Full Recovery",
+            "description": "Client regained complete ownership and received compensation.",
+            "icon": "FaChartLine"
+          }
         ],
         "relatedCaseStudies": [
           {
@@ -2540,30 +3561,79 @@
         "challenge": "The opposing party disputed the contract's enforceability, raised counterclaims of defective goods, and sought to delay proceedings through repeated adjournments. Our client needed a swift, decisive legal outcome.",
         "approachText": "We built an airtight case based on documented communications, delivery records, and expert testimony. Our team pre-empted delay tactics and moved for summary judgment on uncontested issues.",
         "approachItems": [
-          { "title": "Documentary Evidence Compilation" },
-          { "title": "Expert Witness Coordination" },
-          { "title": "Summary Judgment Motion" },
-          { "title": "Counterclaim Defense Strategy" }
+          {
+            "title": "Documentary Evidence Compilation"
+          },
+          {
+            "title": "Expert Witness Coordination"
+          },
+          {
+            "title": "Summary Judgment Motion"
+          },
+          {
+            "title": "Counterclaim Defense Strategy"
+          }
         ],
         "resultText": "The court delivered a clear judgment in favour of our client, awarding full contract damages plus interest. The counterclaims were dismissed entirely. The case concluded in under 11 months.",
         "resultItems": [
-          { "value": "₹8Cr+", "label": "Damages Awarded" },
-          { "value": "11 Months", "label": "Case Duration" },
-          { "value": "0", "label": "Counterclaims Upheld" }
+          {
+            "value": "₹8Cr+",
+            "label": "Damages Awarded"
+          },
+          {
+            "value": "11 Months",
+            "label": "Case Duration"
+          },
+          {
+            "value": "0",
+            "label": "Counterclaims Upheld"
+          }
         ],
         "testimonial": "They were thorough, aggressive where needed, and always kept us informed. The outcome exceeded our expectations.",
         "testimonialAuthor": "CEO, Manufacturing Corporation",
         "metaItems": [
-          { "label": "Industry", "value": "Manufacturing", "icon": "FaBuilding" },
-          { "label": "Client", "value": "Corporate Entity", "icon": "FaUserTie" },
-          { "label": "Duration", "value": "11 Months", "icon": "FaCalendarAlt" },
-          { "label": "Location", "value": "Mumbai, India", "icon": "FaMapMarkerAlt" }
+          {
+            "label": "Industry",
+            "value": "Manufacturing",
+            "icon": "FaBuilding"
+          },
+          {
+            "label": "Client",
+            "value": "Corporate Entity",
+            "icon": "FaUserTie"
+          },
+          {
+            "label": "Duration",
+            "value": "11 Months",
+            "icon": "FaCalendarAlt"
+          },
+          {
+            "label": "Location",
+            "value": "Mumbai, India",
+            "icon": "FaMapMarkerAlt"
+          }
         ],
         "highlightItems": [
-          { "title": "Contract Enforcement", "description": "Proved enforceability of disputed long-term supply agreement.", "icon": "FaFileAlt" },
-          { "title": "Counterclaim Defeat", "description": "Successfully dismissed all counterclaims filed by opposing party.", "icon": "FaShieldAlt" },
-          { "title": "Expert Testimony", "description": "Coordinated industry experts to validate quality and delivery standards.", "icon": "FaCogs" },
-          { "title": "Full Recovery", "description": "Client recovered complete damages plus statutory interest.", "icon": "FaChartLine" }
+          {
+            "title": "Contract Enforcement",
+            "description": "Proved enforceability of disputed long-term supply agreement.",
+            "icon": "FaFileAlt"
+          },
+          {
+            "title": "Counterclaim Defeat",
+            "description": "Successfully dismissed all counterclaims filed by opposing party.",
+            "icon": "FaShieldAlt"
+          },
+          {
+            "title": "Expert Testimony",
+            "description": "Coordinated industry experts to validate quality and delivery standards.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Full Recovery",
+            "description": "Client recovered complete damages plus statutory interest.",
+            "icon": "FaChartLine"
+          }
         ],
         "relatedCaseStudies": [
           {
@@ -2600,30 +3670,79 @@
         "challenge": "False allegations of neglect were filed against our client. The matter involved child welfare authorities, school testimonies, and multiple interim hearings. The emotional complexity required both legal precision and compassionate advocacy.",
         "approachText": "We filed for interim custody backed by character references, school records, and independent welfare reports. Our team worked with family counselors and coordinated with child welfare officers to present a holistic case.",
         "approachItems": [
-          { "title": "Interim Custody Application" },
-          { "title": "Welfare Report Coordination" },
-          { "title": "Counter-Allegations Defense" },
-          { "title": "Mediation & Parenting Plan" }
+          {
+            "title": "Interim Custody Application"
+          },
+          {
+            "title": "Welfare Report Coordination"
+          },
+          {
+            "title": "Counter-Allegations Defense"
+          },
+          {
+            "title": "Mediation & Parenting Plan"
+          }
         ],
         "resultText": "The court granted our client primary residence rights with structured shared custody. All allegations against our client were dismissed, and a detailed parenting plan was approved.",
         "resultItems": [
-          { "value": "Primary", "label": "Residence Rights Granted" },
-          { "value": "Dismissed", "label": "All Allegations Against Client" },
-          { "value": "Approved", "label": "Detailed Parenting Plan" }
+          {
+            "value": "Primary",
+            "label": "Residence Rights Granted"
+          },
+          {
+            "value": "Dismissed",
+            "label": "All Allegations Against Client"
+          },
+          {
+            "value": "Approved",
+            "label": "Detailed Parenting Plan"
+          }
         ],
         "testimonial": "They fought for my children as if they were their own. I could not have navigated this without their support and expertise.",
         "testimonialAuthor": "Parent, Family Law Client",
         "metaItems": [
-          { "label": "Practice Area", "value": "Family Law", "icon": "FaBuilding" },
-          { "label": "Client", "value": "Parent (Confidential)", "icon": "FaUserTie" },
-          { "label": "Duration", "value": "9 Months", "icon": "FaCalendarAlt" },
-          { "label": "Location", "value": "New Delhi, India", "icon": "FaMapMarkerAlt" }
+          {
+            "label": "Practice Area",
+            "value": "Family Law",
+            "icon": "FaBuilding"
+          },
+          {
+            "label": "Client",
+            "value": "Parent (Confidential)",
+            "icon": "FaUserTie"
+          },
+          {
+            "label": "Duration",
+            "value": "9 Months",
+            "icon": "FaCalendarAlt"
+          },
+          {
+            "label": "Location",
+            "value": "New Delhi, India",
+            "icon": "FaMapMarkerAlt"
+          }
         ],
         "highlightItems": [
-          { "title": "Interim Relief Secured", "description": "Obtained interim custody order within the first two hearings.", "icon": "FaShieldAlt" },
-          { "title": "Allegations Dismissed", "description": "Systematically refuted all false allegations with documented evidence.", "icon": "FaFileAlt" },
-          { "title": "Welfare-First Approach", "description": "Collaborated with counselors and welfare officers for the child's benefit.", "icon": "FaCogs" },
-          { "title": "Parenting Plan Approved", "description": "Court approved a structured shared custody and visitation schedule.", "icon": "FaChartLine" }
+          {
+            "title": "Interim Relief Secured",
+            "description": "Obtained interim custody order within the first two hearings.",
+            "icon": "FaShieldAlt"
+          },
+          {
+            "title": "Allegations Dismissed",
+            "description": "Systematically refuted all false allegations with documented evidence.",
+            "icon": "FaFileAlt"
+          },
+          {
+            "title": "Welfare-First Approach",
+            "description": "Collaborated with counselors and welfare officers for the child's benefit.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Parenting Plan Approved",
+            "description": "Court approved a structured shared custody and visitation schedule.",
+            "icon": "FaChartLine"
+          }
         ],
         "relatedCaseStudies": [
           {

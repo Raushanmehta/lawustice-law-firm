@@ -25,12 +25,12 @@ export default function BlogSection(): React.JSX.Element {
                     >
                         {/* Tagline */}
                         <div className="flex items-center justify-center gap-2">
-                        <span className="h-px w-8 bg-[#d9983b]" />
-                        <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
-                            {blog.tagline}
-                        </span>
-                        <span className="h-px w-8 bg-[#d9983b]" />
-                    </div>
+                            <span className="h-px w-8 bg-[#d9983b]" />
+                            <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
+                                {blog.tagline}
+                            </span>
+                            <span className="h-px w-8 bg-[#d9983b]" />
+                        </div>
 
                         {/* Title */}
                         <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight sm:text-5xl md:text-5xl lg:text-6xl">
@@ -47,7 +47,7 @@ export default function BlogSection(): React.JSX.Element {
 
                     {/* ================= BLOG CARDS GRID ================= */}
                     <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        {blog.posts.map((post: BlogPost, index: number) => (
+                        {blog.posts.slice(0, 3).map((post: BlogPost, index: number) => (
                             <motion.article
                                 key={post.id}
                                 initial={{ opacity: 0, y: 30 }}
@@ -98,7 +98,7 @@ export default function BlogSection(): React.JSX.Element {
 
                                     {/* Title */}
                                     <h3 className="mt-4 font-serif text-2xl  leading-snug text-[#102033] transition-colors duration-300 group-hover:text-[#d9983b]">
-                                        <Link href={`#post-${post.id}`}>
+                                        <Link href={`/blog/${post.slug}`}>
                                             {post.title}
                                         </Link>
                                     </h3>
@@ -111,7 +111,7 @@ export default function BlogSection(): React.JSX.Element {
                                     {/* Read More Link */}
                                     <div className="mt-auto pt-6">
                                         <Link
-                                            href={`#post-${post.id}`}
+                                            href={`/blog/${post.slug}`}
                                             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#d9983b] transition-all duration-300 hover:text-[#b87d28] hover:gap-3"
                                         >
                                             <span>READ MORE</span>

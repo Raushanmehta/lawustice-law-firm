@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -16,168 +17,60 @@ import {
     FaArrowRight,
     FaPhoneAlt,
 } from "react-icons/fa";
+import { CaseStudyItem } from "@/types/sections";
+import siteData from "@/data/data.json";
 
-interface MetaItem {
-    label: string;
-    value: string;
-    icon: React.ElementType;
-}
+const iconMap: Record<string, React.ElementType> = {
+    FaBuilding,
+    FaUserTie,
+    FaCalendarAlt,
+    FaMapMarkerAlt,
+    FaFileAlt,
+    FaShieldAlt,
+    FaCogs,
+    FaChartLine,
+    FaCheckCircle,
+};
 
-interface ApproachItem {
-    title: string;
-}
+const getIcon = (name?: string): React.ElementType => {
+    if (name && iconMap[name]) return iconMap[name];
+    return FaFileAlt;
+};
 
-interface ResultItem {
-    value: string;
-    label: string;
-}
+export default function CaseStudyDetailPage({
+    caseStudy,
+}: {
+    caseStudy?: CaseStudyItem;
+}): React.JSX.Element {
+    const defaultCaseStudy = siteData.caseStudies.items[0] as unknown as CaseStudyItem;
+    const currentStudy: CaseStudyItem = caseStudy || defaultCaseStudy;
 
-interface HighlightItem {
-    title: string;
-    description: string;
-    icon: React.ElementType;
-}
+    const metaList = currentStudy.metaItems || [];
+    const approachList = currentStudy.approachItems || [];
+    const resultList = currentStudy.resultItems || [];
+    const highlightList = currentStudy.highlightItems || [];
+    const relatedList =
+        currentStudy.relatedCaseStudies ||
+        (siteData.caseStudies.items
+            .filter((item) => item.slug !== currentStudy.slug)
+            .slice(0, 3) as unknown as typeof currentStudy.relatedCaseStudies);
 
-interface RelatedCaseStudy {
-    image: string;
-    alt: string;
-    category: string;
-    title: string;
-    description: string;
-    href: string;
-}
+    const contactPhone =
+        siteData.topNavbar?.phone || siteData.navbar?.phone || "+91 11 4356 0000";
 
-const metaItems: MetaItem[] = [
-    {
-        label: "Industry",
-        value: "Professional Services",
-        icon: FaBuilding,
-    },
-    {
-        label: "Client",
-        value: "Leading Services Co.",
-        icon: FaUserTie,
-    },
-    {
-        label: "Duration",
-        value: "6 Months",
-        icon: FaCalendarAlt,
-    },
-    {
-        label: "Location",
-        value: "Multiple States, USA",
-        icon: FaMapMarkerAlt,
-    },
-];
-
-const approachItems: ApproachItem[] = [
-    {
-        title: "Comprehensive Due Diligence",
-    },
-    {
-        title: "Risk Mitigation Strategy",
-    },
-    {
-        title: "Regulatory Compliance Management",
-    },
-    {
-        title: "Integration & Implementation Support",
-    },
-];
-
-const resultItems: ResultItem[] = [
-    {
-        value: "100%",
-        label: "Regulatory Approvals Obtained On Time",
-    },
-    {
-        value: "25%",
-        label: "Increase in Market Expansion",
-    },
-    {
-        value: "Seamless",
-        label: "Integration Across All States",
-    },
-];
-
-const highlightItems: HighlightItem[] = [
-    {
-        title: "Multi-State Compliance",
-        description:
-            "Navigated complex regulatory landscapes across multiple states.",
-        icon: FaFileAlt,
-    },
-    {
-        title: "Risk Mitigation",
-        description:
-            "Identified and mitigated potential legal and operational risks.",
-        icon: FaShieldAlt,
-    },
-    {
-        title: "Seamless Integration",
-        description:
-            "Ensured smooth integration of business operations and legal frameworks.",
-        icon: FaCogs,
-    },
-    {
-        title: "Business Growth",
-        description:
-            "Enabled the client to expand market presence and achieve significant growth.",
-        icon: FaChartLine,
-    },
-];
-
-const relatedCaseStudies: RelatedCaseStudy[] = [
-    {
-        image: "/images/news-mic.png",
-        alt: "Real Estate",
-        category: "REAL ESTATE",
-        title: "Resolving a High-Value Property Dispute",
-        description:
-            "Successfully defended client rights in complex multi-million dollar real estate litigation.",
-        href: "/case-studies/property-dispute",
-    },
-    {
-        image: "/images/news-papers.png",
-        alt: "Litigation",
-        category: "LITIGATION",
-        title: "Favorable Verdict in a Commercial Litigation",
-        description:
-            "Represented corporate entity in high-stakes breach of contract dispute.",
-        href: "/case-studies/commercial-litigation",
-    },
-    {
-        image: "/images/news-event.png",
-        alt: "Family Law",
-        category: "FAMILY LAW",
-        title: "Securing the Best Outcome for Child Custody",
-        description:
-            "Guided client through delicate family proceedings with favorable custody arrangement.",
-        href: "/case-studies/child-custody",
-    },
-];
-
-export default function CaseStudyDetailPage(): React.JSX.Element {
     return (
-        <main className="relative bg-[#fdfbf7]">
+        <main className="relative">
             <section className="px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
-                <div className="mx-auto  space-y-16">
-
-                    {/* Hero */}
-
-
+                <div className="mx-auto space-y-16">
                     {/* Content + Sidebar */}
                     <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
-
-
                         {/* Main Content */}
                         <div className="space-y-8 lg:col-span-8">
-                            <div className="grid grid-cols-1 items-center gap-8 rounded-2xl border border-[#f0ebde] bg-white p-4 shadow-[0_10px_30px_rgba(0,0,0,0.04)] sm:p-4 lg:grid-cols-12">
-
+                            <div className="grid grid-cols-1 items-center gap-8 rounded-2xl border border-[#f0ebde] bg-white p-4 shadow-[0_10px_30px_rgba(0,0,0,0.04)] sm:p-6 lg:grid-cols-12">
                                 <div className="relative h-72 w-full overflow-hidden rounded-xl bg-[#0b1329] sm:h-80 lg:col-span-5">
                                     <Image
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4E-qX4qXAcXhHD-iMowMcCIJE9pWXmEaZWrg1ECntkYVF5erjdA1dCw&s=10"
-                                        alt="Successful Merger for a Multi-State Company"
+                                        src={currentStudy.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"}
+                                        alt={currentStudy.title}
                                         fill
                                         priority
                                         sizes="(max-width: 1024px) 100vw, 42vw"
@@ -188,233 +81,193 @@ export default function CaseStudyDetailPage(): React.JSX.Element {
                                 <div className="space-y-6 lg:col-span-7">
                                     <div className="space-y-3">
                                         <span className="text-[11px] font-semibold uppercase tracking-widest text-[#d9983b]">
-                                            Corporate & Commercial
+                                            {currentStudy.category}
                                         </span>
 
-                                        <h1 className="font-serif text-3xl leading-tight text-[#0b1329] sm:text-4xl">
-                                            Successful Merger for a Multi-State Company
+                                        <h1 className="font-serif text-2xl leading-tight text-[#0b1329] sm:text-3xl lg:text-4xl">
+                                            {currentStudy.title}
                                         </h1>
 
                                         <div className="h-[2px] w-12 bg-[#d9983b]" />
 
                                         <p className="text-xs leading-relaxed text-gray-600 sm:text-sm">
-                                            We advised a leading services company on a
-                                            complex merger deal, ensuring regulatory
-                                            compliance and minimizing business disruption
-                                            across multiple states.
+                                            {currentStudy.description}
                                         </p>
                                     </div>
-
-
                                 </div>
-                                <div className="lg:col-span-12">
-                                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                                        {metaItems.map((item) => {
-                                            const Icon = item.icon;
 
-                                            return (
-                                                <div
-                                                    key={item.label}
-                                                    className="flex flex-col items-center space-y-1 rounded-xl border border-[#f5eddce6] bg-[#fdfaf3] p-3 text-center"
-                                                >
-                                                    <Icon className="h-4 w-4 text-[#d9983b]" />
+                                {metaList.length > 0 && (
+                                    <div className="lg:col-span-12">
+                                        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                                            {metaList.map((item, idx) => {
+                                                const Icon = getIcon(item.icon);
+                                                return (
+                                                    <div
+                                                        key={idx}
+                                                        className="flex flex-col items-center space-y-1 rounded-xl border border-[#f5eddce6] bg-[#fdfaf3] p-3 text-center"
+                                                    >
+                                                        <Icon className="h-4 w-4 text-[#d9983b]" />
 
-                                                    <span className="text-[10px] font-semibold uppercase text-gray-400">
-                                                        {item.label}
-                                                    </span>
+                                                        <span className="text-[10px] font-semibold uppercase text-gray-400">
+                                                            {item.label}
+                                                        </span>
 
-                                                    <span className="text-xs font-semibold text-[#0b1329]">
-                                                        {item.value}
-                                                    </span>
-                                                </div>
-                                            );
-                                        })}
+                                                        <span className="text-xs font-semibold text-[#0b1329]">
+                                                            {item.value}
+                                                        </span>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
                                     </div>
-                                </div>
-
+                                )}
                             </div>
 
                             {/* Overview */}
-                            <ContentCard
-                                icon={FaFileAlt}
-                                title="Overview"
-                            >
-                                <p>
-                                    Our client, a rapidly growing professional
-                                    services company, acquired three regional
-                                    firms across different states to expand its
-                                    footprint and service offerings. The
-                                    transaction involved complex regulatory
-                                    approvals, multi-state compliance, and the
-                                    integration of operational and legal
-                                    frameworks.
-                                </p>
-                            </ContentCard>
+                            {currentStudy.overview && (
+                                <ContentCard icon={FaFileAlt} title="Overview">
+                                    <p>{currentStudy.overview}</p>
+                                </ContentCard>
+                            )}
 
                             {/* Challenge */}
-                            <ContentCard
-                                icon={FaShieldAlt}
-                                title="The Challenge"
-                            >
-                                <p>
-                                    The merger involved multiple jurisdictions,
-                                    each with unique regulatory requirements.
-                                    The client needed to ensure a smooth
-                                    transition while minimizing downtime,
-                                    retaining key talent, and maintaining
-                                    client trust throughout the process.
-                                </p>
-                            </ContentCard>
+                            {currentStudy.challenge && (
+                                <ContentCard icon={FaShieldAlt} title="The Challenge">
+                                    <p>{currentStudy.challenge}</p>
+                                </ContentCard>
+                            )}
 
                             {/* Approach */}
-                            <ContentCard
-                                icon={FaCogs}
-                                title="Our Approach"
-                            >
-                                <p>
-                                    Our legal team provided end-to-end support,
-                                    including due diligence, contract review,
-                                    regulatory filings, and risk assessment.
-                                    We developed a tailored integration plan
-                                    that addressed legal, operational, and
-                                    compliance considerations in each state.
-                                </p>
+                            {(currentStudy.approachText || approachList.length > 0) && (
+                                <ContentCard icon={FaCogs} title="Our Approach">
+                                    {currentStudy.approachText && (
+                                        <p>{currentStudy.approachText}</p>
+                                    )}
 
-                                <div className="grid grid-cols-1 gap-3 pt-2 sm:grid-cols-2">
-                                    {approachItems.map((item) => (
-                                        <div
-                                            key={item.title}
-                                            className="flex items-center gap-2.5 text-xs font-medium text-gray-700"
-                                        >
-                                            <FaCheckCircle className="h-3.5 w-3.5 shrink-0 text-[#d9983b]" />
-
-                                            <span>{item.title}</span>
+                                    {approachList.length > 0 && (
+                                        <div className="grid grid-cols-1 gap-3 pt-2 sm:grid-cols-2">
+                                            {approachList.map((item, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className="flex items-center gap-2.5 text-xs font-medium text-gray-700"
+                                                >
+                                                    <FaCheckCircle className="h-3.5 w-3.5 shrink-0 text-[#d9983b]" />
+                                                    <span>{item.title}</span>
+                                                </div>
+                                            ))}
                                         </div>
-                                    ))}
-                                </div>
-                            </ContentCard>
+                                    )}
+                                </ContentCard>
+                            )}
 
                             {/* Results */}
-                            <ContentCard
-                                icon={FaChartLine}
-                                title="The Results"
-                            >
-                                <p>
-                                    The merger was completed seamlessly across
-                                    all states, with all regulatory approvals
-                                    obtained on time. The client achieved
-                                    operational synergies quickly and saw a
-                                    25% increase in market expansion within
-                                    the first year.
-                                </p>
+                            {(currentStudy.resultText || resultList.length > 0) && (
+                                <ContentCard icon={FaChartLine} title="The Results">
+                                    {currentStudy.resultText && (
+                                        <p>{currentStudy.resultText}</p>
+                                    )}
 
-                                <div className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-3">
-                                    {resultItems.map((item) => (
-                                        <div
-                                            key={item.value}
-                                            className="space-y-1 rounded-xl border border-[#f5eddce6] bg-[#fdfaf3] p-4 text-center"
-                                        >
-                                            <h3 className="font-serif text-2xl font-bold text-[#0b1329]">
-                                                {item.value}
-                                            </h3>
+                                    {resultList.length > 0 && (
+                                        <div className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-3">
+                                            {resultList.map((item, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className="space-y-1 rounded-xl border border-[#f5eddce6] bg-[#fdfaf3] p-4 text-center"
+                                                >
+                                                    <h3 className="font-serif text-2xl font-bold text-[#0b1329]">
+                                                        {item.value}
+                                                    </h3>
 
-                                            <p className="text-[11px] text-gray-500">
-                                                {item.label}
-                                            </p>
+                                                    <p className="text-[11px] text-gray-500">
+                                                        {item.label}
+                                                    </p>
+                                                </div>
+                                            ))}
                                         </div>
-                                    ))}
-                                </div>
-                            </ContentCard>
+                                    )}
+                                </ContentCard>
+                            )}
 
                             {/* Testimonial */}
-                            <div className="flex flex-col items-center gap-6 rounded-2xl bg-[#0b1329] p-6 text-white shadow-md sm:flex-row sm:p-8">
-                                <div className="shrink-0 font-serif text-4xl text-[#d9983b]">
-                                    “
-                                </div>
+                            {currentStudy.testimonial && (
+                                <div className="flex flex-col items-center gap-6 rounded-2xl bg-[#0b1329] p-6 text-white shadow-md sm:flex-row sm:p-8">
+                                    <div className="shrink-0 font-serif text-4xl text-[#d9983b]">
+                                        “
+                                    </div>
 
-                                <div className="space-y-3">
-                                    <p className="font-serif text-sm italic leading-relaxed text-gray-200 sm:text-base">
-                                        "Their expertise and attention to detail
-                                        were instrumental in making a complex
-                                        multi-state merger feel seamless and
-                                        efficient."
-                                    </p>
+                                    <div className="space-y-3">
+                                        <p className="font-serif text-sm italic leading-relaxed text-gray-200 sm:text-base">
+                                            &ldquo;{currentStudy.testimonial}&rdquo;
+                                        </p>
 
-                                    <div className="text-xs font-semibold text-[#d9983b]">
-                                        — CEO, Leading Services Company
+                                        {currentStudy.testimonialAuthor && (
+                                            <div className="text-xs font-semibold text-[#d9983b]">
+                                                — {currentStudy.testimonialAuthor}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
-                            </div>
+                            )}
                         </div>
 
                         {/* Sidebar */}
                         <aside className="space-y-8 lg:col-span-4">
-
                             {/* Case Details */}
-                            <SidebarCard title="Case Details">
-                                <div className="space-y-4">
-                                    <SidebarItem
-                                        icon={FaBuilding}
-                                        label="Practice Area"
-                                        value="Corporate & Commercial"
-                                    />
-
-                                    <SidebarItem
-                                        icon={FaBuilding}
-                                        label="Industry"
-                                        value="Professional Services"
-                                    />
-
-                                    <SidebarItem
-                                        icon={FaUserTie}
-                                        label="Client"
-                                        value="Leading Services Company"
-                                    />
-
-                                    <SidebarItem
-                                        icon={FaCalendarAlt}
-                                        label="Duration"
-                                        value="6 Months"
-                                    />
-
-                                    <SidebarItem
-                                        icon={FaMapMarkerAlt}
-                                        label="Location"
-                                        value="Multiple States, USA"
-                                        last
-                                    />
-                                </div>
-                            </SidebarCard>
+                            {metaList.length > 0 && (
+                                <SidebarCard title="Case Details">
+                                    <div className="space-y-4">
+                                        <SidebarItem
+                                            icon={FaBuilding}
+                                            label="Practice Area"
+                                            value={currentStudy.category}
+                                        />
+                                        {metaList.map((item, idx) => {
+                                            const Icon = getIcon(item.icon);
+                                            return (
+                                                <SidebarItem
+                                                    key={idx}
+                                                    icon={Icon}
+                                                    label={item.label}
+                                                    value={item.value}
+                                                    last={idx === metaList.length - 1}
+                                                />
+                                            );
+                                        })}
+                                    </div>
+                                </SidebarCard>
+                            )}
 
                             {/* Highlights */}
-                            <SidebarCard title="Key Highlights">
-                                <div className="space-y-5">
-                                    {highlightItems.map((item) => {
-                                        const Icon = item.icon;
+                            {highlightList.length > 0 && (
+                                <SidebarCard title="Key Highlights">
+                                    <div className="space-y-5">
+                                        {highlightList.map((item, idx) => {
+                                            const Icon = getIcon(item.icon);
 
-                                        return (
-                                            <div
-                                                key={item.title}
-                                                className="flex items-start gap-3"
-                                            >
-                                                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#fdfaf3] text-[#d9983b]">
-                                                    <Icon className="h-3.5 w-3.5" />
+                                            return (
+                                                <div
+                                                    key={idx}
+                                                    className="flex items-start gap-3"
+                                                >
+                                                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#fdfaf3] text-[#d9983b]">
+                                                        <Icon className="h-3.5 w-3.5" />
+                                                    </div>
+
+                                                    <div>
+                                                        <h4 className="font-serif text-xs font-semibold text-[#0b1329]">
+                                                            {item.title}
+                                                        </h4>
+
+                                                        <p className="text-[11px] leading-relaxed text-gray-500">
+                                                            {item.description}
+                                                        </p>
+                                                    </div>
                                                 </div>
-
-                                                <div>
-                                                    <h4 className="font-serif text-xs font-semibold text-[#0b1329]">
-                                                        {item.title}
-                                                    </h4>
-
-                                                    <p className="text-[11px] leading-relaxed text-gray-500">
-                                                        {item.description}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            </SidebarCard>
+                                            );
+                                        })}
+                                    </div>
+                                </SidebarCard>
+                            )}
 
                             {/* Downloads */}
                             <SidebarCard title="Downloads">
@@ -443,12 +296,12 @@ export default function CaseStudyDetailPage(): React.JSX.Element {
 
                                 <p className="text-xs leading-relaxed text-gray-300">
                                     Our experienced attorneys are here to provide
-                                    strategic solutions tailored to your business
+                                    strategic solutions tailored to your legal
                                     needs.
                                 </p>
 
                                 <Link
-                                    href="/contact"
+                                    href="/book-consultation"
                                     className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#d9983b] py-3.5 text-xs font-semibold tracking-wider text-[#0b1329] transition hover:bg-[#c28530]"
                                 >
                                     Schedule a Consultation
@@ -457,75 +310,77 @@ export default function CaseStudyDetailPage(): React.JSX.Element {
 
                                 <div className="flex items-center gap-2 text-xs font-semibold text-[#d9983b]">
                                     <FaPhoneAlt className="h-3 w-3" />
-                                    <span>+1 875 74885</span>
+                                    <span>{contactPhone}</span>
                                 </div>
                             </div>
                         </aside>
                     </div>
 
                     {/* Related Case Studies */}
-                    <section className="space-y-8 border-t border-[#f0ebde] pt-8">
-                        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-                            <div className="space-y-2">
-                                <h2 className="font-serif text-2xl text-[#0b1329] sm:text-3xl">
-                                    Related Case Studies
-                                </h2>
+                    {relatedList && relatedList.length > 0 && (
+                        <section className="space-y-8 border-t border-[#f0ebde] pt-8">
+                            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                                <div className="space-y-2">
+                                    <h2 className="font-serif text-2xl text-[#0b1329] sm:text-3xl">
+                                        Related Case Studies
+                                    </h2>
 
-                                <div className="h-[2px] w-10 bg-[#d9983b]" />
+                                    <div className="h-[2px] w-10 bg-[#d9983b]" />
+                                </div>
+
+                                <Link
+                                    href="/case-studies"
+                                    className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#d9983b]"
+                                >
+                                    View All Case Studies
+                                    <FaArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
+                                </Link>
                             </div>
 
-                            <Link
-                                href="/case-studies"
-                                className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#d9983b]"
-                            >
-                                View All Case Studies
-                                <FaArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
-                            </Link>
-                        </div>
-
-                        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                            {relatedCaseStudies.map((item) => (
-                                <article
-                                    key={item.title}
-                                    className="flex flex-col overflow-hidden rounded-2xl border border-[#f0ebde] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.04)]"
-                                >
-                                    <div className="relative h-48 w-full bg-[#0b1329]">
-                                        <Image
-                                            src={item.image}
-                                            alt={item.alt}
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, 33vw"
-                                            className="object-cover"
-                                        />
-                                    </div>
-
-                                    <div className="flex flex-1 flex-col justify-between p-6">
-                                        <div className="space-y-2">
-                                            <span className="text-[10px] font-semibold uppercase tracking-widest text-[#d9983b]">
-                                                {item.category}
-                                            </span>
-
-                                            <h4 className="font-serif text-lg leading-snug text-[#0b1329]">
-                                                {item.title}
-                                            </h4>
-
-                                            <p className="text-xs text-gray-600">
-                                                {item.description}
-                                            </p>
+                            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                                {relatedList.map((item, idx) => (
+                                    <article
+                                        key={idx}
+                                        className="flex flex-col overflow-hidden rounded-2xl border border-[#f0ebde] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.04)]"
+                                    >
+                                        <div className="relative h-48 w-full bg-[#0b1329]">
+                                            <Image
+                                                src={item.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"}
+                                                alt={item.title}
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                                className="object-cover"
+                                            />
                                         </div>
 
-                                        <Link
-                                            href={item.href}
-                                            className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#d9983b]"
-                                        >
-                                            Read Case Study
-                                            <FaArrowRight className="h-3 w-3" />
-                                        </Link>
-                                    </div>
-                                </article>
-                            ))}
-                        </div>
-                    </section>
+                                        <div className="flex flex-1 flex-col justify-between p-6">
+                                            <div className="space-y-2">
+                                                <span className="text-[10px] font-semibold uppercase tracking-widest text-[#d9983b]">
+                                                    {item.category}
+                                                </span>
+
+                                                <h4 className="font-serif text-lg leading-snug text-[#0b1329] line-clamp-2">
+                                                    {item.title}
+                                                </h4>
+
+                                                <p className="text-xs text-gray-600 line-clamp-2">
+                                                    {item.description}
+                                                </p>
+                                            </div>
+
+                                            <Link
+                                                href={`/case-studies/${item.slug}`}
+                                                className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#d9983b]"
+                                            >
+                                                Read Case Study
+                                                <FaArrowRight className="h-3 w-3" />
+                                            </Link>
+                                        </div>
+                                    </article>
+                                ))}
+                            </div>
+                        </section>
+                    )}
                 </div>
             </section>
         </main>
@@ -613,9 +468,7 @@ function SidebarItem({
                     {label}
                 </span>
 
-                <span className="font-medium text-[#0b1329]">
-                    {value}
-                </span>
+                <span className="font-medium text-[#0b1329]">{value}</span>
             </div>
         </div>
     );

@@ -22,7 +22,7 @@ export default async function CaseStudiesDetail({ params }: CaseStudyDetailRoute
 
     return (
         <main>
-            <PageTopSection title={caseStudy.title} />
+            <PageTopSection title="Case Studies Detail" />
             <CaseSturdieDetailPage caseStudy={caseStudy} />
         </main>
     );
