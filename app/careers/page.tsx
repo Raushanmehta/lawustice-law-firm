@@ -5,7 +5,7 @@ import siteData from "@/data/data.json";
 export default function CareersPage() {
     return (
         <main>
-            <PageTopSection title="Job Details" />
+            <PageTopSection title="Careers" />
             <CareerPageJobSection data={siteData.careersJob} />
         </main>
     );
