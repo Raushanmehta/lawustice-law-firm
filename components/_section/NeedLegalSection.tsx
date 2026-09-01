@@ -16,7 +16,7 @@ export interface NeedLegalSectionProps {
 export default function NeedLegalSection({
     leftColumnImage = siteData.needLegal.leftColumnImage,
     rightBgImage = siteData.needLegal.rightBgImage,
-    phone = siteData.topNavbar.phone,
+    phone = siteData.navbar?.phone || "+91 11 4356 0000",
     onBookConsultation,
     tagline = siteData.needLegal.tagline,
     title = siteData.needLegal.title,

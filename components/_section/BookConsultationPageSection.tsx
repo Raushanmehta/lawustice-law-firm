@@ -278,8 +278,8 @@ export default function BookConsultationPageSection({
                                 {sidebar.immediateAssistance.title}
                             </h4>
                             <p className="text-sm text-gray-300 leading-relaxed">
-                                Call us at <strong className="text-white">{siteData.topNavbar.phone}</strong><br />
-                                or email <strong className="text-white">{siteData.topNavbar.email}</strong>
+                                Call us at <strong className="text-white">{siteData.navbar?.phone || "+91 11 4356 0000"}</strong><br />
+                                or email <strong className="text-white">info@lawfirm.com</strong>
                             </p>
                         </div>
 

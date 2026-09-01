@@ -788,7 +788,7 @@ export interface CaseStudiesData {
 
 // ================= MASTER SITE DATA INTERFACE =================
 export interface SiteData {
-    topNavbar: {
+    topNavbar?: {
         phone: string;
         email: string;
         address: string;

@@ -1,27 +1,4 @@
 {
-  "topNavbar": {
-    "phone": "+91 11 4356 0000",
-    "email": "info@lawfirm.com",
-    "address": "N-45, Connaught Place, New Delhi",
-    "socials": [
-      {
-        "label": "Facebook",
-        "href": "https://facebook.com"
-      },
-      {
-        "label": "Twitter",
-        "href": "https://twitter.com"
-      },
-      {
-        "label": "Instagram",
-        "href": "https://instagram.com"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://linkedin.com"
-      }
-    ]
-  },
   "navbar": {
     "logo": "/images/law-logo.png",
     "phone": "1200 300 9000",
@@ -86,6 +63,14 @@
             "href": "/publications"
           },
           {
+            "name": "Careers",
+            "href": "/careers"
+          },
+          {
+            "name": "Job Detail",
+            "href": "/job-detail"
+          },
+          {
             "name": "Why Choose us",
             "href": "/why-choose-us"
           },
@@ -96,66 +81,12 @@
           {
             "name": "Legal Updates",
             "href": "/legal-updates"
-          },
-          {
-            "name": "News & Media",
-            "href": "/news-media"
-          },
-          {
-            "name": "Book Consultation",
-            "href": "/book-consultation"
-          },
-          {
-            "name": "Case Studies",
-            "href": "/case-studies"
-          },
-          {
-            "name": "Sitemap",
-            "href": "/sitemap"
           }
         ]
       },
       {
         "name": "About",
-        "href": "/about",
-        "dropdown": [
-          {
-            "name": "FAQs",
-            "href": "/faqs"
-          },
-          {
-            "name": "Careers",
-            "href": "/careers"
-          },
-          {
-            "name": "Job Detail",
-            "href": "/job-detail"
-          },
-          {
-            "name": "Testimonials",
-            "href": "/testimonials"
-          },
-          {
-            "name": "Privacy Policy",
-            "href": "/privacy-policy"
-          },
-          {
-            "name": "Office Location",
-            "href": "office-locations"
-          },
-          {
-            "name": "Legal Disclaimer",
-            "href": "/legal-disclaimer"
-          },
-          {
-            "name": "Terms & Conditions",
-            "href": "/terms-conditions"
-          },
-          {
-            "name": "Awards & Recognition",
-            "href": "/awards-recognition"
-          }
-        ]
+        "href": "/about"
       },
       {
         "name": "Blog",
@@ -356,7 +287,7 @@
   "services": {
     "pageTitle": "Services",
     "tagline": "Our Services",
-    "title": "Comprehensive Legal Soluction",
+    "title": "Comprehensive Legal Solution",
     "titleSuffix": "Tailored To",
     "highlight": " Your Needs",
     "description": "We offer a comprehensive range of legal services designed to protect your rights and interests across all areas of law.",
@@ -2030,32 +1961,32 @@
     ],
     "usefulLinks": [
       {
-        "label": "About Us",
-        "href": "/about"
+        "label": "FAQs",
+        "href": "/faqs"
       },
       {
-        "label": "Our Team",
-        "href": "/team"
+        "label": "News & Media",
+        "href": "/news-media"
       },
       {
-        "label": "Case Studies",
-        "href": "/case-studies"
+        "label": "Book Consultation",
+        "href": "/book-consultation"
+      },
+      {
+        "label": "Awards & Recognition",
+        "href": "/awards-recognition"
       },
       {
         "label": "Testimonials",
         "href": "/testimonials"
       },
       {
-        "label": "Blog",
-        "href": "/blog"
+        "label": "Office Locations",
+        "href": "/office-locations"
       },
       {
-        "label": "FAQs",
-        "href": "/faqs"
-      },
-      {
-        "label": "Contact Us",
-        "href": "/contact-us"
+        "label": "Case Studies",
+        "href": "/case-studies"
       },
       {
         "label": "Sitemap",

@@ -198,10 +198,10 @@ export default function Footer() {
                         <span className="text-amber-400">|</span>
 
                         <Link
-                            href="/term-condition"
+                            href="/terms-conditions"
                             className="transition-colors hover:text-amber-400"
                         >
-                            Terms Of Condition
+                            Terms & Conditions
                         </Link>
 
                         <span className="text-amber-400">|</span>

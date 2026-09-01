@@ -56,8 +56,7 @@ export default function CaseStudyDetailPage({
             .filter((item) => item.slug !== currentStudy.slug)
             .slice(0, 3) as unknown as typeof currentStudy.relatedCaseStudies);
 
-    const contactPhone =
-        siteData.topNavbar?.phone || siteData.navbar?.phone || "+91 11 4356 0000";
+    const contactPhone = siteData.navbar?.phone || "+91 11 4356 0000";
 
     return (
         <main className="relative">
