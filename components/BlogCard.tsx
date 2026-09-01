@@ -25,7 +25,7 @@ export default function BlogCard({
     readMoreUrl = "#"
 }: BlogCardProps) {
     return (
-        <div className="w-full max-w-sm rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
+        <div className="w-full rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
 
             {/* Top Image Section with Category Badge */}
             <div className="relative h-64 w-full overflow-hidden bg-[#0b1329]">

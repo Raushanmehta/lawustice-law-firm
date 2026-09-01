@@ -13,6 +13,7 @@ import {
     FaChevronRight 
 } from "react-icons/fa";
 import type { AwardsRecognitionSectionData } from "@/types/sections";
+import { FadeUp, FadeLeft, FadeRight, StaggerContainer, StaggerItem } from "@/components/ui/AnimationWrapper";
 
 interface AwardsRecognitionSectionProps {
     data: AwardsRecognitionSectionData;
@@ -33,6 +34,7 @@ export default function AwardsRecognitionSection({
             <div className="mx-auto  space-y-24">
                 
                 {/* ================= SECTION 1: FEATURED RECOGNITION ================= */}
+                <FadeUp>
                 <div className="rounded-2xl bg-white p-8 sm:p-12 shadow-[0_15px_40px_rgba(0,0,0,0.06)] border border-[#f0ebde]">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                         
@@ -82,6 +84,7 @@ export default function AwardsRecognitionSection({
 
                     </div>
                 </div>
+                </FadeUp>
 
 
                 {/* ================= SECTION 2: OUR RECENT AWARDS ================= */}
@@ -172,6 +175,7 @@ export default function AwardsRecognitionSection({
 
 
                 {/* ================= SECTION 3: STATS BANNER ================= */}
+                <FadeUp delay={0.2}>
                 <div className="rounded-2xl bg-[#070f22] p-8 sm:p-10 text-white shadow-xl border border-[#162340]">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 lg:divide-x divide-[#1b2b4c]">
                         {data.stats.map((stat) => {
@@ -190,9 +194,11 @@ export default function AwardsRecognitionSection({
                         })}
                     </div>
                 </div>
+                </FadeUp>
 
 
                 {/* ================= SECTION 4: RECOGNITION TIMELINE ================= */}
+                <FadeUp delay={0.3}>
                 <div className="space-y-10">
                     
                     {/* Header & Controls */}
@@ -241,8 +247,8 @@ export default function AwardsRecognitionSection({
                             </div>
                         ))}
                     </div>
-
                 </div>
+                </FadeUp>
 
             </div>
         </main>

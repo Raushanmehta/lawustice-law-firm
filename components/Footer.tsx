@@ -90,7 +90,7 @@ export default function Footer() {
 
                     {/* ================= PRACTICE AREAS ================= */}
                     <div className="lg:border-l lg:border-white/10 lg:pl-8">
-                        <h3 className="font-serif text-2xl font-semibold text-white sm:text-3xl">
+                        <h3 className="font-serif text-2xl  text-white sm:text-3xl">
                             Practice Areas
                         </h3>
 
@@ -103,7 +103,7 @@ export default function Footer() {
                                     className="border-b border-white/10 pb-3 last:border-none"
                                 >
                                     <Link
-                                        href="#"
+                                        href={`/services/${item.toLowerCase().replace(/\s+/g, '-')}`}
                                         className="group flex items-center gap-3 text-base transition-colors hover:text-amber-400"
                                     >
                                         <ChevronRight
@@ -119,7 +119,7 @@ export default function Footer() {
 
                     {/* ================= USEFUL LINKS ================= */}
                     <div className="lg:border-l lg:border-white/10 lg:pl-8">
-                        <h3 className="font-serif text-2xl font-semibold text-white sm:text-3xl">
+                        <h3 className="font-serif text-2xl  text-white sm:text-3xl">
                             Useful Links
                         </h3>
 
@@ -148,20 +148,20 @@ export default function Footer() {
 
                     {/* ================= CONTACT ================= */}
                     <div className="lg:border-l lg:border-white/10 lg:pl-8">
-                        <h3 className="font-serif text-2xl font-semibold text-white sm:text-3xl">
+                        <h3 className="font-serif text-2xl text-white sm:text-3xl">
                             Contact Info
                         </h3>
 
                         <div className="mt-4 h-1 w-14 rounded bg-amber-400" />
 
-                        <div className="mt-8 space-y-8">
+                        <div className="mt-4 space-y-2">
                             {footer.contacts.map((item, index) => {
                                 const Icon = contactIconMap[item.icon];
                                 if (!Icon) return null;
                                 return (
                                     <div
                                         key={index}
-                                        className="flex gap-4 border-b border-white/10 pb-7"
+                                        className="flex gap-4 border-b border-white/10 pb-2"
                                     >
                                         {/* Icon */}
                                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-amber-400 text-amber-400">
@@ -198,31 +198,31 @@ export default function Footer() {
                         <span className="text-amber-400">|</span>
 
                         <Link
-                            href="/terms"
+                            href="/term-condition"
                             className="transition-colors hover:text-amber-400"
                         >
-                            Terms Of Use
+                            Terms Of Condition
                         </Link>
 
                         <span className="text-amber-400">|</span>
 
                         <Link
-                            href="/disclaimer"
+                            href="/legal-disclaimer"
                             className="transition-colors hover:text-amber-400"
                         >
-                            Disclaimer
+                            Legal Disclaimer
                         </Link>
                     </div>
                 </div>
 
                 {/* ================= JUSTICE SCALE ================= */}
-                <div className="pointer-events-none absolute bottom-12 z-0 opacity-20 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:bottom-16 md:right-16 lg:right-28 xl:right-36">
+                <div className="pointer-events-none absolute bottom-12 z-0 opacity-50 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:bottom-16 md:right-16 lg:right-28 xl:right-36">
                     <Image
-                        src="https://png.pngtree.com/png-vector/20250223/ourmid/pngtree-scales-of-justice-png-image_15568686.png"
+                        src="/images/footer-law-image.png"
                         alt="Justice Scale"
                         width={300}
                         height={300}
-                        className="h-auto w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64"
+                        className="h-auto w-40 sm:w-40 md:w-48 lg:w-56 xl:w-64"
                     />
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FadeUp } from "@/components/ui/AnimationWrapper";
 
 interface OfficeLocationCardProps {
     cityName?: string;
@@ -20,7 +21,8 @@ export default function OfficeLocationCard({
     imageSrc = "/images/delhi-landmark.png"
 }: OfficeLocationCardProps) {
     return (
-        <div className="group relative w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)]">
+        <FadeUp>
+        <div className="group relative w-full h-full overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)]">
             
             {/* ================= TOP BANNER IMAGE ================= */}
             <div className="relative h-52 w-full overflow-hidden bg-[#0b1329]">
@@ -83,5 +85,6 @@ export default function OfficeLocationCard({
             </div>
 
         </div>
+        </FadeUp>
     );
 }

@@ -16,6 +16,7 @@ import {
     PublicationLegalFrameworkItem,
     PublicationRelated,
 } from "@/types/sections";
+import { FadeLeft, FadeRight } from "@/components/ui/AnimationWrapper";
 
 
 
@@ -30,7 +31,7 @@ export default function PublicationDetailPage({ publication }: PublicationDetail
         <section className="relative bg-white px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
             <div className="mx-auto ">
                 <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
-                    <div className="space-y-8 lg:col-span-8">
+                    <FadeLeft className="space-y-8 lg:col-span-8">
                         <div className="space-y-3">
                             <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
                                 {publication.badge ?? "PUBLICATION"}
@@ -193,9 +194,9 @@ export default function PublicationDetailPage({ publication }: PublicationDetail
                             </div>
                         )}
 
-                    </div>
+                    </FadeLeft>
 
-                    <div className="space-y-8 lg:col-span-4">
+                    <FadeRight className="space-y-8 lg:col-span-4">
 
                         {publication.pdf && (
                             <div className="space-y-6 rounded-2xl border border-[#f0ebde] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] sm:p-8">
@@ -346,7 +347,7 @@ export default function PublicationDetailPage({ publication }: PublicationDetail
                             </div>
                         )}
 
-                    </div>
+                    </FadeRight>
 
                 </div>
             </div>

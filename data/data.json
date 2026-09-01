@@ -356,7 +356,7 @@
   "services": {
     "pageTitle": "Services",
     "tagline": "Our Services",
-    "title": "Comprehensive Legal Soluction ",
+    "title": "Comprehensive Legal Soluction",
     "titleSuffix": "Tailored To",
     "highlight": " Your Needs",
     "description": "We offer a comprehensive range of legal services designed to protect your rights and interests across all areas of law.",
@@ -2034,12 +2034,12 @@
         "href": "/about"
       },
       {
-        "label": "Our Attorneys",
-        "href": "/attorneys"
+        "label": "Our Team",
+        "href": "/team"
       },
       {
-        "label": "Case Results",
-        "href": "/case-results"
+        "label": "Case Studies",
+        "href": "/case-studies"
       },
       {
         "label": "Testimonials",
@@ -2051,11 +2051,15 @@
       },
       {
         "label": "FAQs",
-        "href": "/faq"
+        "href": "/faqs"
       },
       {
         "label": "Contact Us",
-        "href": "/contact"
+        "href": "/contact-us"
+      },
+      {
+        "label": "Sitemap",
+        "href": "/sitemap"
       }
     ],
     "contacts": [

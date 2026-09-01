@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import PageTopSection from '@/components/_page/PageTopSection';
 import { ArrowRight, CalendarRange, Scale } from 'lucide-react';
+import { FadeUp } from "@/components/ui/AnimationWrapper";
 
 interface SitemapItem {
     number: string;
@@ -54,116 +55,122 @@ export default function SitemapPage() {
     return (
         <main>
             <PageTopSection title='Sitemap' />
-            <div className="min-h-screen  text-[#2C2C2C] px-4 md:px-12 py-12">
+            <div className="min-h-screen  text-[#2C2C2C] px-4 md:px-24 py-12 md:py-20">
 
-                <div className="max-w-7xl mx-auto space-y-12">
+                <div className=" mx-auto space-y-12">
 
                     {/* Header Section */}
-                    <div className="text-center space-y-3">
-                        <p className="text-xs uppercase tracking-widest text-[#C27803] font-semibold">
-                            — Sitemap —
-                        </p>
-                        <h1 className="text-3xl md:text-5xl font-serif text-[#1A1A1A]">
-                            Explore All Pages
-                        </h1>
-                        <div className="flex items-center justify-center gap-3">
-                            <span className="h-px w-12 bg-[#d9983b]/60" />
-                            <Scale className="h-6 w-6 text-[#d9983b]" strokeWidth={1.5} />
-                            <span className="h-px w-12 bg-[#d9983b]/60" />
+                    <FadeUp>
+                        <div className="text-center space-y-3">
+                            <p className="text-xs uppercase tracking-widest text-[#C27803] font-semibold">
+                                — Sitemap —
+                            </p>
+                            <h1 className="text-3xl md:text-5xl font-serif text-[#1A1A1A]">
+                                Explore All Pages
+                            </h1>
+                            <div className="flex items-center justify-center gap-3">
+                                <span className="h-px w-12 bg-[#d9983b]/60" />
+                                <Scale className="h-6 w-6 text-[#d9983b]" strokeWidth={1.5} />
+                                <span className="h-px w-12 bg-[#d9983b]/60" />
+                            </div>
                         </div>
-                    </div>
+                    </FadeUp>
 
                     {/* 3-Column Sitemap Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <FadeUp delay={0.2}>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                        {/* Column 1 */}
-                        <div className="space-y-3">
-                            {column1.map((item) => (
-                                <Link
-                                    key={item.number}
-                                    href={item.href}
-                                    className="bg-[#FBF9F4] border border-gray-200/80 rounded-lg p-4 flex items-center justify-between shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-200 group"
-                                >
-                                    <div className="flex items-center space-x-3">
-                                        <span className="bg-[#0B131D] text-[#D4AF37] text-sm font-bold px-2 py-1 rounded">
-                                            {item.number}
-                                        </span>
-                                        <span className="text-sm font-semibold text-[#0B131D] group-hover:text-[#C27803] transition-colors">
-                                            {item.title}
-                                        </span>
-                                    </div>
-                                    <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-[#C27803] group-hover:translate-x-1 transition-all duration-200" />
-                                </Link>
-                            ))}
+                            {/* Column 1 */}
+                            <div className="space-y-3">
+                                {column1.map((item) => (
+                                    <Link
+                                        key={item.number}
+                                        href={item.href}
+                                        className="border border-gray-200/80 rounded-lg p-4 flex items-center justify-between shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-200 group"
+                                    >
+                                        <div className="flex items-center space-x-3">
+                                            <span className="bg-[#0B131D] text-[#D4AF37] text-sm font-bold px-2 py-1 rounded">
+                                                {item.number}
+                                            </span>
+                                            <span className="text-sm font-semibold text-[#0B131D] group-hover:text-[#C27803] transition-colors">
+                                                {item.title}
+                                            </span>
+                                        </div>
+                                        <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-[#C27803] group-hover:translate-x-1 transition-all duration-200" />
+                                    </Link>
+                                ))}
+                            </div>
+
+                            {/* Column 2 */}
+                            <div className="space-y-3">
+                                {column2.map((item) => (
+                                    <Link
+                                        key={item.number}
+                                        href={item.href}
+                                        className=" border border-gray-200/80 rounded-lg p-4 flex items-center justify-between shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-200 group"
+                                    >
+                                        <div className="flex items-center space-x-3">
+                                            <span className="bg-[#0B131D] text-[#D4AF37] text-sm font-bold px-2 py-1 rounded">
+                                                {item.number}
+                                            </span>
+                                            <span className="text-sm font-semibold text-[#0B131D] group-hover:text-[#C27803] transition-colors">
+                                                {item.title}
+                                            </span>
+                                        </div>
+                                        <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-[#C27803] group-hover:translate-x-1 transition-all duration-200" />
+                                    </Link>
+                                ))}
+                            </div>
+
+                            {/* Column 3 */}
+                            <div className="space-y-3">
+                                {column3.map((item) => (
+                                    <Link
+                                        key={item.number}
+                                        href={item.href}
+                                        className=" border border-gray-200/80 rounded-lg p-4 flex items-center justify-between shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-200 group"
+                                    >
+                                        <div className="flex items-center space-x-3">
+                                            <span className="bg-[#0B131D] text-[#D4AF37] text-sm font-bold px-2 py-1 rounded">
+                                                {item.number}
+                                            </span>
+                                            <span className="text-sm font-semibold text-[#0B131D] group-hover:text-[#C27803] transition-colors">
+                                                {item.title}
+                                            </span>
+                                        </div>
+                                        <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-[#C27803] group-hover:translate-x-1 transition-all duration-200" />
+                                    </Link>
+                                ))}
+                            </div>
+
                         </div>
-
-                        {/* Column 2 */}
-                        <div className="space-y-3">
-                            {column2.map((item) => (
-                                <Link
-                                    key={item.number}
-                                    href={item.href}
-                                    className="bg-[#FBF9F4] border border-gray-200/80 rounded-lg p-4 flex items-center justify-between shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-200 group"
-                                >
-                                    <div className="flex items-center space-x-3">
-                                        <span className="bg-[#0B131D] text-[#D4AF37] text-sm font-bold px-2 py-1 rounded">
-                                            {item.number}
-                                        </span>
-                                        <span className="text-sm font-semibold text-[#0B131D] group-hover:text-[#C27803] transition-colors">
-                                            {item.title}
-                                        </span>
-                                    </div>
-                                    <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-[#C27803] group-hover:translate-x-1 transition-all duration-200" />
-                                </Link>
-                            ))}
-                        </div>
-
-                        {/* Column 3 */}
-                        <div className="space-y-3">
-                            {column3.map((item) => (
-                                <Link
-                                    key={item.number}
-                                    href={item.href}
-                                    className="bg-[#FBF9F4] border border-gray-200/80 rounded-lg p-4 flex items-center justify-between shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-200 group"
-                                >
-                                    <div className="flex items-center space-x-3">
-                                        <span className="bg-[#0B131D] text-[#D4AF37] text-sm font-bold px-2 py-1 rounded">
-                                            {item.number}
-                                        </span>
-                                        <span className="text-sm font-semibold text-[#0B131D] group-hover:text-[#C27803] transition-colors">
-                                            {item.title}
-                                        </span>
-                                    </div>
-                                    <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-[#C27803] group-hover:translate-x-1 transition-all duration-200" />
-                                </Link>
-                            ))}
-                        </div>
-
-                    </div>
+                    </FadeUp>
 
                     {/* Bottom CTA Banner */}
-                    <div className="bg-[#FBF5EC] border border-[#F0E6D8] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between shadow-sm gap-6">
-                        <div className="flex items-center space-x-4">
-                            <div className="w-14 h-14 rounded-xl bg-[#0B131D] text-[#D4AF37] flex items-center justify-center text-2xl shadow-md flex-shrink-0">
-                                <CalendarRange />
+                    <FadeUp delay={0.4}>
+                        <div className="bg-[#FBF5EC] border border-[#F0E6D8] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between shadow-sm gap-6">
+                            <div className="flex items-center space-x-4">
+                                <div className="w-14 h-14 rounded-xl bg-[#0B131D] text-[#D4AF37] flex items-center justify-center text-2xl shadow-md flex-shrink-0">
+                                    <CalendarRange />
+                                </div>
+                                <div>
+                                    <h3 className="text-lg md:text-2xl font-serif text-[#1A1A1A]">
+                                        Can&apos;t Find What You&apos;re Looking For?
+                                    </h3>
+                                    <p className="text-xs md:text-sm text-gray-600 mt-0.5">
+                                        Our team is here to help. Get in touch with us for any assistance.
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="text-lg md:text-2xl font-serif text-[#1A1A1A]">
-                                    Can&apos;t Find What You&apos;re Looking For?
-                                </h3>
-                                <p className="text-xs md:text-sm text-gray-600 mt-0.5">
-                                    Our team is here to help. Get in touch with us for any assistance.
-                                </p>
-                            </div>
+                            <Link
+                                href="/contact-us"
+                                className="bg-[#D4AF37] hover:bg-[#c29e2f] text-[#0B131D] font-semibold text-sm px-6 py-3 rounded-xl shadow transition-colors flex items-center space-x-2 whitespace-nowrap"
+                            >
+                                <span>Contact Us</span>
+                                <span>→</span>
+                            </Link>
                         </div>
-                        <Link
-                            href="/contact-us"
-                            className="bg-[#D4AF37] hover:bg-[#c29e2f] text-[#0B131D] font-semibold text-sm px-6 py-3 rounded-xl shadow transition-colors flex items-center space-x-2 whitespace-nowrap"
-                        >
-                            <span>Contact Us</span>
-                            <span>→</span>
-                        </Link>
-                    </div>
+                    </FadeUp>
 
                 </div>
             </div>

@@ -17,7 +17,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function StatsSection({ data }: StatsSectionProps) {
     return (
-        <section className="bg-white py-14 lg:py-20">
+        <section className="bg-white py-14 lg:py-24">
             <div className="mx-auto max-w-[1395px] px-4 sm:px-6 lg:px-8">
                 <div className="overflow-hidden rounded-xl border border-[#273340] bg-[#08131d] shadow-2xl py-2">
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
@@ -26,7 +26,7 @@ export default function StatsSection({ data }: StatsSectionProps) {
 
                             return (
                                 <motion.div
-                                                    key={item.title}
+                                    key={item.title}
                                     initial={{ opacity: 0, y: 28 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, amount: 0.2 }}

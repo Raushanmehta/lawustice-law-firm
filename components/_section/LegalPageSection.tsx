@@ -1,6 +1,7 @@
 import Link from "next/link";
 import siteData from "@/data/data.json";
 import type { TermsItem } from "@/types";
+import { FadeUp, StaggerContainer, StaggerItem } from "@/components/ui/AnimationWrapper";
 
 interface LegalPageSectionProps {
     terms?: TermsItem[];
@@ -20,13 +21,13 @@ export default function LegalPageSection({
     buttonText = siteData.legalPage.buttonText,
 }: LegalPageSectionProps) {
     return (
-        <section className="relative px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-24 xl:px-32">
+        <section className="relative px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-24 xl:px-24">
             <div className="mx-auto space-y-12">
 
                 {/* ================= TERMS LIST CONTAINER ================= */}
-                <div className="space-y-10">
+                <StaggerContainer className="space-y-10">
                     {terms.map((term, index) => (
-                        <div key={index} className="space-y-2 pb-8 border-b border-[#f0ebde] last:border-b-0">
+                        <StaggerItem key={index} className="space-y-2 pb-8 border-b border-[#f0ebde] last:border-b-0">
 
                             {/* Section Title */}
                             <h3 className="font-serif text-lg sm:text-2xl text-[#0b1329] font-medium">
@@ -39,45 +40,49 @@ export default function LegalPageSection({
                                 {term.content}
                             </p>
 
-                        </div>
+                        </StaggerItem>
                     ))}
-                </div>
+                </StaggerContainer>
 
 
                 {/* ================= ACKNOWLEDGEMENT NOTICE BOX ================= */}
-                <div className="rounded-xl bg-[#fcf8f0] border border-[#f5eddce6] p-4 sm:p-5 text-center">
-                    <p className="text-sm sm:text-md text-gray-700 font-medium">
-                        {acknowledgementText}
-                    </p>
-                </div>
+                <FadeUp delay={0.2}>
+                    <div className="rounded-xl bg-[#fcf8f0] border border-[#f5eddce6] p-4 sm:p-5 text-center">
+                        <p className="text-sm sm:text-md text-gray-700 font-medium">
+                            {acknowledgementText}
+                        </p>
+                    </div>
+                </FadeUp>
 
 
                 {/* ================= NEED LEGAL ASSISTANCE BANNER ================= */}
-                <div className="rounded-2xl bg-[#070f22] p-6 sm:p-8 text-white shadow-xl border border-[#162340] flex flex-col sm:flex-row items-center justify-between gap-6">
+                <FadeUp delay={0.3}>
+                    <div className="rounded-2xl bg-[#070f22] p-6 sm:p-8 text-white shadow-xl border border-[#162340] flex flex-col sm:flex-row items-center justify-between gap-6">
 
-                    {/* Text Details */}
-                    <div className="space-y-1.5 text-center sm:text-left">
-                        <h3 className="font-serif text-xl sm:text-3xl text-white">
-                            {assistanceTitle}
-                        </h3>
-                        <p className="text-sm text-gray-300 leading-relaxed max-w-lg">
-                            {assistanceDescription}
-                        </p>
+                        {/* Text Details */}
+                        <div className="space-y-1.5 text-center sm:text-left">
+                            <h3 className="font-serif text-xl sm:text-3xl text-white">
+                                {assistanceTitle}
+                            </h3>
+                            <p className="text-sm text-gray-300 leading-relaxed max-w-lg">
+                                {assistanceDescription}
+                            </p>
+                        </div>
+
+                        {/* Contact Button */}
+                        <div className="shrink-0">
+                            <Link
+                                href={contactUrl}
+                                className="inline-flex items-center justify-center rounded-lg bg-[#d9983b] px-8 py-3.5 text-sm font-semibold tracking-wider text-white shadow-md transition-all duration-300 hover:bg-[#c28530]"
+                            >
+                                {buttonText}
+                            </Link>
+                        </div>
+
                     </div>
-
-                    {/* Contact Button */}
-                    <div className="shrink-0">
-                        <Link
-                            href={contactUrl}
-                            className="inline-flex items-center justify-center rounded-lg bg-[#d9983b] px-8 py-3.5 text-sm font-semibold tracking-wider text-white shadow-md transition-all duration-300 hover:bg-[#c28530]"
-                        >
-                            {buttonText}
-                        </Link>
-                    </div>
-
-                </div>
+                </FadeUp>
 
             </div>
         </section>
     );
-}
+}

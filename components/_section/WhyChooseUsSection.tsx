@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-    FaUserTie, 
-    FaBalanceScale, 
-    FaClock, 
-    FaShieldAlt, 
-    FaHandshake, 
-    FaLock 
+import {
+    FaUserTie,
+    FaBalanceScale,
+    FaClock,
+    FaShieldAlt,
+    FaHandshake,
+    FaLock
 } from "react-icons/fa";
 import { GoLaw } from "react-icons/go";
 import type { WhyChooseUsData } from "@/types";
@@ -30,14 +30,14 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
 
     return (
         <section className="relative overflow-hidden bg-[#fdfbf7] px-5 py-16 sm:px-10 sm:py-20 md:px-16 lg:px-20 xl:px-24">
-            <div className="mx-auto max-w-7xl">
-                
+            <div className="mx-auto">
+
                 {/* Main 2-Column Grid (Balanced 6/6 split for a larger image width) */}
                 <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
-                    
+
                     {/* ================= LEFT SIDE: CONTENT & FEATURES (Col Span 6) ================= */}
                     <div className="flex flex-col lg:col-span-6 space-y-8 ">
-                        
+
                         {/* Section Header */}
                         <motion.div
                             initial={{ opacity: 0, y: 28 }}
@@ -48,12 +48,12 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
                         >
                             {/* Small Upper Title with Horizontal Rules */}
                             <div className="flex items-center justify-center gap-2">
-                        <span className="h-px w-8 bg-[#d9983b]" />
-                        <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
-                            {data.tagline}
-                        </span>
-                        <span className="h-px w-8 bg-[#d9983b]" />
-                    </div>
+                                <span className="h-px w-8 bg-[#d9983b]" />
+                                <span className="text-sm font-semibold uppercase tracking-widest text-[#d9983b]">
+                                    {data.tagline}
+                                </span>
+                                <span className="h-px w-8 bg-[#d9983b]" />
+                            </div>
 
                             {/* Main Heading */}
                             <h2 className="font-serif text-3xl font-normal leading-[1.15] tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl">
@@ -88,7 +88,7 @@ export default function WhyChooseUsSection({ data }: WhyChooseUsProps) {
                                     <div className="flex border-2 h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#0b1329] border border-[#d9983b] shadow-md">
                                         {iconMap[item.icon]}
                                     </div>
-                                    
+
                                     {/* Feature Text */}
                                     <div className="space-y-1">
                                         <h3 className="font-serif text-lg font-medium text-[#0b1329]">

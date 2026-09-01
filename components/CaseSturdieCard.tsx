@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { CaseStudyItem } from "@/types/sections";
+import { FadeUp } from "@/components/ui/AnimationWrapper";
 
 interface CaseSturdieCardProps {
     caseStudy: CaseStudyItem;
@@ -12,6 +13,7 @@ export default function CaseSturdieCard({ caseStudy }: CaseSturdieCardProps) {
     const { slug, category, title, description, image } = caseStudy;
 
     return (
+        <FadeUp>
         <Link
             href={`/case-studies/${slug}`}
             className="group block w-full rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] p-4 grid grid-cols-1 md:grid-cols-12 gap-6 items-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
@@ -57,5 +59,6 @@ export default function CaseSturdieCard({ caseStudy }: CaseSturdieCardProps) {
 
             </div>
         </Link>
+        </FadeUp>
     );
 }

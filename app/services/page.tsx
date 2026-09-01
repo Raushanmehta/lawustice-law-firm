@@ -28,7 +28,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function ServicesPage() {
   return (
-    <main className="bg-[#fdfbf7] min-h-screen">
+    <main className="bg-white min-h-screen">
       {/* Top Banner Section */}
       <PageTopSection title={services.pageTitle} />
 
@@ -41,7 +41,7 @@ export default function ServicesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="mx-auto mb-16 max-w-2xl text-center space-y-4"
+            className="mx-auto mb-16 max-w-4xl text-center space-y-4"
           >
             <div className="flex items-center justify-center gap-3">
               <span className="h-px w-10 bg-[#d9983b]" />

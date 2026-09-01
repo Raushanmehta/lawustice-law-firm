@@ -23,6 +23,7 @@ import {
     PaginationPrevious
 } from "@/components/ui/pagination";
 import { EventItem, EventsData } from "@/types/sections";
+import { FadeLeft, FadeRight } from "@/components/ui/AnimationWrapper";
 
 interface EventPageSectionProps {
     eventsData?: EventsData;
@@ -82,7 +83,7 @@ export default function EventPageSection({ eventsData, items }: EventPageSection
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
 
                     {/* ================= LEFT SIDE: EVENT CARDS WITH SLIDE-UP ANIMATION ================= */}
-                    <div className="lg:col-span-8 space-y-8">
+                    <FadeLeft className="lg:col-span-8 space-y-8">
                         {/* Category filter pills */}
                         <div className="flex flex-wrap items-center gap-2 pb-2 border-b border-[#f0ebde]">
                             {["ALL", "FIRM NEWS", "MEDIA COVERAGE", "EVENTS", "ACHIEVEMENTS"].map((cat) => (
@@ -225,10 +226,10 @@ export default function EventPageSection({ eventsData, items }: EventPageSection
                                 </Pagination>
                             </div>
                         )}
-                    </div>
+                    </FadeLeft>
 
                     {/* ================= RIGHT SIDE: SIDEBAR ================= */}
-                    <div className="lg:col-span-4 space-y-8">
+                    <FadeRight className="lg:col-span-4 space-y-8">
 
                         {/* 1. Latest Highlights Card */}
                         <div className="rounded-2xl bg-white p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-[#f0ebde] space-y-6">
@@ -352,7 +353,7 @@ export default function EventPageSection({ eventsData, items }: EventPageSection
 
                         </div>
 
-                    </div>
+                    </FadeRight>
 
                 </div>
 

@@ -11,8 +11,8 @@ export default function OfficeLocation() {
             <PageTopSection title={officeLocations.pageTitle} />
 
             {/* Office Locations Section */}
-            <section className="bg-[#fdfbf7] px-5 py-16 sm:px-10 sm:py-20 lg:px-16">
-                <div className="mx-auto">
+            <section className="bg-[#fdfbf7] px-5 py-16 sm:px-10 sm:py-20 lg:px-24">
+                <div className="mx-auto ">
 
                     {/* Section Heading */}
                     <div className="mb-12 text-center">
@@ -31,7 +31,7 @@ export default function OfficeLocation() {
                     </div>
 
                     {/* Office Cards */}
-                    <div className="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
                         {officeLocations.locations.map((location) => (
                             <OfficeLocationCard key={location.cityName} {...location} />
                         ))}

@@ -23,6 +23,7 @@ import {
 } from "react-icons/fa";
 import { EventItem } from "@/types/sections";
 import siteData from "@/data/data.json";
+import { FadeLeft, FadeRight } from "@/components/ui/AnimationWrapper";
 
 interface EventDetailPageProps {
     event?: EventItem;
@@ -54,7 +55,7 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
 
                     {/* ================= LEFT SIDE CONTENT (Col Span 8) ================= */}
-                    <div className="lg:col-span-8 space-y-12">
+                    <FadeLeft className="lg:col-span-8 space-y-12">
 
                         {/* 1. About This Seminar / Event Card */}
                         <div className="rounded-2xl bg-white p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-[#f0ebde] space-y-6">
@@ -237,11 +238,11 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
                             </div>
                         )}
 
-                    </div>
+                    </FadeLeft>
 
 
                     {/* ================= RIGHT SIDE SIDEBAR (Col Span 4) ================= */}
-                    <div className="lg:col-span-4 space-y-8">
+                    <FadeRight className="lg:col-span-4 space-y-8">
 
                         {/* 1. Register for This Event Form Card */}
                         <div className="rounded-2xl bg-[#070f22] p-6 sm:p-8 text-white shadow-xl border border-[#162340] space-y-6">
@@ -357,7 +358,7 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
                             </div>
                         </div>
 
-                    </div>
+                    </FadeRight>
 
                 </div>
 

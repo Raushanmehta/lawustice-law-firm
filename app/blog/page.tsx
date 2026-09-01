@@ -72,8 +72,8 @@ export default function BlogPage() {
         <main>
             <PageTopSection title="Blog" />
 
-            <section className="bg-white px-5 py-16 sm:px-10 md:px-20 lg:px-24">
-                <div className="mx-auto">
+            <section className="bg-white  container mx-auto px-5 py-16 sm:px-10 md:px-20 lg:px-24">
+                <div className="">
                     {/* Header */}
                     <motion.div
                         initial={{ opacity: 0, y: 25 }}

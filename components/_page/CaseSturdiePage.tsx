@@ -19,6 +19,7 @@ import {
 } from "react-icons/fa";
 import { CaseStudyItem } from "@/types/sections";
 import siteData from "@/data/data.json";
+import { FadeLeft, FadeRight, FadeUp } from "@/components/ui/AnimationWrapper";
 
 const iconMap: Record<string, React.ElementType> = {
     FaBuilding,
@@ -65,7 +66,7 @@ export default function CaseStudyDetailPage({
                     {/* Content + Sidebar */}
                     <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
                         {/* Main Content */}
-                        <div className="space-y-8 lg:col-span-8">
+                        <FadeLeft className="space-y-8 lg:col-span-8">
                             <div className="grid grid-cols-1 items-center gap-8 rounded-2xl border border-[#f0ebde] bg-white p-4 shadow-[0_10px_30px_rgba(0,0,0,0.04)] sm:p-6 lg:grid-cols-12">
                                 <div className="relative h-72 w-full overflow-hidden rounded-xl bg-[#0b1329] sm:h-80 lg:col-span-5">
                                     <Image
@@ -208,10 +209,10 @@ export default function CaseStudyDetailPage({
                                     </div>
                                 </div>
                             )}
-                        </div>
+                        </FadeLeft>
 
                         {/* Sidebar */}
-                        <aside className="space-y-8 lg:col-span-4">
+                        <FadeRight className="space-y-8 lg:col-span-4">
                             {/* Case Details */}
                             {metaList.length > 0 && (
                                 <SidebarCard title="Case Details">
@@ -313,12 +314,12 @@ export default function CaseStudyDetailPage({
                                     <span>{contactPhone}</span>
                                 </div>
                             </div>
-                        </aside>
+                        </FadeRight>
                     </div>
 
                     {/* Related Case Studies */}
                     {relatedList && relatedList.length > 0 && (
-                        <section className="space-y-8 border-t border-[#f0ebde] pt-8">
+                        <FadeUp className="space-y-8 border-t border-[#f0ebde] pt-8">
                             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
                                 <div className="space-y-2">
                                     <h2 className="font-serif text-2xl text-[#0b1329] sm:text-3xl">
@@ -379,7 +380,7 @@ export default function CaseStudyDetailPage({
                                     </article>
                                 ))}
                             </div>
-                        </section>
+                        </FadeUp>
                     )}
                 </div>
             </section>

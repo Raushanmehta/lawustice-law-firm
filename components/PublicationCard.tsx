@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaArrowRight } from "react-icons/fa";
 import { PublicationItem } from "@/types/sections";
+import { FadeUp } from "@/components/ui/AnimationWrapper";
 
 interface PublicationCardProps {
     publication: PublicationItem;
@@ -25,6 +26,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
     const detailUrl = `/publications/${slug}`;
 
     return (
+        <FadeUp>
         <Link
             href={detailUrl}
             className="group block w-full h-full rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#f0ebde] overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
@@ -87,5 +89,6 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
             </div>
 
         </Link>
+        </FadeUp>
     );
 }

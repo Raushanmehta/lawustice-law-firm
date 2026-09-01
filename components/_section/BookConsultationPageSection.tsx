@@ -19,6 +19,7 @@ import {
     FaBullseye,
     FaHeart
 } from "react-icons/fa";
+import { FadeLeft, FadeRight, FadeUp } from "@/components/ui/AnimationWrapper";
 
 interface BookConsultationPageSectionProps {
     data?: typeof siteData.bookConsultation;
@@ -53,7 +54,7 @@ export default function BookConsultationPageSection({
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
 
                     {/* ================= LEFT SIDE: CONSULTATION DETAILS FORM (Col Span 7) ================= */}
-                    <div className="lg:col-span-7 rounded-2xl bg-white p-8 sm:p-10 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-[#f0ebde] flex flex-col justify-between">
+                    <FadeLeft className="lg:col-span-7 rounded-2xl bg-white p-8 sm:p-10 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-[#f0ebde] flex flex-col justify-between">
 
                         {/* Header */}
                         <div className="space-y-2 mb-8">
@@ -237,10 +238,10 @@ export default function BookConsultationPageSection({
 
                         </form>
 
-                    </div>
+                    </FadeLeft>
 
                     {/* ================= RIGHT SIDE: CONSULTATION INFO SIDEBAR (Col Span 5) ================= */}
-                    <div className="lg:col-span-5 rounded-2xl bg-[#070f22] p-8 sm:p-10 text-white shadow-xl border border-[#162340] flex flex-col justify-between space-y-8">
+                    <FadeRight className="lg:col-span-5 rounded-2xl bg-[#070f22] p-8 sm:p-10 text-white shadow-xl border border-[#162340] flex flex-col justify-between space-y-8">
 
                         {/* Header */}
                         <div className="space-y-2">
@@ -282,13 +283,13 @@ export default function BookConsultationPageSection({
                             </p>
                         </div>
 
-                    </div>
+                    </FadeRight>
 
                 </div>
 
 
                 {/* ================= BOTTOM SECTION: WHY CONSULT WITH US? ================= */}
-                <div className="space-y-10 pt-10">
+                <FadeUp className="space-y-10 pt-10">
 
                     {/* Header */}
                     <div className="mx-auto max-w-xl text-center space-y-3">
@@ -322,7 +323,7 @@ export default function BookConsultationPageSection({
                         </div>
                     </div>
 
-                </div>
+                </FadeUp>
 
             </div>
         </section>
