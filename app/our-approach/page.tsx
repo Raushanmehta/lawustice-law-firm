@@ -2,7 +2,7 @@
 
 import OurApproachSection from "@/components/_section/OurApproachSection";
 import StatsSection from "@/components/_section/StatsSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import PageTopSection from "@/components/_page/PageTopSection";
 import type { OurApproachData } from "@/types";
 

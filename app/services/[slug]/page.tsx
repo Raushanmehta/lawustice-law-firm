@@ -1,6 +1,6 @@
 import ServiceDetailPage from "@/components/_page/ServiceDetailPage";
 import PageTopSection from "@/components/_page/PageTopSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { ServicesPageData } from "@/types";
 
 const servicesData = siteData.services as ServicesPageData;

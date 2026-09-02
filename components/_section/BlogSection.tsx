@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { User, MessageSquare, ArrowRight, Scale } from "lucide-react";
 import { motion } from "framer-motion";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { BlogPost } from "@/types";
 
 const { blog } = siteData;

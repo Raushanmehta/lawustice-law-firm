@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import LegalUpdateDetailPage from "@/components/_page/LegalUpdateDetailPage";
 import PageTopSection from "@/components/_page/PageTopSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { LegalUpdateItem, LegalUpdatesData } from "@/types/sections";
 
 interface LegalUpdateRouteProps {

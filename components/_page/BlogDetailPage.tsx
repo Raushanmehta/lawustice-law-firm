@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FaCalendarAlt, FaClock, FaUser, FaCheck, FaArrowRight, FaTag } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { BlogPost, BlogCategory, BlogDetailPageProps } from "@/types/sections";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 export default function BlogDetailPage({
     post,

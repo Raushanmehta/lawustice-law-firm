@@ -1,6 +1,6 @@
 import AwardsRecognitionSection from "@/components/_section/AwardsRecognitionSection";
 import PageTopSection from "@/components/_page/PageTopSection";
-import data from "@/data/data.json";
+import data from "@/data/siteData";
 
 export default function AwardRecognitionPage() {
   return (

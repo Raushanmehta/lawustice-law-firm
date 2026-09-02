@@ -5,8 +5,10 @@ import { GoLaw } from "react-icons/go";
 import PageTopSection from "@/components/_page/PageTopSection";
 import TeamPageCard from "@/components/TeamPageCard";
 import NeedLegalSection from "@/components/_section/NeedLegalSection";
-import { teamData } from "@/data/teamData";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
+import { TeamMember } from "@/types";
+
+const teamData: TeamMember[] = siteData.team.members;
 
 export default function TeamPage() {
     return (

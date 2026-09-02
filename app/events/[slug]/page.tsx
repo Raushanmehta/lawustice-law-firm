@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import EventDetailPage from "@/components/_page/EventDetailPage";
 import PageTopSection from "@/components/_page/PageTopSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { EventsData } from "@/types/sections";
 
 interface EventDetailRouteProps {

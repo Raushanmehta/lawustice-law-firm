@@ -8,7 +8,7 @@ import { LiaLinkedin } from "react-icons/lia";
 import { FaFacebook } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { motion } from "framer-motion";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 // Map icon string → Lucide component
 const contactIconMap: Record<string, LucideIcon> = {

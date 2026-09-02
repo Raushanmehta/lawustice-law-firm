@@ -1,6 +1,6 @@
 import PageTopSection from "@/components/_page/PageTopSection";
 import OfficeLocationCard from "@/components/OfficeLocationCard";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 export default function OfficeLocation() {
     const officeLocations = siteData.officeLocations;

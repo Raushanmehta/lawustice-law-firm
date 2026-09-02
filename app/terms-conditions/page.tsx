@@ -1,6 +1,6 @@
 import PageTopSection from "@/components/_page/PageTopSection";
 import LegalPageSection from "@/components/_section/LegalPageSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 export default function TermsConditionsPage() {
     return (

@@ -6,7 +6,7 @@ import { UserRound, Scale, BriefcaseBusiness, Gavel, type LucideIcon } from "luc
 import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { IconType } from "react-icons";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { TeamMember } from "@/types";
 import {
     Carousel,

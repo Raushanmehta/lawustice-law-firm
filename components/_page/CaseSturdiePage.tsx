@@ -18,7 +18,7 @@ import {
     FaPhoneAlt,
 } from "react-icons/fa";
 import { CaseStudyItem } from "@/types/sections";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { FadeLeft, FadeRight, FadeUp } from "@/components/ui/AnimationWrapper";
 
 const iconMap: Record<string, React.ElementType> = {

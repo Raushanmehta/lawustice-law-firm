@@ -1,5 +1,5 @@
 import { FiPhoneCall } from "react-icons/fi";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 export interface NeedLegalSectionProps {
     leftColumnImage?: string;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { TermsItem } from "@/types";
 import { FadeUp, StaggerContainer, StaggerItem } from "@/components/ui/AnimationWrapper";
 

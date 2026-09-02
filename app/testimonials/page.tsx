@@ -2,7 +2,7 @@
 
 import TestimonialCard from "@/components/TestimonialCard";
 import PageTopSection from "@/components/_page/PageTopSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { motion } from "framer-motion";
 
 const { testimonials } = siteData;

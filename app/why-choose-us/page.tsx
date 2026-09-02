@@ -3,7 +3,7 @@
 import StatsSection from "@/components/_section/StatsSection";
 import WhyChooseUsSection from "@/components/_section/WhyChooseUsSection";
 import PageTopSection from "@/components/_page/PageTopSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 export default function WhyChooseUsPage() {
     return (

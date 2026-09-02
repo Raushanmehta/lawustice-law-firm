@@ -1,6 +1,6 @@
 import PageTopSection from "@/components/_page/PageTopSection";
 import FaqPageSection from "@/components/_section/FaqPageSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 export default function FaqsPage() {
     return (

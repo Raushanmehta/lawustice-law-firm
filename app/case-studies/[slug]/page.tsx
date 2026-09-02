@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import PageTopSection from "@/components/_page/PageTopSection";
 import CaseSturdieDetailPage from "@/components/_page/CaseSturdiePage";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { CaseStudiesData, CaseStudyItem } from "@/types/sections";
 
 interface CaseStudyDetailRouteProps {

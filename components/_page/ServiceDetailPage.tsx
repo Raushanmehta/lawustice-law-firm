@@ -1,7 +1,7 @@
 import ServicesChooseusSection from "../_section/ServicesChooseusSection";
 import ServiceOurProcessSection from "../_section/ServicesOurProcessSection";
 import ServicesOverviewSection from "../_section/ServicesOverviewSection";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { ServiceDetailData, ServicesPageData } from "@/types";
 
 interface ServiceDetailPageProps {

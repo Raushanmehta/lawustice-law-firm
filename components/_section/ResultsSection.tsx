@@ -9,7 +9,7 @@ import {
     Scale,
     type LucideIcon,
 } from "lucide-react";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { StatItem } from "@/types";
 import Image from "next/image";
 

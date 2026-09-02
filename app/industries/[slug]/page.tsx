@@ -3,7 +3,7 @@ import IndustriesBusinessSection from "@/components/_section/IndustriesBusinessS
 import IndustriesFeaturesSection from "@/components/_section/IndustriesFeaturesSection";
 import IndustriesServeSection from "@/components/_section/IndustriesServeSection";
 import PageTopSection from "@/components/_page/PageTopSection";
-import data from "@/data/data.json";
+import data from "@/data/siteData";
 
 export function generateStaticParams() {
     return data.industries.items.map((industry) => ({ slug: industry.slug }));

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 
 const { hero } = siteData;
 

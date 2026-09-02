@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import {
     FaUser,
     FaEnvelope,

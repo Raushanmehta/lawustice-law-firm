@@ -22,7 +22,7 @@ import {
     FaMapMarkerAlt
 } from "react-icons/fa";
 import { EventItem } from "@/types/sections";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { FadeLeft, FadeRight } from "@/components/ui/AnimationWrapper";
 
 interface EventDetailPageProps {

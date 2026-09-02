@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import PageTopSection from "@/components/_page/PageTopSection";
 import BlogCard from "@/components/BlogCard";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { BlogPost, BlogSectionData } from "@/types/sections";
 
 import {

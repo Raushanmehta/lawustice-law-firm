@@ -13,7 +13,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { ServicesPageData } from "@/types";
 
 const services = siteData.services as ServicesPageData;

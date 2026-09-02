@@ -15,7 +15,7 @@ import {
     type CarouselApi,
 } from "@/components/ui/carousel";
 
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { TestimonialItem } from "@/types";
 
 const { testimonials } = siteData;

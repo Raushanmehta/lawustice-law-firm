@@ -10,7 +10,7 @@ import {
   FaBuilding,
   FaArrowRight,
 } from "react-icons/fa";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import type { ContactPageSectionProps } from "@/types";
 import { FadeUp } from "@/components/ui/AnimationWrapper";
 

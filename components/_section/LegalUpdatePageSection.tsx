@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaUser, FaClock, FaArrowRight, FaChevronRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import {
     LegalUpdatesData,
     LegalUpdateItem,

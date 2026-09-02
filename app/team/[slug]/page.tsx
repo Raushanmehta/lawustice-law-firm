@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
 import TeamDetailPage from "@/components/_page/TeamDetailPage";
 import PageTopSection from "@/components/_page/PageTopSection";
-import { teamData } from "@/data/teamData";
+import siteData from "@/data/siteData";
+import { TeamMember } from "@/types";
+
+const teamData: TeamMember[] = siteData.team.members;
 
 interface TeamDetailRouteProps {
     params: Promise<{ slug: string }>;

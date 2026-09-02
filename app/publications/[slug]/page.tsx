@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import PageTopSection from "@/components/_page/PageTopSection";
 import PublicationDetailPage from "@/components/_page/PublicationDetailPage";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { PublicationsData, PublicationItem } from "@/types/sections";
 
 interface PublicationDetailRouteProps {

@@ -1,6 +1,6 @@
 import PageTopSection from "@/components/_page/PageTopSection";
 import PublicationCard from "@/components/PublicationCard";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { PublicationsData } from "@/types/sections";
 
 export default function PublicationsPage() {

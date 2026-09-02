@@ -1,6 +1,6 @@
 import PageTopSection from "@/components/_page/PageTopSection";
 import CaseSturdieCard from "@/components/CaseSturdieCard";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { CaseStudiesData } from "@/types/sections";
 
 export default function CaseSturdies() {

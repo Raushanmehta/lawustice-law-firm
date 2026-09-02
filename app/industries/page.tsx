@@ -1,7 +1,7 @@
 "use client"
 import IndustrieCard from "@/components/IndustrieCard";
 import PageTopSection from "@/components/_page/PageTopSection";
-import data from "@/data/data.json";
+import data from "@/data/siteData";
 import { motion } from "framer-motion";
 import { Scale } from "lucide-react";
 

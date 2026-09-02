@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { ChevronDown, Phone, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavItem } from "@/types";
-import siteData from "@/data/data.json";
+import siteData from "@/data/siteData";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const { navbar: navData } = siteData;
